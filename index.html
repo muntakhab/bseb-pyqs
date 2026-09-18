@@ -4,312 +4,562 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>BSEB PYQs | Bihar Board Class 12 Previous Year Papers</title>
+<title>BSEB PYQs | Bihar Board Class 12</title>
 
 <meta name="description"
-content="BSEB Class 12 Intermediate previous year question papers from 2020 to 2025. Search papers by year, subject and set.">
+content="BSEB Class 12 previous year question papers, subject-wise PYQs and PYQ-based practice tests.">
 
 <style>
 *{
-    box-sizing:border-box;
-    margin:0;
-    padding:0;
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+html{
+  scroll-behavior:smooth;
 }
 
 body{
-    font-family:Arial,Helvetica,sans-serif;
-    background:#f4f7fb;
-    color:#172033;
-    line-height:1.6;
+  font-family:Arial,Helvetica,sans-serif;
+  background:#f5f7fb;
+  color:#172033;
+  line-height:1.6;
 }
+
+button,
+select,
+input{
+  font:inherit;
+}
+
+button{
+  cursor:pointer;
+}
+
+a{
+  text-decoration:none;
+  color:inherit;
+}
+
+/* HEADER */
 
 header{
-    background:linear-gradient(135deg,#173f72,#166534);
-    color:white;
-    padding:42px 18px;
-    text-align:center;
+  background:linear-gradient(135deg,#173f72,#166534);
+  color:white;
+  padding:42px 18px 35px;
+  text-align:center;
 }
 
-header h1{
-    font-size:34px;
-    margin-bottom:8px;
+.logo{
+  font-size:34px;
+  font-weight:800;
+  letter-spacing:-1px;
 }
 
-header p{
-    opacity:.92;
-    font-size:15px;
+.tagline{
+  margin-top:7px;
+  opacity:.92;
+  font-size:15px;
 }
+
+.header-buttons{
+  margin-top:22px;
+  display:flex;
+  justify-content:center;
+  gap:10px;
+  flex-wrap:wrap;
+}
+
+.header-btn{
+  border:1px solid rgba(255,255,255,.35);
+  background:rgba(255,255,255,.12);
+  color:white;
+  padding:10px 18px;
+  border-radius:10px;
+  font-weight:700;
+}
+
+.header-btn:hover{
+  background:white;
+  color:#173f72;
+}
+
+/* LAYOUT */
 
 .container{
-    max-width:1150px;
-    margin:auto;
-    padding:22px 16px;
+  width:min(1150px,94%);
+  margin:auto;
+  padding:22px 0 50px;
 }
 
-.search-box{
-    background:white;
-    padding:18px;
-    border-radius:16px;
-    box-shadow:0 5px 20px rgba(0,0,0,.07);
-    margin-bottom:22px;
-}
-
-.search-box input{
-    width:100%;
-    padding:14px 16px;
-    border:1px solid #d7dce5;
-    border-radius:10px;
-    font-size:16px;
-    outline:none;
-}
-
-.filters{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:12px;
-    margin-top:12px;
-}
-
-select{
-    width:100%;
-    padding:12px;
-    border:1px solid #d7dce5;
-    border-radius:9px;
-    background:white;
-    font-size:14px;
+.section{
+  margin-top:25px;
 }
 
 .section-title{
-    margin:28px 0 14px;
+  font-size:25px;
+  margin-bottom:14px;
 }
 
-.section-title h2{
-    font-size:24px;
+.muted{
+  color:#687386;
 }
 
-.section-title p{
-    color:#657083;
-    font-size:14px;
+/* STATS */
+
+.stats{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:12px;
+  margin-top:-12px;
 }
 
-.year-card{
-    background:white;
-    border-radius:16px;
-    margin-bottom:20px;
-    overflow:hidden;
-    box-shadow:0 5px 20px rgba(0,0,0,.06);
+.stat{
+  background:white;
+  border-radius:14px;
+  padding:18px;
+  box-shadow:0 5px 20px rgba(0,0,0,.07);
+  text-align:center;
 }
 
-.year-header{
-    background:#173f72;
-    color:white;
-    padding:15px 18px;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
+.stat-number{
+  display:block;
+  font-size:27px;
+  font-weight:800;
+  color:#173f72;
 }
 
-.year-header h3{
-    font-size:20px;
+.stat-label{
+  color:#687386;
+  font-size:13px;
 }
 
-.status{
-    font-size:12px;
-    padding:5px 9px;
-    border-radius:20px;
-    background:rgba(255,255,255,.15);
+/* SEARCH */
+
+.search-box{
+  background:white;
+  padding:18px;
+  border-radius:16px;
+  box-shadow:0 5px 20px rgba(0,0,0,.07);
 }
 
-.subject-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:14px;
-    padding:18px;
+.search-input{
+  width:100%;
+  padding:14px 16px;
+  border:1px solid #d7dce5;
+  border-radius:10px;
+  outline:none;
 }
 
-.subject-card{
-    border:1px solid #e1e5ec;
-    border-radius:13px;
-    padding:16px;
-    background:#fff;
-    transition:.2s;
+.search-input:focus{
+  border-color:#173f72;
 }
 
-.subject-card:hover{
-    transform:translateY(-2px);
-    box-shadow:0 7px 18px rgba(0,0,0,.08);
+.filters{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:12px;
+  margin-top:12px;
 }
 
-.subject-card h4{
-    font-size:18px;
-    margin-bottom:6px;
+.filters select{
+  width:100%;
+  padding:12px;
+  border:1px solid #d7dce5;
+  border-radius:9px;
+  background:white;
 }
 
-.subject-code{
-    color:#667085;
-    font-size:12px;
-    margin-bottom:12px;
+/* NAV */
+
+.nav-tabs{
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+  margin:15px 0;
 }
 
-.sets{
-    display:flex;
-    flex-wrap:wrap;
-    gap:8px;
+.nav-tab{
+  border:0;
+  background:white;
+  padding:11px 17px;
+  border-radius:10px;
+  box-shadow:0 3px 12px rgba(0,0,0,.06);
+  font-weight:700;
+  color:#24324a;
 }
 
-.set{
-    border:1px solid #cbd5e1;
-    border-radius:8px;
-    padding:7px 10px;
-    font-size:13px;
-    cursor:pointer;
-    background:#f8fafc;
+.nav-tab.active{
+  background:#173f72;
+  color:white;
 }
 
-.set.verified{
-    background:#eaf7ee;
-    border-color:#94d3a5;
+/* PAPER CARDS */
+
+.paper-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:15px;
 }
 
-.set.unverified{
-    background:#fff8e6;
-    border-color:#efd38a;
+.paper-card{
+  background:white;
+  border-radius:15px;
+  padding:18px;
+  box-shadow:0 5px 18px rgba(0,0,0,.07);
 }
 
-.set:hover{
-    background:#e9f0ff;
+.paper-card h3{
+  margin-bottom:6px;
 }
 
 .badge{
-    display:inline-block;
-    margin-top:10px;
-    padding:4px 8px;
-    border-radius:15px;
-    font-size:11px;
-}
-
-.badge.verified{
-    background:#dcfce7;
-    color:#166534;
+  display:inline-block;
+  font-size:12px;
+  padding:4px 8px;
+  border-radius:20px;
+  background:#e8f5e9;
+  color:#176b35;
+  font-weight:700;
+  margin:4px 0 10px;
 }
 
 .badge.pending{
-    background:#fef3c7;
-    color:#92400e;
+  background:#fff4d6;
+  color:#815c00;
 }
 
-.info{
-    background:#fff;
-    border-left:5px solid #173f72;
-    padding:16px;
-    border-radius:10px;
-    margin:20px 0;
+.meta{
+  font-size:14px;
+  color:#596579;
+  margin:3px 0;
 }
 
-.info strong{
-    display:block;
-    margin-bottom:5px;
+.card-buttons{
+  display:flex;
+  gap:8px;
+  flex-wrap:wrap;
+  margin-top:14px;
 }
 
-.modal{
-    display:none;
-    position:fixed;
-    inset:0;
-    background:rgba(0,0,0,.6);
-    z-index:1000;
-    padding:20px;
-    overflow:auto;
+.btn{
+  border:0;
+  border-radius:9px;
+  padding:10px 13px;
+  font-weight:700;
 }
 
-.modal-content{
-    background:white;
-    max-width:700px;
-    margin:40px auto;
-    border-radius:18px;
-    padding:24px;
-    position:relative;
+.btn-primary{
+  background:#173f72;
+  color:white;
 }
 
-.close{
-    position:absolute;
-    right:18px;
-    top:12px;
-    font-size:28px;
-    cursor:pointer;
+.btn-secondary{
+  background:#edf1f7;
+  color:#24324a;
 }
 
-.modal h2{
-    margin-bottom:15px;
+.btn-green{
+  background:#166534;
+  color:white;
 }
 
-.paper-info{
-    display:grid;
-    grid-template-columns:repeat(2,1fr);
-    gap:10px;
-    margin:15px 0;
+.btn:disabled{
+  opacity:.5;
+  cursor:not-allowed;
 }
 
-.info-item{
-    background:#f5f7fa;
-    padding:10px;
-    border-radius:9px;
+/* TEST CENTER */
+
+.test-section{
+  background:linear-gradient(135deg,#102f55,#166534);
+  color:white;
+  border-radius:20px;
+  padding:26px;
+  margin-top:30px;
 }
 
-.info-item small{
-    display:block;
-    color:#667085;
-    margin-bottom:3px;
+.test-section h2{
+  font-size:27px;
 }
 
-.source{
-    margin-top:16px;
-    padding:14px;
-    border-radius:10px;
-    background:#eef4ff;
+.test-section p{
+  opacity:.9;
 }
 
-.audit{
-    margin-top:18px;
+.test-start{
+  margin-top:18px;
+  background:white;
+  color:#173f72;
+  border:0;
+  border-radius:10px;
+  padding:12px 18px;
+  font-weight:800;
 }
 
-.audit div{
-    padding:5px 0;
-    font-size:14px;
+/* TEST SETUP */
+
+.test-panel{
+  display:none;
+  background:white;
+  border-radius:18px;
+  padding:22px;
+  box-shadow:0 5px 20px rgba(0,0,0,.08);
+  margin-top:18px;
 }
 
-.note{
-    background:#fff8e1;
-    padding:13px;
-    border-radius:9px;
-    margin-top:15px;
-    font-size:13px;
+.test-panel.show{
+  display:block;
 }
+
+.test-options{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:14px;
+  margin-top:15px;
+}
+
+.test-option label{
+  display:block;
+  font-weight:700;
+  margin-bottom:6px;
+}
+
+.test-option select{
+  width:100%;
+  padding:12px;
+  border:1px solid #d7dce5;
+  border-radius:9px;
+  background:white;
+}
+
+/* TEST SCREEN */
+
+.test-screen{
+  display:none;
+  background:white;
+  border-radius:18px;
+  padding:22px;
+  box-shadow:0 5px 20px rgba(0,0,0,.08);
+  margin-top:18px;
+}
+
+.test-screen.show{
+  display:block;
+}
+
+.test-top{
+  display:flex;
+  justify-content:space-between;
+  gap:10px;
+  flex-wrap:wrap;
+  margin-bottom:20px;
+}
+
+.timer{
+  background:#fff1f1;
+  color:#b42318;
+  padding:8px 12px;
+  border-radius:9px;
+  font-weight:800;
+}
+
+.question-number{
+  color:#687386;
+  font-size:14px;
+  margin-bottom:8px;
+}
+
+.question-text{
+  font-size:19px;
+  font-weight:700;
+  margin-bottom:18px;
+}
+
+.options{
+  display:grid;
+  gap:10px;
+}
+
+.answer-option{
+  border:1px solid #d7dce5;
+  background:#fafbfc;
+  border-radius:10px;
+  padding:13px;
+  text-align:left;
+  width:100%;
+}
+
+.answer-option:hover{
+  border-color:#173f72;
+}
+
+.answer-option.selected{
+  background:#eaf2ff;
+  border-color:#173f72;
+}
+
+.test-controls{
+  display:flex;
+  justify-content:space-between;
+  gap:10px;
+  margin-top:22px;
+}
+
+/* RESULT */
+
+.result-panel{
+  display:none;
+  background:white;
+  border-radius:18px;
+  padding:25px;
+  box-shadow:0 5px 20px rgba(0,0,0,.08);
+  margin-top:18px;
+}
+
+.result-panel.show{
+  display:block;
+}
+
+.score{
+  font-size:42px;
+  font-weight:900;
+  color:#173f72;
+}
+
+.result-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:12px;
+  margin:18px 0;
+}
+
+.result-stat{
+  background:#f5f7fb;
+  padding:15px;
+  border-radius:10px;
+  text-align:center;
+}
+
+.review{
+  margin-top:20px;
+}
+
+.review-item{
+  padding:15px;
+  border:1px solid #e1e5ec;
+  border-radius:10px;
+  margin-bottom:10px;
+}
+
+.correct{
+  color:#147a3c;
+  font-weight:700;
+}
+
+.wrong{
+  color:#b42318;
+  font-weight:700;
+}
+
+/* SUBJECTS */
+
+.subject-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:12px;
+}
+
+.subject{
+  background:white;
+  border-radius:12px;
+  padding:15px;
+  box-shadow:0 3px 14px rgba(0,0,0,.06);
+  font-weight:700;
+  text-align:center;
+}
+
+/* NOTICE */
+
+.notice{
+  background:#fff8e1;
+  border-left:4px solid #e0a800;
+  padding:15px;
+  border-radius:8px;
+  margin-top:18px;
+  font-size:14px;
+}
+
+/* EMPTY */
+
+.empty{
+  background:white;
+  padding:25px;
+  border-radius:14px;
+  text-align:center;
+  color:#687386;
+}
+
+/* FOOTER */
 
 footer{
-    margin-top:40px;
-    background:#172033;
-    color:white;
-    text-align:center;
-    padding:30px 18px;
-    font-size:13px;
+  background:#111827;
+  color:#cbd5e1;
+  padding:30px 18px;
+  text-align:center;
+  font-size:13px;
 }
 
-@media(max-width:700px){
-    header h1{
-        font-size:27px;
-    }
-
-    .filters{
-        grid-template-columns:1fr;
-    }
-
-    .paper-info{
-        grid-template-columns:1fr;
-    }
+footer strong{
+  color:white;
 }
 
-.hidden{
-    display:none!important;
+/* RESPONSIVE */
+
+@media(max-width:850px){
+  .paper-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  .subject-grid{
+    grid-template-columns:repeat(3,1fr);
+  }
+
+  .stats{
+    grid-template-columns:repeat(2,1fr);
+  }
+}
+
+@media(max-width:600px){
+  header{
+    padding:32px 15px;
+  }
+
+  .logo{
+    font-size:29px;
+  }
+
+  .filters,
+  .test-options{
+    grid-template-columns:1fr;
+  }
+
+  .paper-grid{
+    grid-template-columns:1fr;
+  }
+
+  .subject-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  .result-grid{
+    grid-template-columns:1fr;
+  }
+
+  .question-text{
+    font-size:17px;
+  }
 }
 </style>
 </head>
@@ -317,926 +567,1758 @@ footer{
 <body>
 
 <header>
-    <h1>📚 BSEB PYQs</h1>
-    <p>Bihar School Examination Board • Class 12 / Intermediate</p>
-    <p>Previous Year Question Papers • 2020–2025</p>
+
+  <div class="logo">BSEB PYQs</div>
+
+  <div class="tagline">
+    Bihar Board Class 12 Previous Year Question Papers
+  </div>
+
+  <div class="header-buttons">
+    <button class="header-btn" onclick="scrollToSection('papers')">
+      📚 PYQ Papers
+    </button>
+
+    <button class="header-btn" onclick="scrollToSection('testCenter')">
+      🎯 Take a Test
+    </button>
+
+    <button class="header-btn" onclick="scrollToSection('subjects')">
+      📖 Subjects
+    </button>
+  </div>
+
 </header>
 
 <main class="container">
 
-<div class="info">
-    <strong>⚠️ Accuracy First</strong>
-    This website lists genuine BSEB examination papers only.
-    Papers or sets are marked VERIFIED only after source verification.
-    Missing or unverified papers are never replaced with AI-generated questions.
-</div>
+  <!-- STATS -->
 
-<div class="search-box">
+  <section class="stats">
 
-    <input
-        id="search"
+    <div class="stat">
+      <span class="stat-number">2020–2025</span>
+      <span class="stat-label">Years covered</span>
+    </div>
+
+    <div class="stat">
+      <span class="stat-number" id="paperCount">0</span>
+      <span class="stat-label">Paper records</span>
+    </div>
+
+    <div class="stat">
+      <span class="stat-number" id="verifiedCount">0</span>
+      <span class="stat-label">Verified records</span>
+    </div>
+
+    <div class="stat">
+      <span class="stat-number" id="subjectCount">0</span>
+      <span class="stat-label">Subjects</span>
+    </div>
+
+  </section>
+
+
+  <!-- PYQ DATABASE -->
+
+  <section class="section" id="papers">
+
+    <h2 class="section-title">📚 Question Paper Database</h2>
+
+    <div class="search-box">
+
+      <input
+        id="searchInput"
+        class="search-input"
         type="search"
-        placeholder="Search Mathematics, Physics, Hindi, Set A, 2025..."
-        oninput="filterPapers()"
-    >
+        placeholder="Search Mathematics, Physics, 2025, Set A..."
+      >
 
-    <div class="filters">
+      <div class="filters">
 
-        <select id="yearFilter" onchange="filterPapers()">
-            <option value="">All Years</option>
-            <option>2025</option>
-            <option>2024</option>
-            <option>2023</option>
-            <option>2022</option>
-            <option>2021</option>
-            <option>2020</option>
+        <select id="yearFilter">
+          <option value="all">All Years</option>
+          <option value="2025">2025</option>
+          <option value="2024">2024</option>
+          <option value="2023">2023</option>
+          <option value="2022">2022</option>
+          <option value="2021">2021</option>
+          <option value="2020">2020</option>
         </select>
 
-        <select id="subjectFilter" onchange="filterPapers()">
-            <option value="">All Subjects</option>
+        <select id="subjectFilter">
+          <option value="all">All Subjects</option>
         </select>
 
-        <select id="statusFilter" onchange="filterPapers()">
-            <option value="">All Status</option>
-            <option value="VERIFIED">Verified</option>
-            <option value="SOURCE NOT VERIFIED">Source Not Verified</option>
+        <select id="statusFilter">
+          <option value="all">All Status</option>
+          <option value="verified">Verified</option>
+          <option value="pending">Source Not Verified</option>
         </select>
+
+      </div>
 
     </div>
-</div>
 
-<div class="section-title">
-    <h2>Question Paper Database</h2>
-    <p>Year → Subject → Set → Paper information → Verification</p>
-</div>
+    <div class="nav-tabs">
+      <button class="nav-tab active" onclick="setView('all',this)">
+        All Papers
+      </button>
 
-<div id="database"></div>
+      <button class="nav-tab" onclick="setView('science',this)">
+        Science
+      </button>
+
+      <button class="nav-tab" onclick="setView('arts',this)">
+        Arts
+      </button>
+
+      <button class="nav-tab" onclick="setView('commerce',this)">
+        Commerce
+      </button>
+    </div>
+
+    <div id="paperGrid" class="paper-grid"></div>
+
+  </section>
+
+
+  <!-- TEST CENTER -->
+
+  <section class="test-section" id="testCenter">
+
+    <h2>🎯 BSEB PYQ Test Center</h2>
+
+    <p>
+      Practice with four-option questions from the PYQ question bank.
+      Questions are linked to their original year, subject and set.
+    </p>
+
+    <button class="test-start" onclick="openTestSetup()">
+      Start Test
+    </button>
+
+  </section>
+
+
+  <!-- TEST SETUP -->
+
+  <section id="testSetup" class="test-panel">
+
+    <h2>Set Up Your Test</h2>
+
+    <p class="muted">
+      Choose your subject and test settings.
+    </p>
+
+    <div class="test-options">
+
+      <div class="test-option">
+        <label>Subject</label>
+
+        <select id="testSubject">
+          <option value="">Select subject</option>
+        </select>
+      </div>
+
+
+      <div class="test-option">
+        <label>Number of Questions</label>
+
+        <select id="questionCount">
+          <option value="10">10 Questions</option>
+          <option value="25">25 Questions</option>
+          <option value="50">50 Questions</option>
+        </select>
+      </div>
+
+
+      <div class="test-option">
+        <label>Year</label>
+
+        <select id="testYear">
+          <option value="all">All available years</option>
+          <option value="2025">2025</option>
+          <option value="2024">2024</option>
+          <option value="2023">2023</option>
+          <option value="2022">2022</option>
+          <option value="2021">2021</option>
+          <option value="2020">2020</option>
+        </select>
+      </div>
+
+
+      <div class="test-option">
+        <label>Mode</label>
+
+        <select id="testMode">
+          <option value="practice">Practice</option>
+          <option value="timed">Timed</option>
+        </select>
+      </div>
+
+    </div>
+
+    <div class="card-buttons">
+
+      <button class="btn btn-primary" onclick="startTest()">
+        Start Test
+      </button>
+
+      <button class="btn btn-secondary" onclick="closeTestSetup()">
+        Cancel
+      </button>
+
+    </div>
+
+  </section>
+
+
+  <!-- TEST SCREEN -->
+
+  <section id="testScreen" class="test-screen">
+
+    <div class="test-top">
+
+      <strong id="testProgress">
+        Question 1
+      </strong>
+
+      <span id="timer" class="timer">
+        Practice Mode
+      </span>
+
+    </div>
+
+
+    <div class="question-number" id="questionSource">
+      PYQ Source
+    </div>
+
+    <div class="question-text" id="questionText">
+      Question will appear here.
+    </div>
+
+    <div id="options" class="options"></div>
+
+
+    <div class="test-controls">
+
+      <button
+        class="btn btn-secondary"
+        id="previousBtn"
+        onclick="previousQuestion()"
+      >
+        ← Previous
+      </button>
+
+      <button
+        class="btn btn-primary"
+        id="nextBtn"
+        onclick="nextQuestion()"
+      >
+        Next →
+      </button>
+
+    </div>
+
+  </section>
+
+
+  <!-- RESULT -->
+
+  <section id="resultPanel" class="result-panel">
+
+    <h2>📊 Test Result</h2>
+
+    <div class="score" id="scoreText">
+      0/0
+    </div>
+
+    <div id="percentageText">
+      0%
+    </div>
+
+    <div class="result-grid">
+
+      <div class="result-stat">
+        <strong id="correctCount">0</strong>
+        <br>
+        Correct
+      </div>
+
+      <div class="result-stat">
+        <strong id="wrongCount">0</strong>
+        <br>
+        Wrong
+      </div>
+
+      <div class="result-stat">
+        <strong id="unansweredCount">0</strong>
+        <br>
+        Unanswered
+      </div>
+
+    </div>
+
+    <button
+      class="btn btn-primary"
+      onclick="restartTest()"
+    >
+      Take Another Test
+    </button>
+
+    <div class="review">
+
+      <h3>Question Review</h3>
+
+      <div id="reviewList"></div>
+
+    </div>
+
+  </section>
+
+
+  <!-- SUBJECTS -->
+
+  <section class="section" id="subjects">
+
+    <h2 class="section-title">📖 Subjects</h2>
+
+    <div id="subjectGrid" class="subject-grid"></div>
+
+  </section>
+
+
+  <div class="notice">
+
+    <strong>Important:</strong>
+    BSEB PYQs is an independent educational project.
+    It is not the official website of the Bihar School Examination Board.
+    Paper information is marked according to its verification status.
+
+  </div>
 
 </main>
 
-<div id="modal" class="modal" onclick="closeOutside(event)">
-    <div class="modal-content">
-
-        <span class="close" onclick="closeModal()">×</span>
-
-        <h2 id="modalTitle"></h2>
-
-        <div class="paper-info">
-
-            <div class="info-item">
-                <small>Year</small>
-                <span id="mYear"></span>
-            </div>
-
-            <div class="info-item">
-                <small>Subject</small>
-                <span id="mSubject"></span>
-            </div>
-
-            <div class="info-item">
-                <small>Set / Code</small>
-                <span id="mSet"></span>
-            </div>
-
-            <div class="info-item">
-                <small>Exam</small>
-                <span id="mExam"></span>
-            </div>
-
-            <div class="info-item">
-                <small>Full Marks</small>
-                <span id="mMarks"></span>
-            </div>
-
-            <div class="info-item">
-                <small>Time</small>
-                <span id="mTime"></span>
-            </div>
-
-            <div class="info-item">
-                <small>Total Questions</small>
-                <span id="mQuestions"></span>
-            </div>
-
-            <div class="info-item">
-                <small>Verification</small>
-                <span id="mStatus"></span>
-            </div>
-
-        </div>
-
-        <div class="source">
-            <strong>Source Website</strong>
-            <p id="mSource"></p>
-            <p id="mSourceTitle"></p>
-        </div>
-
-        <div class="audit">
-            <h3>Completeness Audit</h3>
-
-            <div>☐ Correct year</div>
-            <div>☐ Correct class</div>
-            <div>☐ Correct subject</div>
-            <div>☐ Correct set/code</div>
-            <div>☐ Correct exam</div>
-            <div>☐ Full marks verified</div>
-            <div>☐ Time verified</div>
-            <div>☐ Question count verified</div>
-            <div>☐ MCQ options checked</div>
-            <div>☐ Internal choices checked</div>
-            <div>☐ Instructions checked</div>
-            <div>☐ Tables/diagrams checked</div>
-            <div>☐ Duplicate sources checked</div>
-            <div>☐ No questions invented</div>
-            <div>☐ No sets invented</div>
-
-        </div>
-
-        <div class="note">
-            Question text is not generated by this website.
-            Where the original paper is not legally or technically available
-            for reproduction, this record provides verified metadata and source
-            information instead of fabricated questions.
-        </div>
-
-    </div>
-</div>
 
 <footer>
-    <p><strong>BSEB PYQs</strong></p>
-    <p>Bihar Board Class 12 Previous Year Question Paper Database</p>
-    <p>Computer-typeset reproductions, where provided, are not official BSEB-issued documents.</p>
-    <p>Accuracy &gt; Completeness</p>
+
+  <strong>BSEB PYQs</strong>
+
+  <br>
+
+  Bihar Board Class 12 Previous Year Papers & PYQ Practice
+
+  <br><br>
+
+  Computer-based educational resource. Not affiliated with BSEB.
+
 </footer>
+
 
 <script>
 
 /*
 =========================================================
-BSEB PYQs DATABASE
+PAPER DATABASE
 =========================================================
 
 IMPORTANT:
-Only verified records should have:
+Only add a paper here after checking its source.
 
-status: "VERIFIED"
+status:
+  "verified"
+or
+  "pending"
 
-Records without sufficient verification must use:
+group:
+  science
+  arts
+  commerce
+  general
 
-status: "SOURCE NOT VERIFIED"
+localPdf:
+  Put the exact repository PDF filename here if available.
 
-Never put AI-generated questions into this database.
+source:
+  Put the source-paper URL here when available.
+
 =========================================================
 */
 
 const papers = [
 
-/* =========================
-   2025
-========================= */
+  {
+    year:"2025",
+    subject:"Mathematics",
+    code:"121/327",
+    set:"A",
+    marks:"100",
+    time:"3h 15m",
+    status:"verified",
+    group:"science",
+    localPdf:"",
+    source:""
+  },
 
-{
+  {
+    year:"2025",
+    subject:"Mathematics",
+    code:"121/327",
+    set:"E",
+    marks:"100",
+    time:"3h 15m",
+    status:"verified",
+    group:"science",
+    localPdf:"Mathematics_2025_Set_E_Questions_First_Solutions-8.pdf",
+    source:""
+  },
+
+  {
     year:"2025",
     subject:"Physics",
-    set:"D",
     code:"117",
-    exam:"BSEB Intermediate Examination",
+    set:"D",
     marks:"70",
-    time:"3 Hours 15 Minutes",
-    questions:"96",
-    status:"VERIFIED",
-    source:"Collegedunia",
-    sourceTitle:"Bihar Board Class 12 Physics 2025 Question Paper — Set D"
-},
+    time:"3h 15m",
+    status:"verified",
+    group:"science",
+    localPdf:"",
+    source:""
+  },
 
-{
+  {
     year:"2025",
     subject:"Physics",
-    set:"H",
     code:"117",
-    exam:"BSEB Intermediate Examination",
-    marks:"70",
-    time:"3 Hours 15 Minutes",
-    questions:"96",
-    status:"VERIFIED",
-    source:"Established educational paper archive",
-    sourceTitle:"BSEB Class 12 Physics 2025 — Set H"
-},
-
-{
-    year:"2025",
-    subject:"Chemistry",
-    set:"D",
-    code:"118",
-    exam:"BSEB Intermediate Examination",
-    marks:"70",
-    time:"3 Hours 15 Minutes",
-    questions:"96",
-    status:"VERIFIED",
-    source:"Collegedunia",
-    sourceTitle:"Bihar Board Class 12 Chemistry 2025 Question Paper — Set D"
-},
-
-{
-    year:"2025",
-    subject:"Chemistry",
     set:"H",
-    code:"118",
-    exam:"BSEB Intermediate Examination",
     marks:"70",
-    time:"3 Hours 15 Minutes",
-    questions:"96",
-    status:"VERIFIED",
-    source:"Collegedunia",
-    sourceTitle:"Bihar Board Class 12 Chemistry 2025 Question Paper — Set H"
-},
+    time:"3h 15m",
+    status:"pending",
+    group:"science",
+    localPdf:"",
+    source:""
+  },
 
-{
+  {
+    year:"2025",
+    subject:"Chemistry",
+    code:"118",
+    set:"D",
+    marks:"70",
+    time:"3h 15m",
+    status:"verified",
+    group:"science",
+    localPdf:"",
+    source:""
+  },
+
+  {
+    year:"2025",
+    subject:"Chemistry",
+    code:"118",
+    set:"H",
+    marks:"70",
+    time:"3h 15m",
+    status:"pending",
+    group:"science",
+    localPdf:"",
+    source:""
+  },
+
+  {
     year:"2025",
     subject:"Biology",
-    set:"F",
     code:"119",
-    exam:"BSEB Intermediate Examination",
-    marks:"70",
-    time:"3 Hours 15 Minutes",
-    questions:"96",
-    status:"VERIFIED",
-    source:"Collegedunia",
-    sourceTitle:"Bihar Board Class 12 Biology 2025 Question Paper — Set F"
-},
-
-{
-    year:"2025",
-    subject:"Hindi",
-    set:"B",
-    code:"106/125/206/224",
-    exam:"BSEB Intermediate Examination",
-    marks:"100",
-    time:"3 Hours 15 Minutes",
-    questions:"Source paper required for final audit",
-    status:"VERIFIED",
-    source:"Collegedunia",
-    sourceTitle:"Bihar Board Class 12 Hindi 2025 Question Paper — Set B"
-},
-
-{
-    year:"2025",
-    subject:"Hindi",
-    set:"C",
-    code:"106/125/206/224",
-    exam:"BSEB Intermediate Examination",
-    marks:"Not yet independently confirmed",
-    time:"Not yet independently confirmed",
-    questions:"Not yet independently confirmed",
-    status:"SOURCE NOT VERIFIED",
-    source:"Paper archive",
-    sourceTitle:"Hindi 2025 — Set C requires additional source verification"
-},
-
-{
-    year:"2025",
-    subject:"Hindi",
-    set:"J",
-    code:"306/331",
-    exam:"BSEB Intermediate Examination",
-    marks:"Not yet independently confirmed",
-    time:"Not yet independently confirmed",
-    questions:"Not yet independently confirmed",
-    status:"SOURCE NOT VERIFIED",
-    source:"Paper archive",
-    sourceTitle:"Hindi 2025 — Set J requires additional source verification"
-},
-
-{
-    year:"2025",
-    subject:"Urdu",
-    set:"G",
-    code:"107/207/307/503",
-    exam:"BSEB Intermediate Examination",
-    marks:"Not yet independently confirmed",
-    time:"Not yet independently confirmed",
-    questions:"Not yet independently confirmed",
-    status:"SOURCE NOT VERIFIED",
-    source:"Paper archive",
-    sourceTitle:"Urdu 2025 — Set G requires additional source verification"
-},
-
-{
-    year:"2025",
-    subject:"Mathematics",
-    set:"A",
-    code:"121/327",
-    exam:"BSEB Intermediate Examination",
-    marks:"100",
-    time:"3 Hours 15 Minutes",
-    questions:"138",
-    status:"VERIFIED",
-    source:"Established educational paper archive",
-    sourceTitle:"BSEB Class 12 Mathematics 2025 — Set A"
-},
-
-{
-    year:"2025",
-    subject:"Mathematics",
-    set:"E",
-    code:"121/327",
-    exam:"BSEB Intermediate Examination",
-    marks:"100",
-    time:"3 Hours 15 Minutes",
-    questions:"138",
-    status:"VERIFIED",
-    source:"Established educational paper archive",
-    sourceTitle:"BSEB Class 12 Mathematics 2025 — Set E"
-},
-
-{
-    year:"2025",
-    subject:"Computer Science",
-    set:"B",
-    code:"122/221/328",
-    exam:"BSEB Intermediate Examination",
-    marks:"Not yet independently confirmed",
-    time:"Not yet independently confirmed",
-    questions:"Not yet independently confirmed",
-    status:"VERIFIED",
-    source:"Established educational paper archive",
-    sourceTitle:"BSEB Class 12 Computer Science 2025 — Set B"
-},
-
-/* =========================
-   2025 ARTS / COMMERCE
-========================= */
-
-{
-    year:"2025",
-    subject:"Economics",
-    set:"J",
-    code:"219",
-    exam:"BSEB Intermediate Examination",
-    marks:"Not yet independently confirmed",
-    time:"Not yet independently confirmed",
-    questions:"Not yet independently confirmed",
-    status:"VERIFIED",
-    source:"Established educational paper archive",
-    sourceTitle:"BSEB Class 12 Economics 2025 — Set J"
-},
-
-{
-    year:"2025",
-    subject:"Economics",
-    set:"D",
-    code:"326",
-    exam:"BSEB Intermediate Examination",
-    marks:"Not yet independently confirmed",
-    time:"Not yet independently confirmed",
-    questions:"Not yet independently confirmed",
-    status:"VERIFIED",
-    source:"Established educational paper archive",
-    sourceTitle:"BSEB Class 12 Economics 2025 — Set D"
-},
-
-{
-    year:"2025",
-    subject:"Geography",
-    set:"G",
-    code:"323",
-    exam:"BSEB Intermediate Examination",
-    marks:"Not yet independently confirmed",
-    time:"Not yet independently confirmed",
-    questions:"Not yet independently confirmed",
-    status:"VERIFIED",
-    source:"Established educational paper archive",
-    sourceTitle:"BSEB Class 12 Geography 2025 — Set G"
-},
-
-{
-    year:"2025",
-    subject:"Political Science",
-    set:"G",
-    code:"322",
-    exam:"BSEB Intermediate Examination",
-    marks:"Not yet independently confirmed",
-    time:"Not yet independently confirmed",
-    questions:"Not yet independently confirmed",
-    status:"VERIFIED",
-    source:"Established educational paper archive",
-    sourceTitle:"BSEB Class 12 Political Science 2025 — Set G"
-},
-
-{
-    year:"2025",
-    subject:"Sociology",
-    set:"B",
-    code:"325",
-    exam:"BSEB Intermediate Examination",
-    marks:"Not yet independently confirmed",
-    time:"Not yet independently confirmed",
-    questions:"Not yet independently confirmed",
-    status:"VERIFIED",
-    source:"Established educational paper archive",
-    sourceTitle:"BSEB Class 12 Sociology 2025 — Set B"
-},
-
-{
-    year:"2025",
-    subject:"Psychology",
-    set:"I",
-    code:"324",
-    exam:"BSEB Intermediate Examination",
-    marks:"Not yet independently confirmed",
-    time:"Not yet independently confirmed",
-    questions:"Not yet independently confirmed",
-    status:"VERIFIED",
-    source:"Established educational paper archive",
-    sourceTitle:"BSEB Class 12 Psychology 2025 — Set I"
-},
-
-{
-    year:"2025",
-    subject:"History",
-    set:"A",
-    code:"321",
-    exam:"BSEB Intermediate Examination",
-    marks:"Not yet independently confirmed",
-    time:"Not yet independently confirmed",
-    questions:"Not yet independently confirmed",
-    status:"VERIFIED",
-    source:"Established educational paper archive",
-    sourceTitle:"BSEB Class 12 History 2025 — Set A"
-},
-
-{
-    year:"2025",
-    subject:"Home Science",
-    set:"B",
-    code:"319",
-    exam:"BSEB Intermediate Examination",
-    marks:"Not yet independently confirmed",
-    time:"Not yet independently confirmed",
-    questions:"Not yet independently confirmed",
-    status:"VERIFIED",
-    source:"Established educational paper archive",
-    sourceTitle:"BSEB Class 12 Home Science 2025 — Set B"
-},
-
-{
-    year:"2025",
-    subject:"Home Science",
-    set:"E",
-    code:"319",
-    exam:"BSEB Intermediate Examination",
-    marks:"Not yet independently confirmed",
-    time:"Not yet independently confirmed",
-    questions:"Not yet independently confirmed",
-    status:"VERIFIED",
-    source:"Established educational paper archive",
-    sourceTitle:"BSEB Class 12 Home Science 2025 — Set E"
-},
-
-{
-    year:"2025",
-    subject:"Entrepreneurship",
     set:"F",
-    code:"218",
-    exam:"BSEB Intermediate Examination",
-    marks:"Not yet independently confirmed",
-    time:"Not yet independently confirmed",
-    questions:"Not yet independently confirmed",
-    status:"VERIFIED",
-    source:"Established educational paper archive",
-    sourceTitle:"BSEB Class 12 Entrepreneurship 2025 — Set F"
-},
+    marks:"70",
+    time:"3h 15m",
+    status:"verified",
+    group:"science",
+    localPdf:"",
+    source:""
+  },
 
-{
+  {
+    year:"2025",
+    subject:"Accountancy",
+    code:"220",
+    set:"J",
+    marks:"100",
+    time:"3h 15m",
+    status:"pending",
+    group:"commerce",
+    localPdf:"",
+    source:""
+  },
+
+  {
     year:"2025",
     subject:"Business Studies",
-    set:"I",
     code:"217",
-    exam:"BSEB Intermediate Examination",
-    marks:"Not yet independently confirmed",
-    time:"Not yet independently confirmed",
-    questions:"Not yet independently confirmed",
-    status:"VERIFIED",
-    source:"Established educational paper archive",
-    sourceTitle:"BSEB Class 12 Business Studies 2025 — Set I"
-},
+    set:"1",
+    marks:"100",
+    time:"3h 15m",
+    status:"pending",
+    group:"commerce",
+    localPdf:"",
+    source:""
+  },
 
-/* =========================
-   YEARS 2024–2020
-   STRUCTURE READY
-========================= */
+  {
+    year:"2025",
+    subject:"Economics",
+    code:"219",
+    set:"J",
+    marks:"100",
+    time:"3h 15m",
+    status:"pending",
+    group:"commerce",
+    localPdf:"",
+    source:""
+  },
 
-...createPendingYear("2024"),
-...createPendingYear("2023"),
-...createPendingYear("2022"),
-...createPendingYear("2021"),
-...createPendingYear("2020")
+  {
+    year:"2025",
+    subject:"Economics",
+    code:"326",
+    set:"D",
+    marks:"100",
+    time:"3h 15m",
+    status:"pending",
+    group:"commerce",
+    localPdf:"",
+    source:""
+  },
+
+  {
+    year:"2025",
+    subject:"Computer Science",
+    code:"122/221/328",
+    set:"B",
+    marks:"100",
+    time:"3h 15m",
+    status:"pending",
+    group:"science",
+    localPdf:"",
+    source:""
+  },
+
+  {
+    year:"2025",
+    subject:"English",
+    code:"105/124/205/223",
+    set:"D",
+    marks:"100",
+    time:"3h 15m",
+    status:"pending",
+    group:"general",
+    localPdf:"",
+    source:""
+  },
+
+  {
+    year:"2025",
+    subject:"English",
+    code:"105/124/205/223",
+    set:"G",
+    marks:"100",
+    time:"3h 15m",
+    status:"pending",
+    group:"general",
+    localPdf:"",
+    source:""
+  },
+
+  {
+    year:"2025",
+    subject:"English",
+    code:"105/124/205/223",
+    set:"I",
+    marks:"100",
+    time:"3h 15m",
+    status:"pending",
+    group:"general",
+    localPdf:"",
+    source:""
+  },
+
+  {
+    year:"2025",
+    subject:"English",
+    code:"305/330",
+    set:"H",
+    marks:"100",
+    time:"3h 15m",
+    status:"pending",
+    group:"general",
+    localPdf:"",
+    source:""
+  },
+
+  {
+    year:"2025",
+    subject:"Hindi",
+    code:"106/125/206/224",
+    set:"B",
+    marks:"100",
+    time:"3h 15m",
+    status:"pending",
+    group:"general",
+    localPdf:"",
+    source:""
+  },
+
+  {
+    year:"2025",
+    subject:"Hindi",
+    code:"106/125/206/224",
+    set:"C",
+    marks:"100",
+    time:"3h 15m",
+    status:"pending",
+    group:"general",
+    localPdf:"",
+    source:""
+  },
+
+  {
+    year:"2025",
+    subject:"Hindi",
+    code:"306/331",
+    set:"J",
+    marks:"100",
+    time:"3h 15m",
+    status:"pending",
+    group:"general",
+    localPdf:"",
+    source:""
+  },
+
+  {
+    year:"2025",
+    subject:"Urdu",
+    code:"107/207/307/503",
+    set:"G",
+    marks:"100",
+    time:"3h 15m",
+    status:"pending",
+    group:"general",
+    localPdf:"",
+    source:""
+  },
+
+  {
+    year:"2025",
+    subject:"History",
+    code:"321",
+    set:"A",
+    marks:"100",
+    time:"3h 15m",
+    status:"pending",
+    group:"arts",
+    localPdf:"",
+    source:""
+  },
+
+  {
+    year:"2025",
+    subject:"Geography",
+    code:"323",
+    set:"G",
+    marks:"100",
+    time:"3h 15m",
+    status:"pending",
+    group:"arts",
+    localPdf:"",
+    source:""
+  },
+
+  {
+    year:"2025",
+    subject:"Political Science",
+    code:"322",
+    set:"G",
+    marks:"100",
+    time:"3h 15m",
+    status:"pending",
+    group:"arts",
+    localPdf:"",
+    source:""
+  },
+
+  {
+    year:"2025",
+    subject:"Psychology",
+    code:"324",
+    set:"1",
+    marks:"100",
+    time:"3h 15m",
+    status:"pending",
+    group:"arts",
+    localPdf:"",
+    source:""
+  },
+
+  {
+    year:"2025",
+    subject:"Sociology",
+    code:"325",
+    set:"B",
+    marks:"100",
+    time:"3h 15m",
+    status:"pending",
+    group:"arts",
+    localPdf:"",
+    source:""
+  },
+
+  {
+    year:"2025",
+    subject:"Entrepreneurship",
+    code:"218",
+    set:"F",
+    marks:"100",
+    time:"3h 15m",
+    status:"pending",
+    group:"commerce",
+    localPdf:"",
+    source:""
+  },
+
+  {
+    year:"2025",
+    subject:"Home Science",
+    code:"319",
+    set:"B",
+    marks:"100",
+    time:"3h 15m",
+    status:"pending",
+    group:"arts",
+    localPdf:"",
+    source:""
+  },
+
+  {
+    year:"2025",
+    subject:"Home Science",
+    code:"319",
+    set:"E",
+    marks:"100",
+    time:"3h 15m",
+    status:"pending",
+    group:"arts",
+    localPdf:"",
+    source:""
+  }
 
 ];
 
 
 /*
 =========================================================
-SUBJECTS TO BE RESEARCHED
+PYQ QUESTION BANK
 =========================================================
-*/
 
-const subjects = [
+THIS IS INTENTIONALLY EMPTY UNTIL ACTUAL PYQs ARE LOADED.
 
-"Mathematics",
-"Physics",
-"Chemistry",
-"Biology",
-"Computer Science",
+Each question must have this structure:
 
-"Hindi",
-"English",
-"Urdu",
-"Sanskrit",
-
-"History",
-"Political Science",
-"Geography",
-"Economics",
-"Sociology",
-"Psychology",
-"Philosophy",
-"Home Science",
-"Music",
-
-"Accountancy",
-"Business Studies",
-"Entrepreneurship",
-
-"Other BSEB Subjects"
-];
-
-
-/*
-Create pending records for years that have not yet
-completed source verification.
-*/
-
-function createPendingYear(year){
-
-    return subjects.map(subject => ({
-
-        year:year,
-
-        subject:subject,
-
-        set:"—",
-
-        code:"—",
-
-        exam:"BSEB Intermediate Examination",
-
-        marks:"Not yet verified",
-
-        time:"Not yet verified",
-
-        questions:"Not yet verified",
-
-        status:"SOURCE NOT VERIFIED",
-
-        source:"Research pending",
-
-        sourceTitle:
-        "Paper/set identification and verification pending"
-
-    }));
-
+{
+  id:"...",
+  subject:"Mathematics",
+  year:"2025",
+  set:"A",
+  questionNo:"1",
+  text:"...",
+  options:[
+    "A...",
+    "B...",
+    "C...",
+    "D..."
+  ],
+  answer:0,
+  marks:1,
+  source:"..."
 }
 
+answer:
+0 = A
+1 = B
+2 = C
+3 = D
 
-/*
-=========================================================
-RENDER DATABASE
+DO NOT put invented questions here.
 =========================================================
 */
 
-function renderDatabase(list = papers){
+const questionBank = [];
 
-    const database =
-        document.getElementById("database");
 
-    database.innerHTML = "";
+/* STATE */
 
-    const years =
-        [...new Set(list.map(p => p.year))]
-        .sort((a,b) => b-a);
+let currentView = "all";
 
-    if(years.length === 0){
+let testQuestions = [];
+let currentQuestion = 0;
+let userAnswers = [];
+let timerInterval = null;
+let timeLeft = 0;
 
-        database.innerHTML =
-        `
-        <div class="info">
-            <strong>No matching papers found.</strong>
-            Try another year, subject or search term.
-        </div>
-        `;
 
-        return;
-    }
+/* INITIALIZE */
 
-    years.forEach(year => {
+document.addEventListener("DOMContentLoaded",function(){
 
-        const yearPapers =
-            list.filter(p => p.year === year);
+  updateStats();
 
-        const verified =
-            yearPapers.filter(
-                p => p.status === "VERIFIED"
-            ).length;
+  populateSubjects();
 
-        const yearCard =
-        document.createElement("section");
+  renderSubjects();
 
-        yearCard.className = "year-card";
+  renderPapers();
 
-        yearCard.innerHTML = `
+  document
+    .getElementById("searchInput")
+    .addEventListener("input",renderPapers);
 
-            <div class="year-header">
+  document
+    .getElementById("yearFilter")
+    .addEventListener("change",renderPapers);
 
-                <h3>📅 ${year}</h3>
+  document
+    .getElementById("subjectFilter")
+    .addEventListener("change",renderPapers);
 
-                <span class="status">
-                    ${verified} verified records
-                </span>
+  document
+    .getElementById("statusFilter")
+    .addEventListener("change",renderPapers);
 
-            </div>
+});
 
-            <div class="subject-grid"
-                 id="year-${year}">
-            </div>
 
-        `;
+/* SCROLL */
 
-        database.appendChild(yearCard);
+function scrollToSection(id){
 
-        const grid =
-            yearCard.querySelector(".subject-grid");
-
-        const subjectNames =
-            [...new Set(
-                yearPapers.map(p => p.subject)
-            )];
-
-        subjectNames.forEach(subject => {
-
-            const subjectPapers =
-                yearPapers.filter(
-                    p => p.subject === subject
-                );
-
-            const card =
-                document.createElement("article");
-
-            card.className = "subject-card";
-
-            let setsHTML = "";
-
-            subjectPapers.forEach(p => {
-
-                const statusClass =
-                    p.status === "VERIFIED"
-                    ? "verified"
-                    : "unverified";
-
-                setsHTML += `
-
-                    <button
-                        class="set ${statusClass}"
-                        onclick='openPaper(${JSON.stringify(p)})'
-                    >
-                        Set ${escapeHTML(p.set)}
-                    </button>
-
-                `;
-
-            });
-
-            const statusBadge =
-                subjectPapers.some(
-                    p => p.status === "VERIFIED"
-                )
-                ? `<span class="badge verified">
-                    VERIFIED RECORD
-                   </span>`
-                : `<span class="badge pending">
-                    SOURCE NOT VERIFIED
-                   </span>`;
-
-            card.innerHTML = `
-
-                <h4>${escapeHTML(subject)}</h4>
-
-                <div class="subject-code">
-                    ${subjectPapers.length} record(s)
-                </div>
-
-                <div class="sets">
-                    ${setsHTML}
-                </div>
-
-                ${statusBadge}
-
-            `;
-
-            grid.appendChild(card);
-
-        });
-
+  document
+    .getElementById(id)
+    .scrollIntoView({
+      behavior:"smooth"
     });
 
 }
 
 
-/*
-=========================================================
-SEARCH / FILTER
-=========================================================
-*/
+/* STATS */
 
-function filterPapers(){
+function updateStats(){
 
-    const search =
-        document
-        .getElementById("search")
-        .value
-        .toLowerCase();
+  const verified = papers.filter(
+    p => p.status === "verified"
+  ).length;
 
-    const year =
-        document
-        .getElementById("yearFilter")
-        .value;
+  const subjects = [
+    ...new Set(
+      papers.map(p => p.subject)
+    )
+  ];
 
-    const subject =
-        document
-        .getElementById("subjectFilter")
-        .value;
+  document.getElementById("paperCount").textContent =
+    papers.length;
 
-    const status =
-        document
-        .getElementById("statusFilter")
-        .value;
+  document.getElementById("verifiedCount").textContent =
+    verified;
 
-    const filtered =
-        papers.filter(p => {
-
-            const text = `
-                ${p.year}
-                ${p.subject}
-                ${p.set}
-                ${p.code}
-                ${p.source}
-                ${p.sourceTitle}
-            `.toLowerCase();
-
-            return (
-
-                text.includes(search)
-
-                &&
-
-                (!year || p.year === year)
-
-                &&
-
-                (!subject || p.subject === subject)
-
-                &&
-
-                (!status || p.status === status)
-
-            );
-
-        });
-
-    renderDatabase(filtered);
+  document.getElementById("subjectCount").textContent =
+    subjects.length;
 
 }
 
 
-/*
-=========================================================
-MODAL
-=========================================================
-*/
+/* SUBJECT FILTER */
 
-function openPaper(p){
+function populateSubjects(){
 
-    document.getElementById("modalTitle")
-        .textContent =
-        `${p.year} ${p.subject} — Set ${p.set}`;
+  const subjects = [
+    ...new Set(
+      papers.map(p => p.subject)
+    )
+  ].sort();
 
-    document.getElementById("mYear")
-        .textContent = p.year;
+  const select =
+    document.getElementById("subjectFilter");
 
-    document.getElementById("mSubject")
-        .textContent = p.subject;
+  subjects.forEach(subject => {
 
-    document.getElementById("mSet")
-        .textContent =
-        `${p.set} / ${p.code}`;
+    const option =
+      document.createElement("option");
 
-    document.getElementById("mExam")
-        .textContent = p.exam;
+    option.value = subject;
+    option.textContent = subject;
 
-    document.getElementById("mMarks")
-        .textContent = p.marks;
+    select.appendChild(option);
 
-    document.getElementById("mTime")
-        .textContent = p.time;
+  });
 
-    document.getElementById("mQuestions")
-        .textContent = p.questions;
 
-    document.getElementById("mStatus")
-        .textContent = p.status;
+  const testSubject =
+    document.getElementById("testSubject");
 
-    document.getElementById("mSource")
-        .textContent = p.source;
+  subjects.forEach(subject => {
 
-    document.getElementById("mSourceTitle")
-        .textContent = p.sourceTitle;
+    const option =
+      document.createElement("option");
 
-    document.getElementById("modal")
-        .style.display = "block";
+    option.value = subject;
+    option.textContent = subject;
+
+    testSubject.appendChild(option);
+
+  });
 
 }
 
 
-function closeModal(){
+/* SUBJECT CARDS */
 
-    document.getElementById("modal")
-        .style.display = "none";
+function renderSubjects(){
+
+  const subjects = [
+    ...new Set(
+      papers.map(p => p.subject)
+    )
+  ].sort();
+
+  const grid =
+    document.getElementById("subjectGrid");
+
+  grid.innerHTML = "";
+
+  subjects.forEach(subject => {
+
+    const div =
+      document.createElement("div");
+
+    div.className = "subject";
+
+    div.textContent = subject;
+
+    div.onclick = function(){
+
+      document.getElementById(
+        "subjectFilter"
+      ).value = subject;
+
+      renderPapers();
+
+      scrollToSection("papers");
+
+    };
+
+    grid.appendChild(div);
+
+  });
 
 }
 
 
-function closeOutside(event){
+/* PAPER VIEW */
 
-    if(event.target.id === "modal"){
-        closeModal();
+function setView(view,button){
+
+  currentView = view;
+
+  document
+    .querySelectorAll(".nav-tab")
+    .forEach(btn =>
+      btn.classList.remove("active")
+    );
+
+  button.classList.add("active");
+
+  renderPapers();
+
+}
+
+
+/* RENDER PAPERS */
+
+function renderPapers(){
+
+  const grid =
+    document.getElementById("paperGrid");
+
+  const search =
+    document
+      .getElementById("searchInput")
+      .value
+      .toLowerCase()
+      .trim();
+
+  const year =
+    document
+      .getElementById("yearFilter")
+      .value;
+
+  const subject =
+    document
+      .getElementById("subjectFilter")
+      .value;
+
+  const status =
+    document
+      .getElementById("statusFilter")
+      .value;
+
+
+  let filtered =
+    papers.filter(p => {
+
+      const text = (
+
+        p.year + " " +
+        p.subject + " " +
+        p.code + " " +
+        p.set
+
+      ).toLowerCase();
+
+
+      const matchesSearch =
+        !search ||
+        text.includes(search);
+
+
+      const matchesYear =
+        year === "all" ||
+        p.year === year;
+
+
+      const matchesSubject =
+        subject === "all" ||
+        p.subject === subject;
+
+
+      const matchesStatus =
+        status === "all" ||
+        (
+          status === "verified"
+          && p.status === "verified"
+        ) ||
+        (
+          status === "pending"
+          && p.status === "pending"
+        );
+
+
+      const matchesGroup =
+        currentView === "all" ||
+        p.group === currentView;
+
+
+      return (
+        matchesSearch &&
+        matchesYear &&
+        matchesSubject &&
+        matchesStatus &&
+        matchesGroup
+      );
+
+    });
+
+
+  grid.innerHTML = "";
+
+
+  if(filtered.length === 0){
+
+    grid.innerHTML = `
+      <div class="empty" style="grid-column:1/-1">
+        No matching paper record found.
+      </div>
+    `;
+
+    return;
+
+  }
+
+
+  filtered.forEach(paper => {
+
+    const card =
+      document.createElement("div");
+
+    card.className = "paper-card";
+
+
+    const statusBadge =
+      paper.status === "verified"
+
+      ? `<span class="badge">
+           ✓ VERIFIED
+         </span>`
+
+      : `<span class="badge pending">
+           SOURCE NOT VERIFIED
+         </span>`;
+
+
+    let buttons = "";
+
+
+    if(paper.localPdf){
+
+      buttons += `
+        <a
+          class="btn btn-primary"
+          href="${encodeURI(paper.localPdf)}"
+          target="_blank"
+        >
+          📄 Open PDF
+        </a>
+      `;
+
     }
 
+
+    if(paper.source){
+
+      buttons += `
+        <a
+          class="btn btn-secondary"
+          href="${paper.source}"
+          target="_blank"
+          rel="noopener"
+        >
+          🔗 Source
+        </a>
+      `;
+
+    }
+
+
+    if(!buttons){
+
+      buttons = `
+        <button class="btn btn-secondary" disabled>
+          Paper link pending
+        </button>
+      `;
+
+    }
+
+
+    card.innerHTML = `
+
+      <h3>${escapeHTML(paper.subject)}</h3>
+
+      ${statusBadge}
+
+      <div class="meta">
+        <strong>Year:</strong>
+        ${escapeHTML(paper.year)}
+      </div>
+
+      <div class="meta">
+        <strong>Set:</strong>
+        ${escapeHTML(paper.set)}
+      </div>
+
+      <div class="meta">
+        <strong>Code:</strong>
+        ${escapeHTML(paper.code)}
+      </div>
+
+      <div class="meta">
+        <strong>Marks:</strong>
+        ${escapeHTML(paper.marks)}
+      </div>
+
+      <div class="meta">
+        <strong>Time:</strong>
+        ${escapeHTML(paper.time)}
+      </div>
+
+      <div class="card-buttons">
+        ${buttons}
+      </div>
+
+    `;
+
+
+    grid.appendChild(card);
+
+  });
+
 }
 
 
-/*
-=========================================================
-SECURITY / DISPLAY HELPERS
-=========================================================
-*/
+/* TEST SETUP */
+
+function openTestSetup(){
+
+  document
+    .getElementById("testSetup")
+    .classList.add("show");
+
+  scrollToSection("testSetup");
+
+}
+
+
+function closeTestSetup(){
+
+  document
+    .getElementById("testSetup")
+    .classList.remove("show");
+
+}
+
+
+/* START TEST */
+
+function startTest(){
+
+  const subject =
+    document.getElementById("testSubject").value;
+
+  const count =
+    Number(
+      document.getElementById("questionCount").value
+    );
+
+  const year =
+    document.getElementById("testYear").value;
+
+  const mode =
+    document.getElementById("testMode").value;
+
+
+  if(!subject){
+
+    alert("Please select a subject.");
+
+    return;
+
+  }
+
+
+  let available =
+    questionBank.filter(q => {
+
+      const subjectMatch =
+        q.subject === subject;
+
+      const yearMatch =
+        year === "all" ||
+        q.year === year;
+
+      return subjectMatch && yearMatch;
+
+    });
+
+
+  if(available.length === 0){
+
+    alert(
+      "No verified PYQ questions are loaded for this selection yet. " +
+      "Questions will be added only from verified/user-provided PYQ papers."
+    );
+
+    return;
+
+  }
+
+
+  available =
+    shuffleArray(available);
+
+
+  testQuestions =
+    available.slice(
+      0,
+      Math.min(count,available.length)
+    );
+
+
+  userAnswers =
+    new Array(
+      testQuestions.length
+    ).fill(null);
+
+
+  currentQuestion = 0;
+
+
+  document
+    .getElementById("testSetup")
+    .classList.remove("show");
+
+
+  document
+    .getElementById("resultPanel")
+    .classList.remove("show");
+
+
+  document
+    .getElementById("testScreen")
+    .classList.add("show");
+
+
+  if(mode === "timed"){
+
+    timeLeft =
+      testQuestions.length * 60;
+
+    startTimer();
+
+  }else{
+
+    clearInterval(timerInterval);
+
+    document
+      .getElementById("timer")
+      .textContent =
+      "Practice Mode";
+
+  }
+
+
+  renderQuestion();
+
+  scrollToSection("testScreen");
+
+}
+
+
+/* RENDER QUESTION */
+
+function renderQuestion(){
+
+  const q =
+    testQuestions[currentQuestion];
+
+
+  document.getElementById(
+    "testProgress"
+  ).textContent =
+    `Question ${currentQuestion + 1} of ${testQuestions.length}`;
+
+
+  document.getElementById(
+    "questionSource"
+  ).textContent =
+    `${q.subject} • ${q.year} • Set ${q.set} • Question ${q.questionNo}`;
+
+
+  document.getElementById(
+    "questionText"
+  ).textContent =
+    q.text;
+
+
+  const options =
+    document.getElementById("options");
+
+  options.innerHTML = "";
+
+
+  q.options.forEach((option,index) => {
+
+    const button =
+      document.createElement("button");
+
+    button.className =
+      "answer-option";
+
+
+    if(userAnswers[currentQuestion] === index){
+
+      button.classList.add("selected");
+
+    }
+
+
+    button.textContent =
+      String.fromCharCode(65 + index)
+      + ") "
+      + option;
+
+
+    button.onclick = function(){
+
+      selectAnswer(index);
+
+    };
+
+
+    options.appendChild(button);
+
+  });
+
+
+  document.getElementById(
+    "previousBtn"
+  ).disabled =
+    currentQuestion === 0;
+
+
+  document.getElementById(
+    "nextBtn"
+  ).textContent =
+    currentQuestion === testQuestions.length - 1
+      ? "Finish Test"
+      : "Next →";
+
+}
+
+
+/* SELECT ANSWER */
+
+function selectAnswer(index){
+
+  userAnswers[currentQuestion] =
+    index;
+
+  renderQuestion();
+
+}
+
+
+/* NEXT */
+
+function nextQuestion(){
+
+  if(
+    currentQuestion <
+    testQuestions.length - 1
+  ){
+
+    currentQuestion++;
+
+    renderQuestion();
+
+  }else{
+
+    finishTest();
+
+  }
+
+}
+
+
+/* PREVIOUS */
+
+function previousQuestion(){
+
+  if(currentQuestion > 0){
+
+    currentQuestion--;
+
+    renderQuestion();
+
+  }
+
+}
+
+
+/* TIMER */
+
+function startTimer(){
+
+  clearInterval(timerInterval);
+
+  updateTimer();
+
+
+  timerInterval =
+    setInterval(function(){
+
+      timeLeft--;
+
+      updateTimer();
+
+
+      if(timeLeft <= 0){
+
+        clearInterval(timerInterval);
+
+        alert("Time is over.");
+
+        finishTest();
+
+      }
+
+    },1000);
+
+}
+
+
+function updateTimer(){
+
+  const minutes =
+    Math.floor(timeLeft / 60);
+
+  const seconds =
+    timeLeft % 60;
+
+
+  document.getElementById(
+    "timer"
+  ).textContent =
+    `${minutes}:${String(seconds).padStart(2,"0")}`;
+
+}
+
+
+/* FINISH */
+
+function finishTest(){
+
+  clearInterval(timerInterval);
+
+  let correct = 0;
+  let wrong = 0;
+  let unanswered = 0;
+
+
+  testQuestions.forEach((q,index) => {
+
+    const answer =
+      userAnswers[index];
+
+
+    if(answer === null){
+
+      unanswered++;
+
+    }else if(answer === q.answer){
+
+      correct++;
+
+    }else{
+
+      wrong++;
+
+    }
+
+  });
+
+
+  const total =
+    testQuestions.length;
+
+  const percentage =
+    total
+      ? Math.round(
+          (correct / total) * 100
+        )
+      : 0;
+
+
+  document.getElementById(
+    "scoreText"
+  ).textContent =
+    `${correct}/${total}`;
+
+
+  document.getElementById(
+    "percentageText"
+  ).textContent =
+    `${percentage}%`;
+
+
+  document.getElementById(
+    "correctCount"
+  ).textContent =
+    correct;
+
+
+  document.getElementById(
+    "wrongCount"
+  ).textContent =
+    wrong;
+
+
+  document.getElementById(
+    "unansweredCount"
+  ).textContent =
+    unanswered;
+
+
+  renderReview();
+
+
+  document
+    .getElementById("testScreen")
+    .classList.remove("show");
+
+
+  document
+    .getElementById("resultPanel")
+    .classList.add("show");
+
+
+  scrollToSection("resultPanel");
+
+}
+
+
+/* REVIEW */
+
+function renderReview(){
+
+  const list =
+    document.getElementById("reviewList");
+
+  list.innerHTML = "";
+
+
+  testQuestions.forEach((q,index) => {
+
+    const item =
+      document.createElement("div");
+
+    item.className =
+      "review-item";
+
+
+    const selected =
+      userAnswers[index];
+
+
+    const selectedText =
+      selected === null
+      ? "Not answered"
+      : q.options[selected];
+
+
+    const correctText =
+      q.options[q.answer];
+
+
+    let resultHTML;
+
+
+    if(selected === q.answer){
+
+      resultHTML =
+        `<div class="correct">
+          ✓ Correct
+        </div>`;
+
+    }else{
+
+      resultHTML =
+        `<div class="wrong">
+          ✗ Wrong
+        </div>`;
+
+    }
+
+
+    item.innerHTML = `
+
+      <strong>
+        Q${index + 1}. ${escapeHTML(q.text)}
+      </strong>
+
+      <br><br>
+
+      Your answer:
+      ${escapeHTML(selectedText)}
+
+      <br>
+
+      Correct answer:
+      ${escapeHTML(correctText)}
+
+      <br>
+
+      <small>
+        PYQ: ${escapeHTML(q.year)}
+        • Set ${escapeHTML(q.set)}
+        • Question ${escapeHTML(q.questionNo)}
+      </small>
+
+      <br><br>
+
+      ${resultHTML}
+
+    `;
+
+
+    list.appendChild(item);
+
+  });
+
+}
+
+
+/* RESTART */
+
+function restartTest(){
+
+  document
+    .getElementById("resultPanel")
+    .classList.remove("show");
+
+  openTestSetup();
+
+}
+
+
+/* SHUFFLE */
+
+function shuffleArray(array){
+
+  const copy =
+    [...array];
+
+
+  for(
+    let i = copy.length - 1;
+    i > 0;
+    i--
+  ){
+
+    const j =
+      Math.floor(
+        Math.random() * (i + 1)
+      );
+
+
+    [
+      copy[i],
+      copy[j]
+    ] =
+    [
+      copy[j],
+      copy[i]
+    ];
+
+  }
+
+
+  return copy;
+
+}
+
+
+/* SECURITY */
 
 function escapeHTML(value){
 
-    return String(value)
-        .replace(/&/g,"&amp;")
-        .replace(/</g,"&lt;")
-        .replace(/>/g,"&gt;")
-        .replace(/"/g,"&quot;")
-        .replace(/'/g,"&#039;");
+  return String(value)
+    .replaceAll("&","&amp;")
+    .replaceAll("<","&lt;")
+    .replaceAll(">","&gt;")
+    .replaceAll('"',"&quot;")
+    .replaceAll("'","&#039;");
 
 }
-
-
-/*
-=========================================================
-SUBJECT FILTER
-=========================================================
-*/
-
-function loadSubjectFilter(){
-
-    const select =
-        document.getElementById("subjectFilter");
-
-    subjects.forEach(subject => {
-
-        const option =
-            document.createElement("option");
-
-        option.value = subject;
-        option.textContent = subject;
-
-        select.appendChild(option);
-
-    });
-
-}
-
-
-/*
-=========================================================
-START WEBSITE
-=========================================================
-*/
-
-loadSubjectFilter();
-
-renderDatabase();
 
 </script>
 
