@@ -1,62 +1,109 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>BSEB PYQs | Bihar Board Class 12</title>
-<meta name="description" content="BSEB Class 12 previous year question papers, subject-wise PYQs and PYQ-based practice tests.">
+<meta name="description" content="BSEB Class 12 previous year question papers and PYQ practice.">
 
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
 body{font-family:Arial,Helvetica,sans-serif;background:#f5f7fb;color:#172033;line-height:1.6}
-button,select,input{font:inherit} button{cursor:pointer} a{text-decoration:none;color:inherit}
-header{background:linear-gradient(135deg,#173f72,#166534);color:white;padding:42px 18px 35px;text-align:center}
-.logo{font-size:34px;font-weight:800;letter-spacing:-1px}.tagline{margin-top:7px;opacity:.92;font-size:15px}
+button,input,select{font:inherit}
+button{cursor:pointer}
+a{text-decoration:none;color:inherit}
+
+header{background:linear-gradient(135deg,#173f72,#166534);color:#fff;text-align:center;padding:42px 18px 35px}
+.logo{font-size:34px;font-weight:800}
+.tagline{margin-top:7px;opacity:.92;font-size:15px}
 .header-buttons{margin-top:22px;display:flex;justify-content:center;gap:10px;flex-wrap:wrap}
-.header-btn{border:1px solid rgba(255,255,255,.35);background:rgba(255,255,255,.12);color:white;padding:10px 18px;border-radius:10px;font-weight:700}
-.header-btn:hover{background:white;color:#173f72}
-.container{width:min(1150px,94%);margin:auto;padding:22px 0 50px}.section{margin-top:25px}
-.section-title{font-size:25px;margin-bottom:14px}.muted{color:#687386}
+.header-btn{border:1px solid rgba(255,255,255,.35);background:rgba(255,255,255,.12);color:#fff;padding:10px 18px;border-radius:10px;font-weight:700}
+
+.container{width:min(1150px,94%);margin:auto;padding:22px 0 50px}
+.section{margin-top:25px}
+.section-title{font-size:25px;margin-bottom:14px}
+.muted{color:#687386}
+
 .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:-12px}
-.stat{background:white;border-radius:14px;padding:18px;box-shadow:0 5px 20px rgba(0,0,0,.07);text-align:center}
-.stat-number{display:block;font-size:27px;font-weight:800;color:#173f72}.stat-label{color:#687386;font-size:13px}
-.search-box{background:white;padding:18px;border-radius:16px;box-shadow:0 5px 20px rgba(0,0,0,.07)}
-.search-input{width:100%;padding:14px 16px;border:1px solid #d7dce5;border-radius:10px;outline:none}
-.search-input:focus{border-color:#173f72}.filters{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:12px}
-.filters select{width:100%;padding:12px;border:1px solid #d7dce5;border-radius:9px;background:white}
+.stat,.search-box,.paper-card,.test-panel,.test-screen,.result-panel,.subject{
+ background:#fff;border-radius:15px;box-shadow:0 5px 20px rgba(0,0,0,.07)
+}
+.stat{text-align:center;padding:18px}
+.stat-number{display:block;font-size:27px;font-weight:800;color:#173f72}
+.stat-label{color:#687386;font-size:13px}
+
+.search-box{padding:18px}
+.search-input{width:100%;padding:14px 16px;border:1px solid #d7dce5;border-radius:10px;outline:0}
+.filters{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:12px}
+.filters select,.test-option select{width:100%;padding:12px;border:1px solid #d7dce5;border-radius:9px;background:#fff}
+
 .nav-tabs{display:flex;gap:10px;flex-wrap:wrap;margin:15px 0}
-.nav-tab{border:0;background:white;padding:11px 17px;border-radius:10px;box-shadow:0 3px 12px rgba(0,0,0,.06);font-weight:700;color:#24324a}
-.nav-tab.active{background:#173f72;color:white}
+.nav-tab{border:0;background:#fff;padding:11px 17px;border-radius:10px;box-shadow:0 3px 12px rgba(0,0,0,.06);font-weight:700;color:#24324a}
+.nav-tab.active{background:#173f72;color:#fff}
+
 .paper-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}
-.paper-card{background:white;border-radius:15px;padding:18px;box-shadow:0 5px 18px rgba(0,0,0,.07)}
-.paper-card h3{margin-bottom:6px}.badge{display:inline-block;font-size:12px;padding:4px 8px;border-radius:20px;background:#e8f5e9;color:#176b35;font-weight:700;margin:4px 0 10px}
-.badge.pending{background:#fff4d6;color:#815c00}.meta{font-size:14px;color:#596579;margin:3px 0}
+.paper-card{padding:18px}
+.paper-card h3{margin-bottom:6px}
+.badge{display:inline-block;font-size:12px;padding:4px 8px;border-radius:20px;background:#e8f5e9;color:#176b35;font-weight:700;margin:4px 0 10px}
+.badge.pending{background:#fff4d6;color:#815c00}
+.meta{font-size:14px;color:#596579;margin:3px 0}
 .card-buttons{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}
-.btn{border:0;border-radius:9px;padding:10px 13px;font-weight:700}.btn-primary{background:#173f72;color:white}
-.btn-secondary{background:#edf1f7;color:#24324a}.btn-green{background:#166534;color:white}.btn:disabled{opacity:.5;cursor:not-allowed}
-.test-section{background:linear-gradient(135deg,#102f55,#166534);color:white;border-radius:20px;padding:26px;margin-top:30px}
-.test-section h2{font-size:27px}.test-section p{opacity:.9}.test-start{margin-top:18px;background:white;color:#173f72;border:0;border-radius:10px;padding:12px 18px;font-weight:800}
-.test-panel{display:none;background:white;border-radius:18px;padding:22px;box-shadow:0 5px 20px rgba(0,0,0,.08);margin-top:18px}
-.test-panel.show{display:block}.test-options{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:15px}
-.test-option label{display:block;font-weight:700;margin-bottom:6px}.test-option select{width:100%;padding:12px;border:1px solid #d7dce5;border-radius:9px;background:white}
-.test-screen{display:none;background:white;border-radius:18px;padding:22px;box-shadow:0 5px 20px rgba(0,0,0,.08);margin-top:18px}
-.test-screen.show{display:block}.test-top{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;margin-bottom:20px}
+
+.btn{border:0;border-radius:9px;padding:10px 13px;font-weight:700}
+.btn-primary{background:#173f72;color:#fff}
+.btn-secondary{background:#edf1f7;color:#24324a}
+.btn:disabled{opacity:.5;cursor:not-allowed}
+
+.test-section{background:linear-gradient(135deg,#102f55,#166534);color:#fff;border-radius:20px;padding:26px;margin-top:30px}
+.test-section h2{font-size:27px}
+.test-section p{opacity:.9}
+.test-start{margin-top:18px;background:#fff;color:#173f72;border:0;border-radius:10px;padding:12px 18px;font-weight:800}
+
+.test-panel,.test-screen,.result-panel{display:none;padding:22px;margin-top:18px}
+.test-panel.show,.test-screen.show,.result-panel.show{display:block}
+.test-options{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:15px}
+.test-option label{display:block;font-weight:700;margin-bottom:6px}
+
+.test-top{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;margin-bottom:20px}
 .timer{background:#fff1f1;color:#b42318;padding:8px 12px;border-radius:9px;font-weight:800}
-.question-number{color:#687386;font-size:14px;margin-bottom:8px}.question-text{font-size:19px;font-weight:700;margin-bottom:18px}
-.options{display:grid;gap:10px}.answer-option{border:1px solid #d7dce5;background:#fafbfc;border-radius:10px;padding:13px;text-align:left;width:100%}
-.answer-option:hover{border-color:#173f72}.answer-option.selected{background:#eaf2ff;border-color:#173f72}
+.question-number{color:#687386;font-size:14px;margin-bottom:8px}
+.question-text{font-size:19px;font-weight:700;margin-bottom:18px}
+.options{display:grid;gap:10px}
+.answer-option{border:1px solid #d7dce5;background:#fafbfc;border-radius:10px;padding:13px;text-align:left;width:100%}
+.answer-option.selected{background:#eaf2ff;border-color:#173f72}
 .test-controls{display:flex;justify-content:space-between;gap:10px;margin-top:22px}
-.result-panel{display:none;background:white;border-radius:18px;padding:25px;box-shadow:0 5px 20px rgba(0,0,0,.08);margin-top:18px}
-.result-panel.show{display:block}.score{font-size:42px;font-weight:900;color:#173f72}.result-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:18px 0}
-.result-stat{background:#f5f7fb;padding:15px;border-radius:10px;text-align:center}.review{margin-top:20px}
-.review-item{padding:15px;border:1px solid #e1e5ec;border-radius:10px;margin-bottom:10px}.correct{color:#147a3c;font-weight:700}.wrong{color:#b42318;font-weight:700}
-.subject-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.subject{background:white;border-radius:12px;padding:15px;box-shadow:0 3px 14px rgba(0,0,0,.06);font-weight:700;text-align:center}
+
+.score{font-size:42px;font-weight:900;color:#173f72}
+.result-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:18px 0}
+.result-stat{background:#f5f7fb;padding:15px;border-radius:10px;text-align:center}
+.review{margin-top:20px}
+.review-item{padding:15px;border:1px solid #e1e5ec;border-radius:10px;margin-bottom:10px}
+.correct{color:#147a3c;font-weight:700}.wrong{color:#b42318;font-weight:700}
+
+.subject-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.subject{padding:15px;font-weight:700;text-align:center}
+.subject:hover{outline:2px solid #173f72}
+
 .notice{background:#fff8e1;border-left:4px solid #e0a800;padding:15px;border-radius:8px;margin-top:18px;font-size:14px}
-.empty{background:white;padding:25px;border-radius:14px;text-align:center;color:#687386}
-footer{background:#111827;color:#cbd5e1;padding:30px 18px;text-align:center;font-size:13px} footer strong{color:white}
-@media(max-width:850px){.paper-grid{grid-template-columns:repeat(2,1fr)}.subject-grid{grid-template-columns:repeat(3,1fr)}.stats{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:600px){header{padding:32px 15px}.logo{font-size:29px}.filters,.test-options{grid-template-columns:1fr}.paper-grid{grid-template-columns:1fr}.subject-grid{grid-template-columns:repeat(2,1fr)}.result-grid{grid-template-columns:1fr}.question-text{font-size:17px}}
+.empty{background:#fff;padding:25px;border-radius:14px;text-align:center;color:#687386}
+
+footer{background:#111827;color:#cbd5e1;padding:30px 18px;text-align:center;font-size:13px}
+footer strong{color:#fff}
+
+@media(max-width:850px){
+.stats{grid-template-columns:repeat(2,1fr)}
+.paper-grid{grid-template-columns:repeat(2,1fr)}
+.subject-grid{grid-template-columns:repeat(3,1fr)}
+}
+@media(max-width:600px){
+header{padding:32px 15px}.logo{font-size:29px}
+.filters,.test-options{grid-template-columns:1fr}
+.paper-grid{grid-template-columns:1fr}
+.subject-grid{grid-template-columns:repeat(2,1fr)}
+.result-grid{grid-template-columns:1fr}
+.question-text{font-size:17px}
+}
 </style>
 </head>
 
@@ -85,15 +132,11 @@ footer{background:#111827;color:#cbd5e1;padding:30px 18px;text-align:center;font
 <div class="search-box">
 <input id="searchInput" class="search-input" type="search" placeholder="Search Mathematics, Physics, 2025, Set A...">
 <div class="filters">
-<select id="yearFilter">
-<option value="all">All Years</option><option value="2025">2025</option><option value="2024">2024</option>
-<option value="2023">2023</option><option value="2022">2022</option><option value="2021">2021</option><option value="2020">2020</option>
-</select>
+<select id="yearFilter"><option value="all">All Years</option><option>2025</option><option>2024</option><option>2023</option><option>2022</option><option>2021</option><option>2020</option></select>
 <select id="subjectFilter"><option value="all">All Subjects</option></select>
 <select id="statusFilter"><option value="all">All Status</option><option value="verified">Verified</option><option value="pending">Source Not Verified</option></select>
 </div>
 </div>
-
 <div class="nav-tabs">
 <button class="nav-tab active" onclick="setView('all',this)">All Papers</button>
 <button class="nav-tab" onclick="setView('science',this)">Science</button>
@@ -105,25 +148,29 @@ footer{background:#111827;color:#cbd5e1;padding:30px 18px;text-align:center;font
 
 <section class="test-section" id="testCenter">
 <h2>🎯 BSEB PYQ Test Center</h2>
-<p>Practice with four-option questions from the PYQ question bank. Questions are linked to their original year, subject and set.</p>
+<p>Practice with questions loaded from the PYQ database.</p>
 <button class="test-start" onclick="openTestSetup()">Start Test</button>
 </section>
 
 <section id="testSetup" class="test-panel">
-<h2>Set Up Your Test</h2><p class="muted">Choose your subject and test settings.</p>
+<h2>Set Up Your Test</h2>
+<p class="muted">Choose your subject and test settings.</p>
 <div class="test-options">
 <div class="test-option"><label>Subject</label><select id="testSubject"><option value="">Select subject</option></select></div>
 <div class="test-option"><label>Number of Questions</label><select id="questionCount"><option value="10">10 Questions</option><option value="25">25 Questions</option><option value="50">50 Questions</option></select></div>
-<div class="test-option"><label>Year</label><select id="testYear"><option value="all">All available years</option><option value="2025">2025</option><option value="2024">2024</option><option value="2023">2023</option><option value="2022">2022</option><option value="2021">2021</option><option value="2020">2020</option></select></div>
+<div class="test-option"><label>Year</label><select id="testYear"><option value="all">All available years</option><option>2025</option><option>2024</option><option>2023</option><option>2022</option><option>2021</option><option>2020</option></select></div>
 <div class="test-option"><label>Mode</label><select id="testMode"><option value="practice">Practice</option><option value="timed">Timed</option></select></div>
 </div>
-<div class="card-buttons"><button class="btn btn-primary" onclick="startTest()">Start Test</button><button class="btn btn-secondary" onclick="closeTestSetup()">Cancel</button></div>
+<div class="card-buttons">
+<button class="btn btn-primary" onclick="startTest()">Start Test</button>
+<button class="btn btn-secondary" onclick="closeTestSetup()">Cancel</button>
+</div>
 </section>
 
 <section id="testScreen" class="test-screen">
-<div class="test-top"><strong id="testProgress">Question 1</strong><span id="timer" class="timer">Practice Mode</span></div>
+<div class="test-top"><strong id="testProgress">Question</strong><span id="timer" class="timer">Practice Mode</span></div>
 <div class="question-number" id="questionSource">PYQ Source</div>
-<div class="question-text" id="questionText">Question will appear here.</div>
+<div class="question-text" id="questionText"></div>
 <div id="options" class="options"></div>
 <div class="test-controls">
 <button class="btn btn-secondary" id="previousBtn" onclick="previousQuestion()">← Previous</button>
@@ -132,7 +179,9 @@ footer{background:#111827;color:#cbd5e1;padding:30px 18px;text-align:center;font
 </section>
 
 <section id="resultPanel" class="result-panel">
-<h2>📊 Test Result</h2><div class="score" id="scoreText">0/0</div><div id="percentageText">0%</div>
+<h2>📊 Test Result</h2>
+<div class="score" id="scoreText">0/0</div>
+<div id="percentageText">0%</div>
 <div class="result-grid">
 <div class="result-stat"><strong id="correctCount">0</strong><br>Correct</div>
 <div class="result-stat"><strong id="wrongCount">0</strong><br>Wrong</div>
@@ -153,11 +202,7 @@ footer{background:#111827;color:#cbd5e1;padding:30px 18px;text-align:center;font
 <footer><strong>BSEB PYQs</strong><br>Bihar Board Class 12 Previous Year Papers & PYQ Practice<br><br>Computer-based educational resource. Not affiliated with BSEB.</footer>
 
 <script>
-/* PAPER DATABASE
-   Only records that have been checked are marked "verified".
-   "pending" means source/set information still needs verification.
-*/
-const papers = [
+const papers=[
 {year:"2025",subject:"Mathematics",code:"121/327",set:"A",marks:"100",time:"3h 15m",status:"verified",group:"science",localPdf:"",source:""},
 {year:"2025",subject:"Mathematics",code:"121/327",set:"E",marks:"100",time:"3h 15m",status:"verified",group:"science",localPdf:"Mathematics_2025_Set_E_Questions_First_Solutions-8.pdf",source:""},
 {year:"2025",subject:"Physics",code:"117",set:"D",marks:"70",time:"3h 15m",status:"verified",group:"science",localPdf:"",source:""},
@@ -185,330 +230,108 @@ const papers = [
 {year:"2025",subject:"Sociology",code:"325",set:"B",marks:"100",time:"3h 15m",status:"pending",group:"arts",localPdf:"",source:""}
 ];
 
-let questionBank = [];
-let currentView = "all";
-let testQuestions = [];
-let testAnswers = [];
-let currentQuestion = 0;
-let timerInterval = null;
-let timeLeft = 0;
+let questionBank=[];
+let currentView="all",testQuestions=[],testAnswers=[],currentQuestion=0,timerInterval=null,timeLeft=0;
 
-/* Load the external JSON database.
-   The file must be at: data/questions.json
-*/
 async function loadQuestionBank(){
-  try{
-    const response = await fetch("data/questions.json", {cache:"no-store"});
-    if(!response.ok) throw new Error("HTTP " + response.status);
-    const data = await response.json();
-    questionBank = Array.isArray(data) ? data : [];
-  }catch(error){
-    console.error("questions.json could not be loaded:", error);
-    questionBank = [];
-  }
-  populateTestSubjects();
-  renderAll();
+ try{
+  const r=await fetch("data/questions.json?x="+Date.now());
+  if(!r.ok)throw new Error("HTTP "+r.status);
+  const data=await r.json();
+  questionBank=Array.isArray(data)?data:[];
+ }catch(e){console.error(e);questionBank=[]}
+ populateTestSubjects();
+ renderAll();
 }
 
 function scrollToSection(id){document.getElementById(id)?.scrollIntoView({behavior:"smooth"})}
+function escapeHtml(v){return String(v??"").replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[m]))}
 
 function populateSubjectFilter(){
-  const subjects=[...new Set(papers.map(p=>p.subject))].sort();
-  const select=document.getElementById("subjectFilter");
-  const old=select.value;
-  select.innerHTML='<option value="all">All Subjects</option>';
-  subjects.forEach(s=>{
-    const o=document.createElement("option");o.value=s;o.textContent=s;select.appendChild(o);
-  });
-  if(subjects.includes(old))select.value=old;
+ const subjects=[...new Set(papers.map(p=>p.subject))].sort(),s=document.getElementById("subjectFilter"),old=s.value;
+ s.innerHTML='<option value="all">All Subjects</option>';
+ subjects.forEach(x=>{let o=document.createElement("option");o.value=x;o.textContent=x;s.appendChild(o)});
+ if(subjects.includes(old))s.value=old;
 }
-
 function populateTestSubjects(){
-  const subjects=[...new Set(questionBank.map(q=>q.subject).filter(Boolean))].sort();
-  const select=document.getElementById("testSubject");
-  const old=select.value;
-  select.innerHTML='<option value="">Select subject</option>';
-  subjects.forEach(s=>{
-    const o=document.createElement("option");o.value=s;o.textContent=s;select.appendChild(o);
-  });
-  if(subjects.includes(old))select.value=old;
+ const subjects=[...new Set(questionBank.map(q=>q.subject).filter(Boolean))].sort(),s=document.getElementById("testSubject");
+ s.innerHTML='<option value="">Select subject</option>';
+ subjects.forEach(x=>{let o=document.createElement("option");o.value=x;o.textContent=x;s.appendChild(o)});
 }
-
 function renderStats(){
-  document.getElementById("paperCount").textContent=papers.length;
-  document.getElementById("verifiedCount").textContent=papers.filter(p=>p.status==="verified").length;
-  document.getElementById("subjectCount").textContent=new Set(papers.map(p=>p.subject)).size;
+ document.getElementById("paperCount").textContent=papers.length;
+ document.getElementById("verifiedCount").textContent=papers.filter(p=>p.status==="verified").length;
+ document.getElementById("subjectCount").textContent=new Set(papers.map(p=>p.subject)).size;
 }
-
 function renderSubjects(){
-  const box=document.getElementById("subjectGrid");
-  const subjects=[...new Set(papers.map(p=>p.subject))].sort();
-  box.innerHTML="";
-  subjects.forEach(s=>{
-    const div=document.createElement("div");
-    div.className="subject";
-    div.textContent=s;
-    div.onclick=()=>{document.getElementById("subjectFilter").value=s;renderPapers();scrollToSection("papers")};
-    box.appendChild(div);
-  });
+ const box=document.getElementById("subjectGrid");box.innerHTML="";
+ [...new Set(papers.map(p=>p.subject))].sort().forEach(s=>{
+  const d=document.createElement("div");d.className="subject";d.textContent=s;
+  d.onclick=()=>{document.getElementById("subjectFilter").value=s;renderPapers();scrollToSection("papers")};box.appendChild(d);
+ });
 }
-
 function renderPapers(){
-  const grid=document.getElementById("paperGrid");
-  const q=document.getElementById("searchInput").value.toLowerCase().trim();
-  const year=document.getElementById("yearFilter").value;
-  const subject=document.getElementById("subjectFilter").value;
-  const status=document.getElementById("statusFilter").value;
-
-  const filtered=papers.filter(p=>{
-    const hay=[p.year,p.subject,p.code,p.set,p.marks,p.time,p.status].join(" ").toLowerCase();
-    return (!q||hay.includes(q)) &&
-           (year==="all"||p.year===year) &&
-           (subject==="all"||p.subject===subject) &&
-           (status==="all"||p.status===status) &&
-           (currentView==="all"||p.group===currentView);
-  });
-
-  grid.innerHTML="";
-  if(!filtered.length){
-    grid.innerHTML='<div class="empty" style="grid-column:1/-1">No paper records match your search/filter.</div>';
-    return;
-  }
-
-  filtered.forEach(p=>{
-    const card=document.createElement("article");
-    card.className="paper-card";
-    const badge=p.status==="verified"
-      ? '<span class="badge">VERIFIED</span>'
-      : '<span class="badge pending">SOURCE NOT VERIFIED</span>';
-
-    let buttons="";
-    if(p.localPdf){
-      buttons+=`<a class="btn btn-primary" href="${encodeURI(p.localPdf)}" target="_blank" rel="noopener">📄 PDF</a>`;
-    }else{
-      buttons+='<button class="btn btn-primary" disabled>📄 PDF Pending</button>';
-    }
-    if(p.source){
-      buttons+=`<a class="btn btn-secondary" href="${p.source}" target="_blank" rel="noopener">🔗 Source</a>`;
-    }
-
-    card.innerHTML=`
-      <h3>${escapeHtml(p.subject)}</h3>
-      ${badge}
-      <div class="meta"><strong>Year:</strong> ${escapeHtml(p.year)}</div>
-      <div class="meta"><strong>Code:</strong> ${escapeHtml(p.code)}</div>
-      <div class="meta"><strong>Set:</strong> ${escapeHtml(p.set)}</div>
-      <div class="meta"><strong>Marks:</strong> ${escapeHtml(p.marks)}</div>
-      <div class="meta"><strong>Time:</strong> ${escapeHtml(p.time)}</div>
-      <div class="card-buttons">${buttons}</div>`;
-    grid.appendChild(card);
-  });
+ const grid=document.getElementById("paperGrid"),q=document.getElementById("searchInput").value.toLowerCase().trim(),year=document.getElementById("yearFilter").value,subject=document.getElementById("subjectFilter").value,status=document.getElementById("statusFilter").value;
+ const list=papers.filter(p=>{
+  const hay=[p.year,p.subject,p.code,p.set,p.marks,p.time,p.status].join(" ").toLowerCase();
+  return (!q||hay.includes(q))&&(year==="all"||p.year===year)&&(subject==="all"||p.subject===subject)&&(status==="all"||p.status===status)&&(currentView==="all"||p.group===currentView);
+ });
+ grid.innerHTML="";
+ if(!list.length){grid.innerHTML='<div class="empty" style="grid-column:1/-1">No paper records match your search/filter.</div>';return}
+ list.forEach(p=>{
+  const card=document.createElement("article");card.className="paper-card";
+  const badge=p.status==="verified"?'<span class="badge">✓ VERIFIED</span>':'<span class="badge pending">SOURCE NOT VERIFIED</span>';
+  let buttons=p.localPdf?`<a class="btn btn-primary" href="${encodeURI(p.localPdf)}" target="_blank">📄 Open PDF</a>`:'<button class="btn btn-primary" disabled>📄 Paper link pending</button>';
+  if(p.source)buttons+=`<a class="btn btn-secondary" href="${p.source}" target="_blank">🔗 Source</a>`;
+  card.innerHTML=`<h3>${escapeHtml(p.subject)}</h3>${badge}<div class="meta"><b>Year:</b> ${escapeHtml(p.year)}</div><div class="meta"><b>Set:</b> ${escapeHtml(p.set)}</div><div class="meta"><b>Code:</b> ${escapeHtml(p.code)}</div><div class="meta"><b>Marks:</b> ${escapeHtml(p.marks)}</div><div class="meta"><b>Time:</b> ${escapeHtml(p.time)}</div><div class="card-buttons">${buttons}</div>`;
+  grid.appendChild(card);
+ });
 }
+function setView(v,b){currentView=v;document.querySelectorAll(".nav-tab").forEach(x=>x.classList.remove("active"));b.classList.add("active");renderPapers()}
+function renderAll(){renderStats();populateSubjectFilter();renderSubjects();renderPapers()}
 
-function escapeHtml(value){
-  return String(value??"").replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[m]));
-}
-
-function setView(view,button){
-  currentView=view;
-  document.querySelectorAll(".nav-tab").forEach(b=>b.classList.remove("active"));
-  button.classList.add("active");
-  renderPapers();
-}
-
-function renderAll(){
-  renderStats();populateSubjectFilter();renderSubjects();renderPapers();
-}
-
-function openTestSetup(){
-  document.getElementById("testSetup").classList.add("show");
-  document.getElementById("testSetup").scrollIntoView({behavior:"smooth",block:"start"});
-  populateTestSubjects();
-}
-
+function openTestSetup(){document.getElementById("testSetup").classList.add("show");document.getElementById("testSetup").scrollIntoView({behavior:"smooth"})}
 function closeTestSetup(){document.getElementById("testSetup").classList.remove("show")}
-
-function shuffle(array){
-  const a=[...array];
-  for(let i=a.length-1;i>0;i--){
-    const j=Math.floor(Math.random()*(i+1));
-    [a[i],a[j]]=[a[j],a[i]];
-  }
-  return a;
-}
+function shuffle(a){a=[...a];for(let i=a.length-1;i>0;i--){let j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a}
 
 function startTest(){
-  const subject=document.getElementById("testSubject").value;
-  const year=document.getElementById("testYear").value;
-  const count=Number(document.getElementById("questionCount").value);
-  const mode=document.getElementById("testMode").value;
-
-  if(!subject){
-    alert("Please select a subject.");
-    return;
-  }
-
-  let pool=questionBank.filter(q=>
-    q.subject===subject && (year==="all" || String(q.year)===year)
-  );
-
-  if(!pool.length){
-    alert("No verified PYQ questions are loaded for this selection yet. Add the questions to data/questions.json first.");
-    return;
-  }
-
-  testQuestions=shuffle(pool).slice(0,Math.min(count,pool.length));
-  testAnswers=new Array(testQuestions.length).fill(null);
-  currentQuestion=0;
-
-  document.getElementById("testSetup").classList.remove("show");
-  document.getElementById("resultPanel").classList.remove("show");
-  document.getElementById("testScreen").classList.add("show");
-
-  if(mode==="timed"){
-    timeLeft=testQuestions.length*60;
-    startTimer();
-  }else{
-    stopTimer();
-    document.getElementById("timer").textContent="Practice Mode";
-  }
-
-  renderQuestion();
-  document.getElementById("testScreen").scrollIntoView({behavior:"smooth"});
+ const subject=document.getElementById("testSubject").value,year=document.getElementById("testYear").value,count=+document.getElementById("questionCount").value,mode=document.getElementById("testMode").value;
+ if(!subject){alert("Please select a subject.");return}
+ const pool=questionBank.filter(q=>q.subject===subject&&(year==="all"||String(q.year)===year));
+ if(!pool.length){alert("No questions are loaded for this selection yet.");return}
+ testQuestions=shuffle(pool).slice(0,Math.min(count,pool.length));testAnswers=new Array(testQuestions.length).fill(null);currentQuestion=0;
+ document.getElementById("testSetup").classList.remove("show");document.getElementById("resultPanel").classList.remove("show");document.getElementById("testScreen").classList.add("show");
+ if(mode==="timed"){timeLeft=testQuestions.length*60;startTimer()}else{stopTimer();document.getElementById("timer").textContent="Practice Mode"}
+ renderQuestion();document.getElementById("testScreen").scrollIntoView({behavior:"smooth"});
 }
-
 function renderQuestion(){
-  if(!testQuestions.length)return;
-  const q=testQuestions[currentQuestion];
-  document.getElementById("testProgress").textContent=`Question ${currentQuestion+1} of ${testQuestions.length}`;
-  document.getElementById("questionSource").textContent=
-    `${q.year??"Year"} • ${q.subject??"Subject"} • Set ${q.set??"—"} • Q${q.questionNo??"—"}`;
-  document.getElementById("questionText").textContent=q.text??q.question??"Question text unavailable.";
-
-  const options=document.getElementById("options");
-  options.innerHTML="";
-  const opts=Array.isArray(q.options)
-    ? q.options
-    : ["A","B","C","D"].map(k=>q.options?.[k]).filter(v=>v!==undefined);
-
-  opts.forEach((opt,index)=>{
-    const b=document.createElement("button");
-    b.className="answer-option"+(testAnswers[currentQuestion]===index?" selected":"");
-    b.innerHTML=`<strong>${String.fromCharCode(65+index)}.</strong> ${escapeHtml(opt)}`;
-    b.onclick=()=>selectAnswer(index);
-    options.appendChild(b);
-  });
-
-  document.getElementById("previousBtn").disabled=currentQuestion===0;
-  document.getElementById("nextBtn").textContent=currentQuestion===testQuestions.length-1?"Finish Test":"Next →";
+ const q=testQuestions[currentQuestion];if(!q)return;
+ document.getElementById("testProgress").textContent=`Question ${currentQuestion+1} of ${testQuestions.length}`;
+ document.getElementById("questionSource").textContent=`${q.year??"Year"} • ${q.subject??"Subject"} • Set ${q.set??"—"} • Q${q.questionNo??"—"}`;
+ document.getElementById("questionText").textContent=q.text??q.question??"Question text unavailable.";
+ const box=document.getElementById("options");box.innerHTML="";
+ const opts=Array.isArray(q.options)?q.options:["A","B","C","D"].map(k=>q.options?.[k]).filter(x=>x!==undefined);
+ opts.forEach((x,i)=>{let b=document.createElement("button");b.className="answer-option"+(testAnswers[currentQuestion]===i?" selected":"");b.innerHTML=`<b>${String.fromCharCode(65+i)}.</b> ${escapeHtml(x)}`;b.onclick=()=>{testAnswers[currentQuestion]=i;renderQuestion()};box.appendChild(b)});
+ document.getElementById("previousBtn").disabled=currentQuestion===0;
+ document.getElementById("nextBtn").textContent=currentQuestion===testQuestions.length-1?"Finish Test":"Next →";
 }
-
-function selectAnswer(index){
-  testAnswers[currentQuestion]=index;
-  renderQuestion();
-}
-
-function nextQuestion(){
-  if(currentQuestion<testQuestions.length-1){
-    currentQuestion++;
-    renderQuestion();
-  }else{
-    finishTest();
-  }
-}
-
-function previousQuestion(){
-  if(currentQuestion>0){
-    currentQuestion--;
-    renderQuestion();
-  }
-}
-
-function startTimer(){
-  stopTimer();
-  updateTimer();
-  timerInterval=setInterval(()=>{
-    timeLeft--;
-    updateTimer();
-    if(timeLeft<=0){
-      stopTimer();
-      alert("Time is up!");
-      finishTest();
-    }
-  },1000);
-}
-
-function stopTimer(){
-  if(timerInterval){clearInterval(timerInterval);timerInterval=null}
-}
-
-function updateTimer(){
-  const min=Math.floor(timeLeft/60).toString().padStart(2,"0");
-  const sec=(timeLeft%60).toString().padStart(2,"0");
-  document.getElementById("timer").textContent=`⏱ ${min}:${sec}`;
-}
-
+function nextQuestion(){if(currentQuestion<testQuestions.length-1){currentQuestion++;renderQuestion()}else finishTest()}
+function previousQuestion(){if(currentQuestion>0){currentQuestion--;renderQuestion()}}
+function startTimer(){stopTimer();updateTimer();timerInterval=setInterval(()=>{timeLeft--;updateTimer();if(timeLeft<=0){stopTimer();finishTest()}},1000)}
+function stopTimer(){if(timerInterval){clearInterval(timerInterval);timerInterval=null}}
+function updateTimer(){document.getElementById("timer").textContent=`⏱ ${String(Math.floor(timeLeft/60)).padStart(2,"0")}:${String(timeLeft%60).padStart(2,"0")}`}
+function normaliseAnswer(a){if(typeof a==="number")return a;if(typeof a==="string"){a=a.trim().toUpperCase();if(/^[A-D]$/.test(a))return a.charCodeAt(0)-65;let n=Number(a);if(Number.isInteger(n))return n>0&&n<=4?n-1:n}return -1}
 function finishTest(){
-  stopTimer();
-  let correct=0,wrong=0,unanswered=0;
-
-  testQuestions.forEach((q,i)=>{
-    const answer=normaliseAnswer(q.answer);
-    if(testAnswers[i]===null||testAnswers[i]===undefined) unanswered++;
-    else if(testAnswers[i]===answer) correct++;
-    else wrong++;
-  });
-
-  const total=testQuestions.length;
-  const percentage=total?((correct/total)*100).toFixed(1):"0.0";
-
-  document.getElementById("scoreText").textContent=`${correct}/${total}`;
-  document.getElementById("percentageText").textContent=`${percentage}%`;
-  document.getElementById("correctCount").textContent=correct;
-  document.getElementById("wrongCount").textContent=wrong;
-  document.getElementById("unansweredCount").textContent=unanswered;
-
-  const review=document.getElementById("reviewList");
-  review.innerHTML="";
-  testQuestions.forEach((q,i)=>{
-    const correctIndex=normaliseAnswer(q.answer);
-    const user=testAnswers[i];
-    const item=document.createElement("div");
-    item.className="review-item";
-    let resultText="";
-    if(user===null||user===undefined){
-      resultText='<span class="wrong">Unanswered</span>';
-    }else if(user===correctIndex){
-      resultText='<span class="correct">Correct ✓</span>';
-    }else{
-      resultText='<span class="wrong">Wrong ✗</span>';
-    }
-    const opts=Array.isArray(q.options)?q.options:Object.values(q.options||{});
-    const correctText=opts[correctIndex]??"Not available";
-    item.innerHTML=`<strong>Q${q.questionNo??i+1}.</strong> ${escapeHtml(q.text??q.question??"")}<br>${resultText}<br><small>Correct answer: ${escapeHtml(correctText)}</small>`;
-    review.appendChild(item);
-  });
-
-  document.getElementById("testScreen").classList.remove("show");
-  document.getElementById("resultPanel").classList.add("show");
-  document.getElementById("resultPanel").scrollIntoView({behavior:"smooth"});
+ stopTimer();let correct=0,wrong=0,unanswered=0;
+ testQuestions.forEach((q,i)=>{let a=testAnswers[i],c=normaliseAnswer(q.answer);if(a==null)unanswered++;else if(a===c)correct++;else wrong++});
+ const total=testQuestions.length,p=total?(correct/total*100).toFixed(1):"0.0";
+ document.getElementById("scoreText").textContent=`${correct}/${total}`;document.getElementById("percentageText").textContent=p+"%";
+ document.getElementById("correctCount").textContent=correct;document.getElementById("wrongCount").textContent=wrong;document.getElementById("unansweredCount").textContent=unanswered;
+ const review=document.getElementById("reviewList");review.innerHTML="";
+ testQuestions.forEach((q,i)=>{let c=normaliseAnswer(q.answer),u=testAnswers[i],opts=Array.isArray(q.options)?q.options:Object.values(q.options||{}),d=document.createElement("div");d.className="review-item";let r=u==null?'<span class="wrong">Unanswered</span>':u===c?'<span class="correct">Correct ✓</span>':'<span class="wrong">Wrong ✗</span>';d.innerHTML=`<b>Q${q.questionNo??i+1}.</b> ${escapeHtml(q.text??q.question??"")}<br>${r}<br><small>Correct answer: ${escapeHtml(opts[c]??"Not available")}</small>`;review.appendChild(d)});
+ document.getElementById("testScreen").classList.remove("show");document.getElementById("resultPanel").classList.add("show");document.getElementById("resultPanel").scrollIntoView({behavior:"smooth"});
 }
-
-function normaliseAnswer(answer){
-  if(typeof answer==="number") return answer;
-  if(typeof answer==="string"){
-    const s=answer.trim().toUpperCase();
-    if(/^[A-D]$/.test(s)) return s.charCodeAt(0)-65;
-    const n=Number(s);
-    if(Number.isInteger(n)) return n>0&&n<=4?n-1:n;
-  }
-  return -1;
-}
-
-function restartTest(){
-  document.getElementById("resultPanel").classList.remove("show");
-  openTestSetup();
-}
+function restartTest(){document.getElementById("resultPanel").classList.remove("show");openTestSetup()}
 
 document.getElementById("searchInput").addEventListener("input",renderPapers);
 document.getElementById("yearFilter").addEventListener("change",renderPapers);
