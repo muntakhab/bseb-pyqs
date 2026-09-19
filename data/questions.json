@@ -1628,3 +1628,703 @@
     "note": "Pending slots remain outside the PYQ test pool until supported by source material."
   }
 }
+{
+"schema_version": "2.0",
+"dataset": "BSEB Class 12 PYQ Question Bank",
+"generated_question_count": 142,
+"note": "Questions are based on the uploaded BSEB PYQ source material and the previously generated database batch. Verify against the original scan before treating generated variants as verbatim PYQs.",
+"questions": [
+{
+"id": 1,
+"subject": "Chemistry",
+"topic": "Solid State",
+"question": "The number of atoms present in one face-centred cubic unit cell is",
+"options": {
+"A": "1",
+"B": "2",
+"C": "4",
+"D": "8"
+},
+"answer": "C",
+"source": "BSEB Intermediate 2026 Chemistry — uploaded sets A/C/D/E/F/G"
+},
+{
+"id": 2,
+"subject": "Chemistry",
+"topic": "Solid State",
+"question": "The packing fraction of a body-centred cubic unit cell is approximately",
+"options": {
+"A": "0.42",
+"B": "0.53",
+"C": "0.68",
+"D": "0.74"
+},
+"answer": "C",
+"source": "BSEB Intermediate 2026 Chemistry — uploaded sets A/C/D/E/F/G"
+},
+{
+"id": 3,
+"subject": "Chemistry",
+"topic": "Solid State",
+"question": "Which of the following is ferromagnetic?",
+"options": {
+"A": "Fe",
+"B": "Cu",
+"C": "NaCl",
+"D": "MnO"
+},
+"answer": "A",
+"source": "BSEB Intermediate 2026 Chemistry — uploaded sets A/C/D/E/F/G"
+},
+{
+"id": 4,
+"subject": "Chemistry",
+"topic": "Solid State",
+"question": "Which of the following exhibits a Frenkel defect?",
+"options": {
+"A": "NaCl",
+"B": "Graphite",
+"C": "AgCl",
+"D": "Diamond"
+},
+"answer": "C",
+"source": "BSEB Intermediate 2026 Chemistry — uploaded sets A/C/D/E/F/G"
+},
+{
+"id": 5,
+"subject": "Chemistry",
+"topic": "Solutions",
+"question": "Which solute can produce abnormal osmotic pressure because of dissociation?",
+"options": {
+"A": "Urea",
+"B": "NaCl",
+"C": "Glucose",
+"D": "Sucrose"
+},
+"answer": "B",
+"source": "BSEB Intermediate 2026 Chemistry — uploaded sets A/C/D/E/F/G"
+},
+{
+"id": 6,
+"subject": "Chemistry",
+"topic": "Solutions",
+"question": "The elevation in boiling point produced by a one-molal solution is related to the",
+"options": {
+"A": "Ebullioscopic constant",
+"B": "Vapour pressure constant",
+"C": "Cryoscopic constant",
+"D": "Henry constant"
+},
+"answer": "A",
+"source": "BSEB Intermediate 2026 Chemistry — uploaded sets A/C/D/E/F/G"
+},
+{
+"id": 7,
+"subject": "Chemistry",
+"topic": "Solutions",
+"question": "At equal molarity, which solution has the lowest vapour pressure, assuming complete dissociation?",
+"options": {
+"A": "0.1 M BaCl2",
+"B": "0.1 M urea",
+"C": "0.1 M Na2SO4",
+"D": "0.1 M Na3PO4"
+},
+"answer": "D",
+"source": "BSEB Intermediate 2026 Chemistry — uploaded sets A/C/D/E/F/G"
+},
+{
+"id": 8,
+"subject": "Chemistry",
+"topic": "Solutions",
+"question": "34.2 g of sucrose is present in 234.2 g of aqueous solution. The molality is",
+"options": {
+"A": "0.1 m",
+"B": "0.5 m",
+"C": "5.5 m",
+"D": "55 m"
+},
+"answer": "B",
+"source": "BSEB Intermediate 2026 Chemistry — uploaded sets A/C/D/E/F/G"
+},
+{
+"id": 9,
+"subject": "Chemistry",
+"topic": "Electrochemistry",
+"question": "Faraday's first law is represented by",
+"options": {
+"A": "m = cIt",
+"B": "m = ZIt",
+"C": "mc = Zt",
+"D": "c = mZt"
+},
+"answer": "B",
+"source": "BSEB Intermediate 2026 Chemistry — uploaded sets A/C/D/E/F/G"
+},
+{
+"id": 10,
+"subject": "Chemistry",
+"topic": "Electrochemistry",
+"question": "On increasing dilution, the specific conductance of an electrolyte generally",
+"options": {
+"A": "increases",
+"B": "decreases",
+"C": "remains constant",
+"D": "becomes infinite"
+},
+"answer": "B",
+"source": "BSEB Intermediate 2026 Chemistry — uploaded sets A/C/D/E/F/G"
+},
+{
+"id": 11,
+"subject": "Chemistry",
+"topic": "Organic Chemistry",
+"question": "In the Wurtz reaction, alkyl halide is treated with",
+"options": {
+"A": "Zn/HCl",
+"B": "HI",
+"C": "Zn/Cu couple",
+"D": "Na in dry ether"
+},
+"answer": "D",
+"source": "BSEB Intermediate 2026 Chemistry — uploaded sets A/C/D/E/F/G"
+},
+{
+"id": 12,
+"subject": "Chemistry",
+"topic": "Organic Chemistry",
+"question": "Ethyl bromide on boiling with alcoholic KOH gives",
+"options": {
+"A": "Ethyl alcohol",
+"B": "Ethylene",
+"C": "Acetylene",
+"D": "Ethane"
+},
+"answer": "B",
+"source": "BSEB Intermediate 2026 Chemistry — uploaded sets A/C/D/E/F/G"
+},
+{
+"id": 13,
+"subject": "Chemistry",
+"topic": "Organic Chemistry",
+"question": "The reaction of an aryl halide with sodium and an alkyl halide in dry ether is called",
+"options": {
+"A": "Wurtz reaction",
+"B": "Wurtz-Fittig reaction",
+"C": "Fittig reaction",
+"D": "Friedel-Crafts reaction"
+},
+"answer": "B",
+"source": "BSEB Intermediate 2026 Chemistry — uploaded sets A/C/D/E/F/G"
+},
+{
+"id": 14,
+"subject": "Chemistry",
+"topic": "Organic Chemistry",
+"question": "Ethylamine reacts with nitrous acid to form",
+"options": {
+"A": "Ethyl alcohol",
+"B": "Ethene",
+"C": "Ethyl nitrite",
+"D": "Acetaldehyde"
+},
+"answer": "A",
+"source": "BSEB Intermediate 2026 Chemistry — uploaded sets A/C/D/E/F/G"
+},
+{
+"id": 15,
+"subject": "Chemistry",
+"topic": "Alcohols",
+"question": "Wood spirit is",
+"options": {
+"A": "Methyl alcohol",
+"B": "Ethyl alcohol",
+"C": "Glycerol",
+"D": "Glycol"
+},
+"answer": "A",
+"source": "BSEB Intermediate 2026 Chemistry — uploaded sets A/C/D/E/F/G"
+},
+{
+"id": 16,
+"subject": "Chemistry",
+"topic": "Alcohols",
+"question": "When vapours of a primary alcohol are passed over hot reduced copper, the main product is generally",
+"options": {
+"A": "An alkene",
+"B": "An aldehyde",
+"C": "A ketone",
+"D": "A carboxylic acid"
+},
+"answer": "B",
+"source": "BSEB Intermediate 2026 Chemistry — uploaded sets A/C/D/E/F/G"
+},
+{
+"id": 17,
+"subject": "Chemistry",
+"topic": "Surface Chemistry",
+"question": "The size range of colloidal particles is approximately",
+"options": {
+"A": "1–10 nm",
+"B": "10–100 nm",
+"C": "1–100 nm",
+"D": "100–1000 nm"
+},
+"answer": "C",
+"source": "BSEB Intermediate 2026 Chemistry — uploaded sets A/C/D/E/F/G"
+},
+{
+"id": 18,
+"subject": "Chemistry",
+"topic": "Surface Chemistry",
+"question": "Smoke is a colloid in which",
+"options": {
+"A": "gas is dispersed in solid",
+"B": "solid is dispersed in gas",
+"C": "gas is dispersed in gas",
+"D": "liquid is dispersed in gas"
+},
+"answer": "B",
+"source": "BSEB Intermediate 2026 Chemistry — uploaded sets A/C/D/E/F/G"
+},
+{
+"id": 19,
+"subject": "Chemistry",
+"topic": "Surface Chemistry",
+"question": "The Langmuir adsorption isotherm is represented by",
+"options": {
+"A": "x/m = (1+aP)/b",
+"B": "x/m = aP/(1+bP)",
+"C": "x/m = (1+aP)/(1+bP)",
+"D": "x/m = (1+bP)/a"
+},
+"answer": "B",
+"source": "BSEB Intermediate 2026 Chemistry — uploaded sets A/C/D/E/F/G"
+},
+{
+"id": 20,
+"subject": "Chemistry",
+"topic": "Catalysis",
+"question": "Which of the following is a shape-selective catalyst?",
+"options": {
+"A": "V2O5",
+"B": "Cr2O3",
+"C": "MnO2",
+"D": "ZSM-5"
+},
+"answer": "D",
+"source": "BSEB Intermediate 2026 Chemistry — uploaded sets A/C/D/E/F/G"
+},
+{
+"id": 21,
+"subject": "Chemistry",
+"topic": "Metallurgy",
+"question": "In the thermite process, the reducing agent is",
+"options": {
+"A": "C",
+"B": "Zn",
+"C": "Na",
+"D": "Al"
+},
+"answer": "D",
+"source": "BSEB Intermediate 2026 Chemistry — uploaded sets A/C/D/E/F/G"
+},
+{
+"id": 22,
+"subject": "Chemistry",
+"topic": "Metallurgy",
+"question": "Which metal is extracted by leaching its ore with dilute cyanide solution?",
+"options": {
+"A": "Silver",
+"B": "Titanium",
+"C": "Vanadium",
+"D": "Zinc"
+},
+"answer": "A",
+"source": "BSEB Intermediate 2026 Chemistry — uploaded sets A/C/D/E/F/G"
+},
+{
+"id": 23,
+"subject": "Chemistry",
+"topic": "Biomolecules",
+"question": "Hydrolysis of maltose gives",
+"options": {
+"A": "Glucose + fructose",
+"B": "Galactose + glucose + fructose",
+"C": "Starch + sucrose",
+"D": "Two molecules of glucose"
+},
+"answer": "D",
+"source": "BSEB Intermediate 2026 Chemistry — uploaded sets A/C/D/E/F/G"
+},
+{
+"id": 24,
+"subject": "Chemistry",
+"topic": "Biomolecules",
+"question": "Which of the following is not a macromolecule?",
+"options": {
+"A": "DNA",
+"B": "Starch",
+"C": "Palmitate",
+"D": "Insulin"
+},
+"answer": "C",
+"source": "BSEB Intermediate 2026 Chemistry — uploaded sets A/C/D/E/F/G"
+},
+{
+"id": 25,
+"subject": "Chemistry",
+"topic": "Biomolecules",
+"question": "Which compound can form a zwitter ion?",
+"options": {
+"A": "H2N–CH2COOH",
+"B": "CH3COOH",
+"C": "CH3CH2NH2",
+"D": "CH3NO2"
+},
+"answer": "A",
+"source": "BSEB Intermediate 2026 Chemistry — uploaded sets A/C/D/E/F/G"
+},
+{
+"id": 26,
+"subject": "Chemistry",
+"topic": "Biomolecules",
+"question": "Riboflavin is the chemical name of",
+"options": {
+"A": "Vitamin B1",
+"B": "Vitamin B2",
+"C": "Vitamin B6",
+"D": "Vitamin B-complex"
+},
+"answer": "B",
+"source": "BSEB Intermediate 2026 Chemistry — uploaded sets A/C/D/E/F/G"
+},
+{
+"id": 27,
+"subject": "Chemistry",
+"topic": "Pharmaceuticals",
+"question": "Which of the following is used as a tranquilizer?",
+"options": {
+"A": "Luminal",
+"B": "Tofranil",
+"C": "Mescaline",
+"D": "Sulphadiazine"
+},
+"answer": "B",
+"source": "BSEB Intermediate 2026 Chemistry — uploaded sets A/C/D/E/F/G"
+},
+{
+"id": 28,
+"subject": "Chemistry",
+"topic": "Chemical Kinetics",
+"question": "Radioactive decay is generally a",
+"options": {
+"A": "Zero-order reaction",
+"B": "First-order reaction",
+"C": "Second-order reaction",
+"D": "Third-order reaction"
+},
+"answer": "B",
+"source": "BSEB Intermediate 2026 Chemistry — uploaded sets A/C/D/E/F/G"
+},
+{
+"id": 29,
+"subject": "Chemistry",
+"topic": "Chemical Kinetics",
+"question": "For a reaction aA + bB → products, -d[A]/dt is equal to",
+"options": {
+"A": "-d[B]/dt",
+"B": "-(b/a)d[B]/dt",
+"C": "-(a/b)d[B]/dt",
+"D": "-(b/a)d[A]/dt"
+},
+"answer": "B",
+"source": "BSEB Intermediate 2026 Chemistry — uploaded sets A/C/D/E/F/G"
+},
+{
+"id": 30,
+"subject": "Chemistry",
+"topic": "Adsorption",
+"question": "Among H2, CH4, CO2 and NH3, which is most strongly adsorbed by charcoal at the same temperature?",
+"options": {
+"A": "H2",
+"B": "CH4",
+"C": "CO2",
+"D": "NH3"
+},
+"answer": "D",
+"source": "BSEB Intermediate 2026 Chemistry — uploaded sets A/C/D/E/F/G"
+},
+{
+"id": 31,
+"subject": "Chemistry",
+"topic": "P-block",
+"question": "The bleaching action of chlorine is mainly due to its",
+"options": {
+"A": "acidic property",
+"B": "oxidising property",
+"C": "reducing property",
+"D": "air-polluting property"
+},
+"answer": "B",
+"source": "BSEB Intermediate 2026 Chemistry — uploaded sets A/C/D/E/F/G"
+},
+{
+"id": 32,
+"subject": "Chemistry",
+"topic": "P-block",
+"question": "The outermost electronic configuration of inert gases is",
+"options": {
+"A": "ns2np2",
+"B": "ns2np4",
+"C": "ns2np5",
+"D": "ns2np6"
+},
+"answer": "D",
+"source": "BSEB Intermediate 2026 Chemistry — uploaded sets A/C/D/E/F/G"
+},
+{
+"id": 33,
+"subject": "Chemistry",
+"topic": "P-block",
+"question": "Which gas cannot be collected over water?",
+"options": {
+"A": "H2",
+"B": "O2",
+"C": "CH4",
+"D": "SO2"
+},
+"answer": "D",
+"source": "BSEB Intermediate 2026 Chemistry — uploaded sets A/C/D/E/F/G"
+},
+{
+"id": 34,
+"subject": "Chemistry",
+"topic": "P-block",
+"question": "Nitric acid is manufactured from ammonia by the",
+"options": {
+"A": "Ostwald process",
+"B": "Birkeland-Eyde process",
+"C": "Laboratory process",
+"D": "All of these"
+},
+"answer": "A",
+"source": "BSEB Intermediate 2026 Chemistry — uploaded sets A/C/D/E/F/G"
+},
+{
+"id": 35,
+"subject": "Chemistry",
+"topic": "Sulphur",
+"question": "The peroxy acid of sulphur is",
+"options": {
+"A": "H2S2O7",
+"B": "H2S2O8",
+"C": "H2SO4",
+"D": "H2SO3"
+},
+"answer": "B",
+"source": "BSEB Intermediate 2026 Chemistry — uploaded sets A/C/D/E/F/G"
+},
+{
+"id": 36,
+"subject": "Chemistry",
+"topic": "Mercury Chemistry",
+"question": "Reaction of mercury with ozone forms",
+"options": {
+"A": "HgO",
+"B": "HgO2",
+"C": "Hg2O",
+"D": "None of these"
+},
+"answer": "C",
+"source": "BSEB Intermediate 2026 Chemistry — uploaded sets A/C/D/E/F/G"
+},
+{
+"id": 37,
+"subject": "Chemistry",
+"topic": "Surface Chemistry",
+"question": "Smoke is best classified as",
+"options": {
+"A": "a sol",
+"B": "an aerosol",
+"C": "a gel",
+"D": "an emulsion"
+},
+"answer": "B",
+"source": "BSEB Intermediate 2026 Chemistry — uploaded sets A/C/D/E/F/G"
+},
+{
+"id": 38,
+"subject": "Chemistry",
+"topic": "Catalysis",
+"question": "Which is a biological catalyst?",
+"options": {
+"A": "Carbohydrate",
+"B": "Enzyme",
+"C": "Amino acid",
+"D": "Nitrogenous base"
+},
+"answer": "B",
+"source": "BSEB Intermediate 2026 Chemistry — uploaded sets A/C/D/E/F/G"
+},
+{
+"id": 39,
+"subject": "Chemistry",
+"topic": "Emulsions",
+"question": "Which substance acts as an emulsifier?",
+"options": {
+"A": "Common salt",
+"B": "Urea",
+"C": "Soap",
+"D": "Oil"
+},
+"answer": "C",
+"source": "BSEB Intermediate 2026 Chemistry — uploaded sets A/C/D/E/F/G"
+},
+{
+"id": 40,
+"subject": "Chemistry",
+"topic": "Solid State",
+"question": "A face-centred cubic unit cell contains how many atoms in total?",
+"options": {
+"A": "2",
+"B": "4",
+"C": "6",
+"D": "8"
+},
+"answer": "B",
+"source": "BSEB Intermediate 2026 Chemistry — uploaded sets A/C/D/E/F/G"
+},
+{
+"id": 41,
+"subject": "Chemistry",
+"topic": "Solid State",
+"question": "The approximate packing efficiency of a body-centred cubic lattice is",
+"options": {
+"A": "52%",
+"B": "68%",
+"C": "74%",
+"D": "34%"
+},
+"answer": "B",
+"source": "BSEB Intermediate 2026 Chemistry — uploaded sets A/C/D/E/F/G"
+},
+{
+"id": 42,
+"subject": "Chemistry",
+"topic": "Solid State",
+"question": "Which substance among the following is associated with ferromagnetism?",
+"options": {
+"A": "Fe",
+"B": "Cu",
+"C": "NaCl",
+"D": "MnO"
+},
+"answer": "A",
+"source": "BSEB Intermediate 2026 Chemistry — uploaded sets A/C/D/E/F/G"
+},
+{
+"id": 43,
+"subject": "Chemistry",
+"topic": "Solid State",
+"question": "A common example of a crystal showing Frenkel defect is",
+"options": {
+"A": "AgCl",
+"B": "NaCl",
+"C": "KCl",
+"D": "CsCl"
+},
+"answer": "A",
+"source": "BSEB Intermediate 2026 Chemistry — uploaded sets A/C/D/E/F/G"
+},
+{
+"id": 44,
+"subject": "Chemistry",
+"topic": "Solutions",
+"question": "Which solute among these gives a greater van't Hoff factor because it dissociates in water?",
+"options": {
+"A": "Urea",
+"B": "Glucose",
+"C": "NaCl",
+"D": "Sucrose"
+},
+"answer": "C",
+"source": "BSEB Intermediate 2026 Chemistry — uploaded sets A/C/D/E/F/G"
+},
+{
+"id": 45,
+"subject": "Chemistry",
+"topic": "Solutions",
+"question": "The constant used in the elevation of boiling point equation ΔTb = Kb m is called",
+"options": {
+"A": "Kb",
+"B": "Kf",
+"C": "R",
+"D": "π"
+},
+"answer": "A",
+"source": "BSEB Intermediate 2026 Chemistry — uploaded sets A/C/D/E/F/G"
+},
+{
+"id": 46,
+"subject": "Chemistry",
+"topic": "Solutions",
+"question": "For equal molarity and complete ionisation, the lowest vapour pressure is expected for",
+"options": {
+"A": "urea",
+"B": "NaCl",
+"C": "Na2SO4",
+"D": "Na3PO4"
+},
+"answer": "D",
+"source": "BSEB Intermediate 2026 Chemistry — uploaded sets A/C/D/E/F/G"
+},
+{
+"id": 47,
+"subject": "Chemistry",
+"topic": "Solutions",
+"question": "A solution contains 0.5 mol sucrose in 1 kg of solvent. Its molality is",
+"options": {
+"A": "0.05 m",
+"B": "0.5 m",
+"C": "1.5 m",
+"D": "2 m"
+},
+"answer": "B",
+"source": "BSEB Intermediate 2026 Chemistry — uploaded sets A/C/D/E/F/G"
+},
+{
+"id": 48,
+"subject": "Chemistry",
+"topic": "Electrochemistry",
+"question": "If the mass deposited is proportional to current and time, the relation is",
+"options": {
+"A": "m = ZIt",
+"B": "m = I/Zt",
+"C": "m = Z/I t",
+"D": "m = Zt/I"
+},
+"answer": "A",
+"source": "BSEB Intermediate 2026 Chemistry — uploaded sets A/C/D/E/F/G"
+},
+{
+"id": 49,
+"subject": "Chemistry",
+"topic": "Electrochemistry",
+"question": "Specific conductance on dilution usually",
+"options": {
+"A": "decreases",
+"B": "increases",
+"C": "becomes zero immediately",
+"D": "does not change"
+},
+"answer": "A",
+"source": "BSEB Intermediate 2026 Chemistry — uploaded sets A/C/D/E/F/G"
+},
+{
+"id": 50,
+"subject": "Chemistry",
+"topic": "Organic Chemistry",
+"question": "Sodium metal in dry ether is characteristic of the",
+"options": {
+"A
+Isko mai kia kru
