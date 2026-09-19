@@ -1,117 +1,460 @@
-[
-  {
-    "id": "2025-physics-D-001",
-    "year": 2025,
-    "subject": "Physics",
-    "set": "D",
-    "code": "117",
-    "section": "A",
-    "questionNo": 1,
-    "chapter": "Electric Charges and Fields",
-    "difficulty": "Moderate",
-    "type": "PYQ",
-    "text": "Two equal positive point charges of 1 μC are kept 1 metre apart in air. The electric potential energy of the system is:",
-    "options": [
-      "1 joule",
-      "1 eV",
-      "9 × 10⁻³ joule",
-      "zero"
-    ],
-    "answer": 2,
-    "marks": 1,
-    "source": "BSEB Class 12 Physics 2025 Set D",
-    "verification": "Answer verified against the uploaded Set D answer/solution material."
-  },
-  {
-    "id": "2025-physics-D-002",
-    "year": 2025,
-    "subject": "Physics",
-    "set": "D",
-    "code": "117",
-    "section": "A",
-    "questionNo": 2,
-    "chapter": "Electrostatic Potential and Capacitance",
-    "difficulty": "Easy",
-    "type": "PYQ",
-    "text": "Which of the following is a unit of capacitance?",
-    "options": [
-      "coulomb",
-      "ampere",
-      "volt",
-      "coulomb/volt"
-    ],
-    "answer": 3,
-    "marks": 1,
-    "source": "BSEB Class 12 Physics 2025 Set D",
-    "verification": "Answer verified against the uploaded Set D answer/solution material."
-  },
-  {
-    "id": "2025-physics-D-003",
-    "year": 2025,
-    "subject": "Physics",
-    "set": "D",
-    "code": "117",
-    "section": "A",
-    "questionNo": 3,
-    "chapter": "Electrostatic Potential and Capacitance",
-    "difficulty": "Easy",
-    "type": "PYQ",
-    "text": "The capacitance of a condenser does not depend upon:",
-    "options": [
-      "shape of plates",
-      "size of plates",
-      "charge on plates",
-      "distance between plates"
-    ],
-    "answer": 2,
-    "marks": 1,
-    "source": "BSEB Class 12 Physics 2025 Set D",
-    "verification": "Answer verified against the uploaded Set D answer/solution material."
-  },
-  {
-    "id": "2025-physics-D-004",
-    "year": 2025,
-    "subject": "Physics",
-    "set": "D",
-    "code": "117",
-    "section": "A",
-    "questionNo": 4,
-    "chapter": "Electric Charges and Fields",
-    "difficulty": "Easy",
-    "type": "PYQ",
-    "text": "The electric field on the outer surface of a charged conductor is:",
-    "options": [
-      "parallel to the surface",
-      "perpendicular to the surface",
-      "at 45° to the surface",
-      "zero"
-    ],
-    "answer": 1,
-    "marks": 1,
-    "source": "BSEB Class 12 Physics 2025 Set D",
-    "verification": "Answer verified against the uploaded Set D answer/solution material."
-  },
-  {
-    "id": "2025-physics-D-005",
-    "year": 2025,
-    "subject": "Physics",
-    "set": "D",
-    "code": "117",
-    "section": "A",
-    "questionNo": 5,
-    "chapter": "Electric Charges and Fields",
-    "difficulty": "Easy",
-    "type": "PYQ",
-    "text": "If a conductor is placed in an external electric field, the field inside the conductor will be:",
-    "options": [
-      "zero",
-      "equal to the external field",
-      "twice the external field",
-      "half the external field"
-    ],
-    "answer": 0,
-    "marks": 1,
-    "source": "BSEB Class 12 Physics 2025 Set D",
-    "verification": "Answer verified against the uploaded Set D answer/solution material."
-  }
-]
+============================================================
+10A. MCQs MUST BE IN ONLINE TEST FORMAT
+
+IMPORTANT:
+
+All 25 MCQs for every chapter MUST be designed as an
+ONLINE TEST, not merely as a list of questions.
+
+The MCQs must be database-ready for an interactive website test system.
+
+The test system must support the following structure:
+
+TEST
+│
+├── Test ID
+├── Subject
+├── Chapter
+├── Total Questions = 25
+├── Total Marks
+├── Time Limit
+├── Questions
+│   ├── Question 1
+│   ├── Question 2
+│   ├── Question 3
+│   └── ... Question 25
+├── Submit Test
+├── Automatic Evaluation
+├── Score
+├── Percentage
+├── Correct Answers
+├── Incorrect Answers
+├── Unattempted Questions
+└── Answer Review
+
+============================================================
+ONLINE TEST QUESTION STRUCTURE
+
+Every MCQ must be stored in a structure that allows the website
+to directly render it as an interactive test question.
+
+Each question MUST contain:
+
+question_id
+
+test_id
+
+subject
+
+chapter
+
+question_number
+
+question
+
+options
+
+correct_answer
+
+explanation
+
+difficulty
+
+priority
+
+type
+
+concept
+
+historical evidence
+
+
+Example:
+
+{
+"question_id": "MATH-RF-001",
+"test_id": "BSEB12-MATH-RF-TEST01",
+
+"subject": "Mathematics",
+
+"chapter": "Relations and Functions",
+
+"question_number": 1,
+
+"question": "Which of the following is a function?",
+
+"options": {
+"A": "Option A",
+"B": "Option B",
+"C": "Option C",
+"D": "Option D"
+},
+
+"correct_answer": "B",
+
+"explanation": "Explanation of the correct answer.",
+
+"difficulty": "Easy",
+
+"priority": "VERY_HIGH",
+
+"type": "REPEATED_CONCEPT",
+
+"concept": "Functions",
+
+"years_seen": [2022, 2024, 2026],
+
+"sets_seen": [],
+
+"shifts_seen": [],
+
+"frequency": 3,
+
+"historical_priority_score": 85,
+
+"evidence_status": "VERIFIED"
+}
+
+============================================================
+TEST DISTRIBUTION
+
+Every chapter must generate ONE complete 25-question test.
+
+Total:
+
+25 Questions
+
+Difficulty:
+
+Question 1–12:
+EASY
+
+Question 13–20:
+MODERATE
+
+Question 21–25:
+TOUGH
+
+However, the system may randomise the order during the actual
+test while preserving the difficulty metadata.
+
+The database must NOT rely on question number to determine difficulty.
+
+============================================================
+TEST BEHAVIOUR
+
+The website test system should support:
+
+1. Start Test
+
+
+2. Display one question at a time.
+
+
+3. Display four options:
+A
+B
+C
+D
+
+
+4. Allow the student to select ONE answer.
+
+
+5. Allow the student to change their selected answer before submission.
+
+
+6. Provide Next Question.
+
+
+7. Provide Previous Question.
+
+
+8. Provide question navigation.
+
+
+9. Show question status:
+
+Answered
+
+Not Answered
+
+Current Question
+
+
+
+10. Allow the student to move between questions.
+
+
+11. Show a final Submit Test button.
+
+
+12. Ask for confirmation before final submission.
+
+
+13. Automatically evaluate the test.
+
+
+14. Calculate:
+
+
+
+Total questions
+
+Attempted questions
+
+Correct answers
+
+Incorrect answers
+
+Unattempted questions
+
+Total score
+
+Percentage
+
+
+15. After submission, display the result.
+
+
+
+============================================================
+RESULT FORMAT
+
+The test result should be compatible with:
+
+{
+"test_id": "BSEB12-MATH-RF-TEST01",
+
+"total_questions": 25,
+
+"attempted": 23,
+
+"correct": 18,
+
+"incorrect": 5,
+
+"unattempted": 2,
+
+"score": 18,
+
+"percentage": 72,
+
+"results": []
+}
+
+============================================================
+ANSWER REVIEW
+
+After submission, the student should be able to review every question.
+
+For each question display:
+
+Question
+
+Student's selected answer
+
+Correct answer
+
+Whether the answer was correct
+
+Explanation
+
+Difficulty
+
+Historical priority
+
+Concept
+
+
+Example:
+
+{
+"question_number": 1,
+"student_answer": "C",
+"correct_answer": "B",
+"status": "INCORRECT",
+"explanation": "Explanation..."
+}
+
+Possible status values:
+
+CORRECT
+INCORRECT
+UNATTEMPTED
+
+============================================================
+SCORING
+
+Use the official BSEB marking scheme wherever the test is intended
+to simulate the actual BSEB examination.
+
+If the chapter test is a practice test rather than an exact
+BSEB examination simulation, use:
+
+correct = +1
+incorrect = 0
+unattempted = 0
+
+Do NOT apply negative marking unless the verified BSEB pattern
+for that specific test requires it.
+
+============================================================
+TEST MODES
+
+The question database should support at least these modes:
+
+1. CHAPTER_TEST
+
+
+
+25 questions from one chapter.
+
+2. SUBJECT_TEST
+
+
+
+Questions from multiple chapters of one subject.
+
+3. FULL_SYLLABUS_TEST
+
+
+
+Questions selected from the entire subject syllabus.
+
+4. PYQ_MODE
+
+
+
+Questions based directly on verified historical PYQs.
+
+5. MOST_IMPORTANT_MODE
+
+
+
+Questions selected according to historical priority.
+
+6. RANDOM_TEST
+
+
+
+Randomly select questions while maintaining the required
+difficulty distribution where applicable.
+
+============================================================
+IMPORTANT RANDOMISATION RULE
+
+Randomisation must NEVER change:
+
+correct_answer
+
+question text
+
+historical evidence
+
+difficulty
+
+priority
+
+concept
+
+
+Only the display order of questions and/or options may be randomised.
+
+If options are randomised, the correct_answer must automatically
+be updated to the new option position.
+
+============================================================
+TEST DATABASE STRUCTURE
+
+Use separate database structures for:
+
+A. Tests
+
+B. Questions
+
+C. Test Attempts
+
+D. Test Results
+
+Example:
+
+tests/
+
+test_id
+subject
+chapter
+title
+total_questions
+time_limit
+test_type
+
+questions/
+
+question_id
+test_id
+question
+options
+correct_answer
+explanation
+difficulty
+priority
+concept
+historical_evidence
+
+test_attempts/
+
+attempt_id
+user_id
+test_id
+started_at
+submitted_at
+answers
+
+test_results/
+
+result_id
+user_id
+test_id
+score
+percentage
+correct
+incorrect
+unattempted
+completed_at
+
+============================================================
+FINAL MCQ REQUIREMENT
+
+DO NOT return the 25 MCQs as an ordinary question list.
+
+Return them as a COMPLETE ONLINE-TEST-READY DATA STRUCTURE.
+
+Every chapter must produce:
+
+25 MCQs
++
+Test metadata
++
+Question numbering
++
+Four options
++
+One correct answer
++
+Difficulty
++
+Priority
++
+Explanation
++
+Historical evidence
++
+Test configuration
+
+The resulting JSON must be directly usable by a JavaScript/Firebase
+online test interface.
+
+The AI must think of each chapter's 25 MCQs as a
+COMPLETE INTERACTIVE TEST rather than merely a collection of questions.
+Kia ye code website mai shi rhega
