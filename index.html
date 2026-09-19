@@ -79,8 +79,7 @@ header{background:linear-gradient(135deg,#173f72,#166534);color:#fff;text-align:
 .result-stat{background:#f5f7fb;padding:15px;border-radius:10px;text-align:center}
 .review{margin-top:20px}
 .review-item{padding:15px;border:1px solid #e1e5ec;border-radius:10px;margin-bottom:10px}
-.correct{color:#147a3c;font-weight:700}
-.wrong{color:#b42318;font-weight:700}
+.correct{color:#147a3c;font-weight:700}.wrong{color:#b42318;font-weight:700}
 
 .subject-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
 .subject{padding:15px;font-weight:700;text-align:center}
@@ -97,44 +96,34 @@ footer strong{color:#fff}
 .paper-grid{grid-template-columns:repeat(2,1fr)}
 .subject-grid{grid-template-columns:repeat(3,1fr)}
 }
-
 @media(max-width:600px){
-header{padding:32px 15px}
-.logo{font-size:29px}
+header{padding:32px 15px}.logo{font-size:29px}
 .filters,.test-options{grid-template-columns:1fr}
 .paper-grid{grid-template-columns:1fr}
 .subject-grid{grid-template-columns:repeat(2,1fr)}
 .result-grid{grid-template-columns:1fr}
 .question-text{font-size:17px}
 }
+.pdf-wrap{background:#111827;border-radius:12px;overflow:hidden;margin-top:14px}.pdf-wrap iframe{display:block;width:100%;height:75vh;border:0;background:white}@media(max-width:600px){.pdf-wrap iframe{height:70vh}}
 
-.pdf-wrap{
-background:#111827;
-border-radius:12px;
-overflow:hidden;
-margin-top:14px
-}
-
-.pdf-wrap iframe{
-display:block;
-width:100%;
-height:75vh;
-border:0;
-background:white
-}
-
-@media(max-width:600px){
-.pdf-wrap iframe{height:70vh}
-}
+/* Enhanced test center */
+.test-options{grid-template-columns:repeat(2,1fr)}
+.palette-box{background:#fff;border-radius:12px;padding:14px;margin-top:18px;box-shadow:0 3px 12px rgba(0,0,0,.06)}
+.palette{display:flex;flex-wrap:wrap;gap:7px;margin-top:10px}
+.qdot{width:36px;height:36px;border:1px solid #d7dce5;background:#fff;border-radius:8px;font-weight:700}
+.qdot.answered{background:#dcfce7;border-color:#79b98e}
+.qdot.current{outline:3px solid #173f72}
+.qdot.review{background:#fef3c7;border-color:#e0a800}
+.test-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}
+.result-grid{grid-template-columns:repeat(4,1fr)}
+@media(max-width:600px){.test-options,.result-grid{grid-template-columns:1fr}}
 </style>
 </head>
 
 <body>
-
 <header>
 <div class="logo">BSEB PYQs</div>
 <div class="tagline">Bihar Board Class 12 Previous Year Question Papers</div>
-
 <div class="header-buttons">
 <button class="header-btn" onclick="scrollToSection('papers')">📚 PYQ Papers</button>
 <button class="header-btn" onclick="scrollToSection('testCenter')">🎯 Take a Test</button>
@@ -145,1747 +134,323 @@ background:white
 <main class="container">
 
 <section class="stats">
-
-<div class="stat">
-<span class="stat-number">2020–2026</span>
-<span class="stat-label">Years covered</span>
-</div>
-
-<div class="stat">
-<span class="stat-number" id="paperCount">0</span>
-<span class="stat-label">Paper records</span>
-</div>
-
-<div class="stat">
-<span class="stat-number" id="verifiedCount">0</span>
-<span class="stat-label">Verified records</span>
-</div>
-
-<div class="stat">
-<span class="stat-number" id="subjectCount">0</span>
-<span class="stat-label">Subjects</span>
-</div>
-
+<div class="stat"><span class="stat-number">2020–2026</span><span class="stat-label">Years covered</span></div>
+<div class="stat"><span class="stat-number" id="paperCount">0</span><span class="stat-label">Paper records</span></div>
+<div class="stat"><span class="stat-number" id="verifiedCount">0</span><span class="stat-label">Verified records</span></div>
+<div class="stat"><span class="stat-number" id="subjectCount">0</span><span class="stat-label">Subjects</span></div>
 </section>
 
 <section class="section" id="papers">
-
 <h2 class="section-title">📚 Question Paper Database</h2>
-
 <div class="search-box">
-
-<input
-id="searchInput"
-class="search-input"
-type="search"
-placeholder="Search Mathematics, Physics, 2025, Set A..."
->
-
+<input id="searchInput" class="search-input" type="search" placeholder="Search Mathematics, Physics, 2025, Set A...">
 <div class="filters">
-
-<select id="yearFilter">
-<option value="all">All Years</option>
-<option>2026</option>
-<option>2025</option>
-<option>2024</option>
-<option>2023</option>
-<option>2022</option>
-<option>2021</option>
-<option>2020</option>
-</select>
-
-<select id="subjectFilter">
-<option value="all">All Subjects</option>
-</select>
-
-<select id="statusFilter">
-<option value="all">All Status</option>
-<option value="verified">Verified</option>
-<option value="pending">Source Not Verified</option>
-</select>
-
+<select id="yearFilter"><option value="all">All Years</option><option>2026</option><option>2025</option><option>2024</option><option>2023</option><option>2022</option><option>2021</option><option>2020</option></select>
+<select id="subjectFilter"><option value="all">All Subjects</option></select>
+<select id="statusFilter"><option value="all">All Status</option><option value="verified">Verified</option><option value="pending">Source Not Verified</option></select>
 </div>
 </div>
-
 <div class="nav-tabs">
-
-<button class="nav-tab active" onclick="setView('all',this)">
-All Papers
-</button>
-
-<button class="nav-tab" onclick="setView('science',this)">
-Science
-</button>
-
-<button class="nav-tab" onclick="setView('arts',this)">
-Arts
-</button>
-
-<button class="nav-tab" onclick="setView('commerce',this)">
-Commerce
-</button>
-
+<button class="nav-tab active" onclick="setView('all',this)">All Papers</button>
+<button class="nav-tab" onclick="setView('science',this)">Science</button>
+<button class="nav-tab" onclick="setView('arts',this)">Arts</button>
+<button class="nav-tab" onclick="setView('commerce',this)">Commerce</button>
 </div>
-
 <div id="paperGrid" class="paper-grid"></div>
-
 </section>
 
 <section class="section" id="sources">
-
 <h2 class="section-title">📚 Uploaded PDF Material</h2>
-
-<p class="muted" style="margin-bottom:14px">
-Only PDFs included in this website are shown here.
-Students can open or download them directly from BSEB PYQs.
-</p>
-
+<p class="muted" style="margin-bottom:14px">Only PDFs included in this website are shown here. Students can open or download them directly from BSEB PYQs.</p>
 <div id="materialGrid" class="source-grid"></div>
-
 </section>
 
 <section id="pdfViewer" class="test-panel">
-
 <h2 id="pdfTitle">PDF Viewer</h2>
-
-<div class="pdf-wrap">
-<iframe id="pdfFrame" title="Question paper PDF"></iframe>
-</div>
-
-<div class="card-buttons">
-<button class="btn btn-secondary" onclick="closePdfViewer()">
-Close PDF
-</button>
-</div>
-
+<div class="pdf-wrap"><iframe id="pdfFrame" title="Question paper PDF"></iframe></div>
+<div class="card-buttons"><button class="btn btn-secondary" onclick="closePdfViewer()">Close PDF</button></div>
 </section>
 
 <section class="test-section" id="testCenter">
-
 <h2>🎯 BSEB PYQ Test Center</h2>
-
 <p>Practice with questions loaded from the PYQ database.</p>
-
-<button class="test-start" onclick="openTestSetup()">
-Start Test
-</button>
-
+<button class="test-start" onclick="openTestSetup()">Start Test</button>
 </section>
 
 <section id="testSetup" class="test-panel">
-
 <h2>Set Up Your Test</h2>
-
-<p class="muted">
-Choose your subject and test settings.
-</p>
-
+<p class="muted">Questions are loaded only from <b>data/questions.json</b>. PYQ and Practice records remain distinct.</p>
 <div class="test-options">
-
-<div class="test-option">
-
-<label>Subject</label>
-
-<select id="testSubject">
-<option value="">Select subject</option>
-</select>
-
+<div class="test-option"><label>Subject</label><select id="testSubject"><option value="">Select subject</option></select></div>
+<div class="test-option"><label>Chapter</label><select id="testChapter"><option value="all">All Chapters</option></select></div>
+<div class="test-option"><label>Number of Questions</label><select id="questionCount"><option value="10">10 Questions</option><option value="25">25 Questions</option><option value="50">50 Questions</option><option value="full">Full Available</option></select></div>
+<div class="test-option"><label>Year</label><select id="testYear"><option value="all">All available years</option><option>2026</option><option>2025</option><option>2024</option><option>2023</option><option>2022</option><option>2021</option><option>2020</option></select></div>
+<div class="test-option"><label>Difficulty</label><select id="difficulty"><option value="all">All Levels</option><option>Easy</option><option>Moderate</option><option>High</option><option>Tough</option></select></div>
+<div class="test-option"><label>Mode</label><select id="testMode"><option value="practice">Practice</option><option value="timed">Timed</option><option value="pyq">PYQ Only</option><option value="important">Most Important</option><option value="random">Random</option></select></div>
+<div class="test-option"><label>Test Type</label><select id="testType"><option value="chapter">Chapter Test</option><option value="subject">Subject Test</option><option value="full">Full Syllabus Test</option></select></div>
 </div>
-
-<div class="test-option">
-
-<label>Number of Questions</label>
-
-<select id="questionCount">
-<option value="10">10 Questions</option>
-<option value="25">25 Questions</option>
-<option value="50">50 Questions</option>
-</select>
-
-</div>
-
-<div class="test-option">
-
-<label>Year</label>
-
-<select id="testYear">
-<option value="all">All available years</option>
-<option>2026</option>
-<option>2025</option>
-<option>2024</option>
-<option>2023</option>
-<option>2022</option>
-<option>2021</option>
-<option>2020</option>
-</select>
-
-</div>
-
-<div class="test-option">
-
-<label>Mode</label>
-
-<select id="testMode">
-<option value="practice">Practice</option>
-<option value="timed">Timed</option>
-</select>
-
-</div>
-
-</div>
-
-<div class="card-buttons">
-
-<button class="btn btn-primary" onclick="startTest()">
-Start Test
-</button>
-
-<button class="btn btn-secondary" onclick="closeTestSetup()">
-Cancel
-</button>
-
-</div>
-
+<div class="card-buttons"><button class="btn btn-primary" onclick="startTest()">Start Test</button><button class="btn btn-secondary" onclick="closeTestSetup()">Cancel</button></div>
+<div id="dataNotice" class="notice" style="display:none"></div>
 </section>
 
 <section id="testScreen" class="test-screen">
-
-<div class="test-top">
-
-<strong id="testProgress">Question</strong>
-
-<span id="timer" class="timer">
-Practice Mode
-</span>
-
-</div>
-
-<div class="question-number" id="questionSource">
-PYQ Source
-</div>
-
-<div class="question-text" id="questionText"></div>
-
-<div id="options" class="options"></div>
-
-<div class="test-controls">
-
-<button
-class="btn btn-secondary"
-id="previousBtn"
-onclick="previousQuestion()"
->
-← Previous
-</button>
-
-<button
-class="btn btn-primary"
-id="nextBtn"
-onclick="nextQuestion()"
->
-Next →
-</button>
-
-</div>
-
+<div class="test-top"><strong id="testProgress">Question</strong><span id="timer" class="timer">Practice Mode</span></div>
+<div class="question-number" id="questionSource">PYQ Source</div>
+<div class="question-text" id="questionText"></div><div id="options" class="options"></div>
+<div class="palette-box"><strong>Question Palette</strong><div id="palette" class="palette"></div></div>
+<div class="test-actions"><button class="btn btn-secondary" onclick="clearAnswer()">Clear Answer</button><button class="btn btn-secondary" onclick="toggleReview()">🔖 Mark for Review</button><button class="btn btn-danger" onclick="confirmSubmit()">Submit Test</button></div>
+<div class="test-controls"><button class="btn btn-secondary" id="previousBtn" onclick="previousQuestion()">← Previous</button><button class="btn btn-primary" id="nextBtn" onclick="nextQuestion()">Next →</button></div>
 </section>
 
 <section id="resultPanel" class="result-panel">
-
 <h2>📊 Test Result</h2>
-
-<div class="score" id="scoreText">
-0/0
-</div>
-
-<div id="percentageText">
-0%
-</div>
-
+<div class="score" id="scoreText">0/0</div>
+<div id="percentageText">0%</div>
 <div class="result-grid">
-
-<div class="result-stat">
-<strong id="correctCount">0</strong>
-<br>
-Correct
+<div class="result-stat"><strong id="totalCount">0</strong><br>Total</div>
+<div class="result-stat"><strong id="correctCount">0</strong><br>Correct</div>
+<div class="result-stat"><strong id="wrongCount">0</strong><br>Wrong</div>
+<div class="result-stat"><strong id="unansweredCount">0</strong><br>Unanswered</div>
 </div>
-
-<div class="result-stat">
-<strong id="wrongCount">0</strong>
-<br>
-Wrong
-</div>
-
-<div class="result-stat">
-<strong id="unansweredCount">0</strong>
-<br>
-Unanswered
-</div>
-
-</div>
-
-<button class="btn btn-primary" onclick="restartTest()">
-Take Another Test
-</button>
-
-<div class="review">
-
-<h3>Question Review</h3>
-
-<div id="reviewList"></div>
-
-</div>
-
+<div class="card-buttons"><button class="btn btn-primary" onclick="restartTest()">Take Another Test</button><button class="btn btn-secondary" onclick="retryIncorrect()">Retry Incorrect</button></div>
+<div class="review"><h3>Question Review</h3><div id="reviewList"></div></div>
 </section>
 
 <section class="section" id="subjects">
-
-<h2 class="section-title">
-📖 Subjects
-</h2>
-
+<h2 class="section-title">📖 Subjects</h2>
 <div id="subjectGrid" class="subject-grid"></div>
-
 </section>
 
-<div class="notice">
-
-<strong>Important:</strong>
-BSEB PYQs is an independent educational project.
-It is not the official website of the Bihar School Examination Board.
-Paper information is marked according to its verification status.
-
-</div>
-
+<div class="notice"><strong>Important:</strong> BSEB PYQs is an independent educational project. It is not the official website of the Bihar School Examination Board. Paper information is marked according to its verification status.</div>
 </main>
 
-<footer>
-
-<strong>BSEB PYQs</strong>
-<br>
-Bihar Board Class 12 Previous Year Papers & PYQ Practice
-<br><br>
-Computer-based educational resource. Not affiliated with BSEB.
-
-</footer>
+<footer><strong>BSEB PYQs</strong><br>Bihar Board Class 12 Previous Year Papers & PYQ Practice<br><br>Computer-based educational resource. Not affiliated with BSEB.</footer>
 
 <script>
-
 const sourceRegistry={
-
-2026:{
-name:"Careers360",
-url:"https://school.careers360.com/boards/bseb/bihar-board-12th-question-papers-2026"
-},
-
-2025:{
-name:"BiharBoardBook",
-url:"https://www.biharboardbook.com/papers/12th/2025"
-},
-
-2024:{
-name:"Collegedunia",
-url:"https://collegedunia.com/exams/bihar-board/question-paper-2024"
-},
-
-2023:{
-name:"SelfStudys",
-url:"https://www.selfstudys.com/books/bihar/state-books/class-12th/2023/46387"
-},
-
-2022:{
-name:"BiharBoardBook",
-url:"https://www.biharboardbook.com/papers/12th/2022"
-},
-
-2021:{
-name:"SelfStudys",
-url:"https://www.selfstudys.com/books/bihar/state-books/class-12th/2021/25498"
-},
-
-2020:{
-name:"BSEBResult",
-url:"https://bsebresult.in/bihar-board-12th-question-paper-2020-pdf-with-answers/"
-}
-
+2026:{name:"Careers360",url:"https://school.careers360.com/boards/bseb/bihar-board-12th-question-papers-2026"},
+2025:{name:"BiharBoardBook",url:"https://www.biharboardbook.com/papers/12th/2025"},
+2024:{name:"Collegedunia",url:"https://collegedunia.com/exams/bihar-board/question-paper-2024"},
+2023:{name:"SelfStudys",url:"https://www.selfstudys.com/books/bihar/state-books/class-12th/2023/46387"},
+2022:{name:"BiharBoardBook",url:"https://www.biharboardbook.com/papers/12th/2022"},
+2021:{name:"SelfStudys",url:"https://www.selfstudys.com/books/bihar/state-books/class-12th/2021/25498"},
+2020:{name:"BSEBResult",url:"https://bsebresult.in/bihar-board-12th-question-paper-2020-pdf-with-answers/"}
 };
-
 
 const papers=[
-
-{
-year:"2026",
-subject:"Physics",
-code:"117",
-set:"C",
-marks:"70",
-time:"3h 15m",
-status:"verified",
-group:"science",
-localPdf:"BSEB_Class12_Physics_2026_Set_C.pdf",
-sourceName:"Uploaded annual paper"
-},
-
-{
-year:"2026",
-subject:"Physics",
-code:"117",
-set:"E",
-marks:"70",
-time:"3h 15m",
-status:"verified",
-group:"science",
-localPdf:"BSEB_Class12_Physics_2026_Set_E.pdf",
-sourceName:"Uploaded annual paper"
-},
-
-{
-year:"2026",
-subject:"Physics",
-code:"117",
-set:"I",
-marks:"70",
-time:"3h 15m",
-status:"verified",
-group:"science",
-localPdf:"BSEB_Class12_Physics_2026_Set_I.pdf",
-sourceName:"Uploaded annual paper"
-},
-
-{
-year:"2026",
-subject:"Biology",
-code:"119",
-set:"G",
-marks:"70",
-time:"3h 15m",
-status:"verified",
-group:"science",
-localPdf:"BSEB_Class12_Biology_2026_Set_G.pdf",
-sourceName:"Uploaded annual paper"
-},
-
-{
-year:"2026",
-subject:"Biology",
-code:"119",
-set:"I",
-marks:"70",
-time:"3h 15m",
-status:"verified",
-group:"science",
-localPdf:"BSEB_Class12_Biology_2026_Set_I.pdf",
-sourceName:"Uploaded annual paper"
-},
-
-{
-year:"2026",
-subject:"English",
-code:"105/124/205/223",
-set:"B",
-marks:"100",
-time:"3h 15m",
-status:"verified",
-group:"general",
-localPdf:"BSEB_Class12_English_2026_Set_B.pdf",
-sourceName:"Uploaded annual paper"
-},
-
-{
-year:"2026",
-subject:"English",
-code:"105/124/205/223",
-set:"C",
-marks:"100",
-time:"3h 15m",
-status:"verified",
-group:"general",
-localPdf:"BSEB_Class12_English_2026_Set_C.pdf",
-sourceName:"Uploaded annual paper"
-},
-
-{
-year:"2026",
-subject:"English",
-code:"105/124/205/223",
-set:"D",
-marks:"100",
-time:"3h 15m",
-status:"verified",
-group:"general",
-localPdf:"BSEB_Class12_English_2026_Set_D.pdf",
-sourceName:"Uploaded annual paper"
-},
-
-{
-year:"2026",
-subject:"English",
-code:"105/124/205/223",
-set:"I",
-marks:"100",
-time:"3h 15m",
-status:"verified",
-group:"general",
-localPdf:"BSEB_Class12_English_2026_Set_I.pdf",
-sourceName:"Uploaded annual paper"
-},
-
-{
-year:"2026",
-subject:"History",
-code:"321",
-set:"E",
-marks:"100",
-time:"3h 15m",
-status:"verified",
-group:"arts",
-localPdf:"selfstudys_com_file (20).pdf",
-sourceName:"Uploaded annual paper"
-},
-
-{
-year:"2026",
-subject:"History",
-code:"321",
-set:"D",
-marks:"100",
-time:"3h 15m",
-status:"verified",
-group:"arts",
-localPdf:"selfstudys_com_file (21).pdf",
-sourceName:"Uploaded annual paper"
-},
-
-{
-year:"2026",
-subject:"Economics",
-code:"219",
-set:"B",
-marks:"100",
-time:"3h 15m",
-status:"verified",
-group:"commerce",
-localPdf:"selfstudys_com_file (23).pdf",
-sourceName:"Uploaded annual paper"
-},
-
-{
-year:"2026",
-subject:"Geography",
-code:"323",
-set:"A",
-marks:"70",
-time:"3h 15m",
-status:"verified",
-group:"arts",
-localPdf:"selfstudys_com_file (24).pdf",
-sourceName:"Uploaded annual paper"
-},
-
-{
-year:"2026",
-subject:"Geography",
-code:"323",
-set:"E",
-marks:"70",
-time:"3h 15m",
-status:"verified",
-group:"arts",
-localPdf:"selfstudys_com_file (25).pdf",
-sourceName:"Uploaded annual paper"
-},
-
-{
-year:"2026",
-subject:"Geography",
-code:"323",
-set:"I",
-marks:"70",
-time:"3h 15m",
-status:"verified",
-group:"arts",
-localPdf:"selfstudys_com_file (26).pdf",
-sourceName:"Uploaded annual paper"
-},
-
-{
-year:"2026",
-subject:"History",
-code:"321",
-set:"I",
-marks:"100",
-time:"3h 15m",
-status:"verified",
-group:"arts",
-localPdf:"selfstudys_com_file (27).pdf",
-sourceName:"Uploaded annual paper"
-},
-
-{
-year:"2026",
-subject:"Philosophy",
-code:"320",
-set:"A",
-marks:"100",
-time:"3h 15m",
-status:"verified",
-group:"arts",
-localPdf:"selfstudys_com_file (28).pdf",
-sourceName:"Uploaded annual paper"
-},
-
-{
-year:"2026",
-subject:"Physics",
-code:"117",
-set:"I",
-marks:"70",
-time:"3h 15m",
-status:"verified",
-group:"science",
-localPdf:"selfstudys_com_file (29).pdf",
-sourceName:"Uploaded annual paper"
-},
-
-{
-year:"2025",
-subject:"Mathematics",
-code:"121/327",
-set:"E",
-marks:"100",
-time:"3h 15m",
-status:"verified",
-group:"science",
-localPdf:"Mathematics_2025_Set_E_Questions_First_Solutions-8.pdf",
-sourceName:"Uploaded paper"
-},
-
-{
-year:"2025",
-subject:"Physics",
-code:"117",
-set:"D",
-marks:"70",
-time:"3h 15m",
-status:"verified",
-group:"science",
-localPdf:"BSEB_Class12_Physics_2025_Set_D.pdf",
-sourceName:"Uploaded paper"
-}
-
+{year:"2026",subject:"Physics",code:"117",set:"C",marks:"70",time:"3h 15m",status:"verified",group:"science",localPdf:"2026/Physics/BSEB_Class12_Physics_2026_Set_C.pdf",sourceName:"Uploaded annual paper"},
+{year:"2026",subject:"Physics",code:"117",set:"E",marks:"70",time:"3h 15m",status:"verified",group:"science",localPdf:"2026/Physics/BSEB_Class12_Physics_2026_Set_E.pdf",sourceName:"Uploaded annual paper"},
+{year:"2026",subject:"Physics",code:"117",set:"I",marks:"70",time:"3h 15m",status:"verified",group:"science",localPdf:"2026/Physics/BSEB_Class12_Physics_2026_Set_I.pdf",sourceName:"Uploaded annual paper"},
+{year:"2026",subject:"Biology",code:"119",set:"G",marks:"70",time:"3h 15m",status:"verified",group:"science",localPdf:"2026/Biology/BSEB_Class12_Biology_2026_Set_G.pdf",sourceName:"Uploaded annual paper"},
+{year:"2026",subject:"Biology",code:"119",set:"I",marks:"70",time:"3h 15m",status:"verified",group:"science",localPdf:"2026/Biology/BSEB_Class12_Biology_2026_Set_I.pdf",sourceName:"Uploaded annual paper"},
+{year:"2026",subject:"English",code:"105/124/205/223",set:"B",marks:"100",time:"3h 15m",status:"verified",group:"general",localPdf:"2026/English/BSEB_Class12_English_2026_Set_B.pdf",sourceName:"Uploaded annual paper"},
+{year:"2026",subject:"English",code:"105/124/205/223",set:"C",marks:"100",time:"3h 15m",status:"verified",group:"general",localPdf:"2026/English/BSEB_Class12_English_2026_Set_C.pdf",sourceName:"Uploaded annual paper"},
+{year:"2026",subject:"English",code:"105/124/205/223",set:"D",marks:"100",time:"3h 15m",status:"verified",group:"general",localPdf:"2026/English/BSEB_Class12_English_2026_Set_D.pdf",sourceName:"Uploaded annual paper"},
+{year:"2026",subject:"English",code:"105/124/205/223",set:"I",marks:"100",time:"3h 15m",status:"verified",group:"general",localPdf:"2026/English/BSEB_Class12_English_2026_Set_I.pdf",sourceName:"Uploaded annual paper"},
+{year:"2026",subject:"Mathematics",code:"121/327",set:"Various",marks:"100",time:"3h 15m",status:"pending",group:"science",localPdf:"",sourceName:"PDF not uploaded"},
+{year:"2026",subject:"Chemistry",code:"118",set:"Various",marks:"70",time:"3h 15m",status:"pending",group:"science",localPdf:"",sourceName:"PDF not uploaded"},
+{year:"2026",subject:"Computer Science",code:"122/221/328",set:"Various",marks:"100",time:"3h 15m",status:"pending",group:"science",localPdf:"",sourceName:"PDF not uploaded"},
+{year:"2026",subject:"Hindi",code:"106/125/206/224",set:"Various",marks:"100",time:"3h 15m",status:"pending",group:"general",localPdf:"",sourceName:"PDF not uploaded"},
+{year:"2026",subject:"Political Science",code:"322",set:"Various",marks:"100",time:"3h 15m",status:"pending",group:"arts",localPdf:"",sourceName:"PDF not uploaded"},
+{year:"2026",subject:"Geography",code:"323",set:"Various",marks:"100",time:"3h 15m",status:"pending",group:"arts",localPdf:"",sourceName:"PDF not uploaded"},
+{year:"2026",subject:"History",code:"321",set:"Various",marks:"100",time:"3h 15m",status:"pending",group:"arts",localPdf:"",sourceName:"PDF not uploaded"},
+{year:"2026",subject:"Economics",code:"219/326",set:"Various",marks:"100",time:"3h 15m",status:"pending",group:"commerce",localPdf:"",sourceName:"PDF not uploaded"},
+{year:"2026",subject:"Business Studies",code:"217",set:"Various",marks:"100",time:"3h 15m",status:"pending",group:"commerce",localPdf:"",sourceName:"PDF not uploaded"},
+{year:"2025",subject:"Mathematics",code:"121/327",set:"A",marks:"100",time:"3h 15m",status:"pending",group:"science",localPdf:"",sourceName:"PDF not uploaded"},
+{year:"2025",subject:"Mathematics",code:"121/327",set:"E",marks:"100",time:"3h 15m",status:"verified",group:"science",localPdf:"2025/Mathematics/BSEB_Class12_Mathematics_2025_Set_E.pdf",sourceName:"Uploaded annual paper"},
+{year:"2025",subject:"Physics",code:"117",set:"D",marks:"70",time:"3h 15m",status:"verified",group:"science",localPdf:"2025/Physics/BSEB_Class12_Physics_2025_Set_D.pdf",sourceName:"Uploaded annual paper"},
+{year:"2025",subject:"Physics",code:"117",set:"H",marks:"70",time:"3h 15m",status:"pending",group:"science",localPdf:"",sourceName:"PDF not uploaded"},
+{year:"2025",subject:"Chemistry",code:"118",set:"D",marks:"70",time:"3h 15m",status:"pending",group:"science",localPdf:"",sourceName:"PDF not uploaded"},
+{year:"2025",subject:"Chemistry",code:"118",set:"H",marks:"70",time:"3h 15m",status:"pending",group:"science",localPdf:"",sourceName:"PDF not uploaded"},
+{year:"2025",subject:"Biology",code:"119",set:"F",marks:"70",time:"3h 15m",status:"pending",group:"science",localPdf:"",sourceName:"PDF not uploaded"},
+{year:"2025",subject:"Accountancy",code:"220",set:"J",marks:"100",time:"3h 15m",status:"pending",group:"commerce",localPdf:"",sourceName:"PDF not uploaded"},
+{year:"2025",subject:"Business Studies",code:"217",set:"1",marks:"100",time:"3h 15m",status:"pending",group:"commerce",localPdf:"",sourceName:"PDF not uploaded"},
+{year:"2025",subject:"Economics",code:"219",set:"J",marks:"100",time:"3h 15m",status:"pending",group:"commerce",localPdf:"",sourceName:"PDF not uploaded"},
+{year:"2025",subject:"Computer Science",code:"122/221/328",set:"B",marks:"100",time:"3h 15m",status:"pending",group:"science",localPdf:"",sourceName:"PDF not uploaded"},
+{year:"2025",subject:"English",code:"105/124/205/223",set:"D/G/I",marks:"100",time:"3h 15m",status:"pending",group:"general",localPdf:"",sourceName:"PDF not uploaded"},
+{year:"2025",subject:"Hindi",code:"106/125/206/224",set:"B/C",marks:"100",time:"3h 15m",status:"pending",group:"general",localPdf:"",sourceName:"PDF not uploaded"},
+{year:"2025",subject:"History",code:"321",set:"A",marks:"100",time:"3h 15m",status:"pending",group:"arts",localPdf:"",sourceName:"PDF not uploaded"},
+{year:"2025",subject:"Geography",code:"323",set:"G",marks:"100",time:"3h 15m",status:"pending",group:"arts",localPdf:"",sourceName:"PDF not uploaded"},
+{year:"2025",subject:"Political Science",code:"322",set:"G",marks:"100",time:"3h 15m",status:"pending",group:"arts",localPdf:"",sourceName:"PDF not uploaded"}
 ];
-
-
-papers.forEach(p=>{
-if(!p.sourceName)
-p.sourceName=p.localPdf?"Uploaded annual paper":"PDF not uploaded";
-});
-
+papers.forEach(p=>{ if(!p.sourceName) p.sourceName=p.localPdf?"Uploaded annual paper":"PDF not uploaded"; });
 
 let questionBank=[];
-
 let currentView="all";
-
 let testQuestions=[];
-
 let testAnswers=[];
-
+let testReview=[];
 let currentQuestion=0;
-
 let timerInterval=null;
-
 let timeLeft=0;
-
+let lastConfig=null;
 
 async function loadQuestionBank(){
-
-try{
-
-const r=await fetch(
-"data/questions.json?x="+Date.now()
-);
-
-if(!r.ok)
-throw new Error("HTTP "+r.status);
-
-const data=await r.json();
-
-questionBank=Array.isArray(data)?data:[];
-
-}catch(e){
-
-console.error(e);
-
-questionBank=[];
-
+ try{
+  const r=await fetch("data/questions.json?x="+Date.now(),{cache:"no-store"});
+  if(!r.ok) throw new Error("HTTP "+r.status);
+  const data=await r.json();
+  questionBank=Array.isArray(data)?data:[];
+ }catch(e){console.error("Question database load failed:",e);questionBank=[]}
+ populateTestSubjects();renderAll();
 }
-
-populateTestSubjects();
-
-renderAll();
-
-}
-
-
-function scrollToSection(id){
-
-document
-.getElementById(id)
-?.scrollIntoView({behavior:"smooth"});
-
-}
-
-
-function escapeHtml(v){
-
-return String(v??"")
-.replace(
-/[&<>"']/g,
-m=>({
-"&":"&amp;",
-"<":"&lt;",
-">":"&gt;",
-'"':"&quot;",
-"'":"&#039;"
-}[m])
-);
-
-}
-
-
+function scrollToSection(id){document.getElementById(id)?.scrollIntoView({behavior:"smooth"})}
+function escapeHtml(v){return String(v??"").replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[m]))}
 function populateSubjectFilter(){
-
-const subjects=[
-...new Set(
-papers.map(p=>p.subject)
-)
-].sort();
-
-const s=
-document.getElementById("subjectFilter");
-
-const old=s.value;
-
-s.innerHTML=
-'<option value="all">All Subjects</option>';
-
-subjects.forEach(x=>{
-
-let o=document.createElement("option");
-
-o.value=x;
-
-o.textContent=x;
-
-s.appendChild(o);
-
-});
-
-if(subjects.includes(old))
-s.value=old;
-
+ const subjects=[...new Set(papers.map(p=>p.subject))].sort(),s=document.getElementById("subjectFilter"),old=s.value;
+ s.innerHTML='<option value="all">All Subjects</option>';subjects.forEach(x=>{let o=document.createElement("option");o.value=x;o.textContent=x;s.appendChild(o)});if(subjects.includes(old))s.value=old;
 }
-
-
 function populateTestSubjects(){
-
-const subjects=[
-...new Set([
-
-...papers.map(p=>p.subject),
-
-...questionBank
-.map(q=>q.subject)
-.filter(Boolean)
-
-])
-
-]
-.filter(Boolean)
-.sort();
-
-
-const s=
-document.getElementById("testSubject");
-
-const old=s.value;
-
-s.innerHTML=
-'<option value="">Select subject</option>';
-
-
-subjects.forEach(x=>{
-
-let o=document.createElement("option");
-
-o.value=x;
-
-o.textContent=x;
-
-s.appendChild(o);
-
-});
-
-
-if(subjects.includes(old))
-s.value=old;
-
+ const subjects=[...new Set([...papers.map(p=>p.subject),...questionBank.map(q=>q.subject).filter(Boolean)])].filter(Boolean).sort();
+ const s=document.getElementById("testSubject"),old=s.value;s.innerHTML='<option value="">Select subject</option>';subjects.forEach(x=>s.add(new Option(x,x)));if(subjects.includes(old))s.value=old;updateChapters();
 }
-
-
-function renderStats(){
-
-document
-.getElementById("paperCount")
-.textContent=papers.length;
-
-document
-.getElementById("verifiedCount")
-.textContent=
-papers.filter(
-p=>p.status==="verified"
-).length;
-
-document
-.getElementById("subjectCount")
-.textContent=
-new Set(
-papers.map(p=>p.subject)
-).size;
-
+function updateChapters(){
+ const subject=document.getElementById("testSubject").value,sel=document.getElementById("testChapter");
+ const chapters=[...new Set(questionBank.filter(q=>!subject||q.subject===subject).map(q=>q.chapter).filter(Boolean))];
+ sel.innerHTML='<option value="all">All Chapters</option>';chapters.forEach(c=>sel.add(new Option(c,c)));
 }
-
-
-function renderSubjects(){
-
-const box=
-document.getElementById("subjectGrid");
-
-box.innerHTML="";
-
-
-[
-...new Set(
-papers.map(p=>p.subject)
-)
-]
-.sort()
-.forEach(s=>{
-
-const d=document.createElement("div");
-
-d.className="subject";
-
-d.textContent=s;
-
-d.onclick=()=>{
-
-document
-.getElementById("subjectFilter")
-.value=s;
-
-renderPapers();
-
-scrollToSection("papers");
-
-};
-
-box.appendChild(d);
-
-});
-
-}
-
-
-function renderMaterials(){
-
-const box=
-document.getElementById("materialGrid");
-
-if(!box)
-return;
-
-box.innerHTML="";
-
-
-papers
-.filter(p=>p.localPdf)
-.forEach(p=>{
-
-const d=
-document.createElement("article");
-
-d.className="paper-card";
-
-d.innerHTML=`
-
-<h3>${escapeHtml(p.subject)}</h3>
-
-<span class="badge">
-PDF INCLUDED
-</span>
-
-<div class="meta">
-<b>Year:</b>
-${escapeHtml(p.year)}
-</div>
-
-<div class="meta">
-<b>Set:</b>
-${escapeHtml(p.set)}
-</div>
-
-<div class="meta">
-<b>Code:</b>
-${escapeHtml(p.code)}
-</div>
-
-<div class="card-buttons">
-
-<button
-class="btn btn-primary"
-onclick='openPdf(
-${JSON.stringify(p.localPdf)},
-${JSON.stringify(
-p.year+" "+p.subject+" Set "+p.set
-)}
-)'
->
-📄 View PDF
-</button>
-
-<a
-class="btn btn-secondary"
-href="${encodeURI(p.localPdf)}"
-download
->
-⬇ Download
-</a>
-
-</div>
-
-`;
-
-box.appendChild(d);
-
-});
-
-}
-
-
-function openPdf(file,title){
-
-document
-.getElementById("pdfTitle")
-.textContent=title;
-
-document
-.getElementById("pdfFrame")
-.src=encodeURI(file);
-
-document
-.getElementById("pdfViewer")
-.classList.add("show");
-
-document
-.getElementById("pdfViewer")
-.scrollIntoView({
-behavior:"smooth"
-});
-
-}
-
-
-function closePdfViewer(){
-
-document
-.getElementById("pdfFrame")
-.src="";
-
-document
-.getElementById("pdfViewer")
-.classList.remove("show");
-
-}
-
-
+function renderStats(){document.getElementById("paperCount").textContent=papers.length;document.getElementById("verifiedCount").textContent=papers.filter(p=>p.status==="verified").length;document.getElementById("subjectCount").textContent=new Set(papers.map(p=>p.subject)).size}
+function renderSubjects(){const box=document.getElementById("subjectGrid");box.innerHTML="";[...new Set(papers.map(p=>p.subject))].sort().forEach(s=>{const d=document.createElement("div");d.className="subject";d.textContent=s;d.onclick=()=>{document.getElementById("subjectFilter").value=s;renderPapers();scrollToSection("papers")};box.appendChild(d)})}
+function renderMaterials(){const box=document.getElementById("materialGrid");if(!box)return;box.innerHTML="";papers.filter(p=>p.localPdf).forEach(p=>{const d=document.createElement("article");d.className="paper-card";d.innerHTML=`<h3>${escapeHtml(p.subject)}</h3><span class="badge">PDF INCLUDED</span><div class="meta"><b>Year:</b> ${escapeHtml(p.year)}</div><div class="meta"><b>Set:</b> ${escapeHtml(p.set)}</div><div class="meta"><b>Code:</b> ${escapeHtml(p.code)}</div><div class="card-buttons"><button class="btn btn-primary" onclick='openPdf(${JSON.stringify(p.localPdf)},${JSON.stringify(p.year+" "+p.subject+" Set "+p.set)})'>📄 View PDF</button><a class="btn btn-secondary" href="${encodeURI(p.localPdf)}" download>⬇ Download</a></div>`;box.appendChild(d)})}
 function renderPapers(){
-
-const grid=
-document.getElementById("paperGrid");
-
-const q=
-document
-.getElementById("searchInput")
-.value
-.toLowerCase()
-.trim();
-
-const year=
-document.getElementById("yearFilter")
-.value;
-
-const subject=
-document.getElementById("subjectFilter")
-.value;
-
-const status=
-document.getElementById("statusFilter")
-.value;
-
-
-const list=
-papers.filter(p=>{
-
-const hay=[
-p.year,
-p.subject,
-p.code,
-p.set,
-p.marks,
-p.time,
-p.status
-]
-.join(" ")
-.toLowerCase();
-
-
-return (
-
-(!q || hay.includes(q))
-
-&&
-(year==="all" || p.year===year)
-
-&&
-(subject==="all" || p.subject===subject)
-
-&&
-(status==="all" || p.status===status)
-
-&&
-(
-currentView==="all"
-||
-p.group===currentView
-)
-
-);
-
-});
-
-
-grid.innerHTML="";
-
-
-if(!list.length){
-
-grid.innerHTML=
-'<div class="empty" style="grid-column:1/-1">No paper records match your search/filter.</div>';
-
-return;
-
+ const grid=document.getElementById("paperGrid"),q=document.getElementById("searchInput").value.toLowerCase().trim(),year=document.getElementById("yearFilter").value,subject=document.getElementById("subjectFilter").value,status=document.getElementById("statusFilter").value;
+ const list=papers.filter(p=>{const hay=[p.year,p.subject,p.code,p.set,p.marks,p.time,p.status].join(" ").toLowerCase();return(!q||hay.includes(q))&&(year==="all"||p.year===year)&&(subject==="all"||p.subject===subject)&&(status==="all"||p.status===status)&&(currentView==="all"||p.group===currentView)});
+ grid.innerHTML="";if(!list.length){grid.innerHTML='<div class="empty" style="grid-column:1/-1">No paper records match your search/filter.</div>';return}list.forEach(p=>{const card=document.createElement("article");card.className="paper-card";const badge=p.status==="verified"?'<span class="badge">✓ VERIFIED</span>':'<span class="badge pending">SOURCE NOT VERIFIED</span>';let buttons=p.localPdf?`<button class="btn btn-primary" onclick='openPdf(${JSON.stringify(p.localPdf)},${JSON.stringify(p.year+" "+p.subject+" Set "+p.set)})'>📄 View PDF</button><a class="btn btn-secondary" href="${encodeURI(p.localPdf)}" download>⬇ Download</a>`:'<button class="btn btn-primary" disabled>📄 PDF not uploaded yet</button>';card.innerHTML=`<h3>${escapeHtml(p.subject)}</h3>${badge}<div class="meta"><b>Year:</b> ${escapeHtml(p.year)}</div><div class="meta"><b>Set:</b> ${escapeHtml(p.set)}</div><div class="meta"><b>Code:</b> ${escapeHtml(p.code)}</div><div class="meta"><b>Marks:</b> ${escapeHtml(p.marks)}</div><div class="meta"><b>Time:</b> ${escapeHtml(p.time)}</div><div class="card-buttons">${buttons}</div>`;grid.appendChild(card)})
 }
+function setView(v,b){currentView=v;document.querySelectorAll(".nav-tab").forEach(x=>x.classList.remove("active"));b.classList.add("active");renderPapers()}
+function renderAll(){renderStats();populateSubjectFilter();renderSubjects();renderMaterials();renderPapers()}
+function openPdf(file,title){document.getElementById("pdfTitle").textContent=title;document.getElementById("pdfFrame").src=encodeURI(file);document.getElementById("pdfViewer").classList.add("show");scrollToSection("pdfViewer")}
+function closePdfViewer(){document.getElementById("pdfFrame").src="";document.getElementById("pdfViewer").classList.remove("show")}
+function openTestSetup(){document.getElementById("testSetup").classList.add("show");document.getElementById("resultPanel").classList.remove("show");scrollToSection("testSetup");populateTestSubjects()}
+function closeTestSetup(){document.getElementById("testSetup").classList.remove("show")}
 
-
-list.forEach(p=>{
-
-const card=
-document.createElement("article");
-
-card.className="paper-card";
-
-
-const badge=
-p.status==="verified"
-
-?
-'<span class="badge">✓ VERIFIED</span>'
-
-:
-'<span class="badge pending">SOURCE NOT VERIFIED</span>';
-
-
-let buttons=
-p.localPdf
-
-?
-
-`<button
-class="btn btn-primary"
-onclick='openPdf(
-${JSON.stringify(p.localPdf)},
-${JSON.stringify(
-p.year+" "+p.subject+" Set "+p.set
-)}
-)'
->
-📄 View PDF
-</button>
-
-<a
-class="btn btn-secondary"
-href="${encodeURI(p.localPdf)}"
-download
->
-⬇ Download
-</a>`
-
-:
-
-'<button class="btn btn-primary" disabled>📄 PDF not uploaded yet</button>';
-
-
-card.innerHTML=`
-
-<h3>
-${escapeHtml(p.subject)}
-</h3>
-
-${badge}
-
-<div class="meta">
-<b>Year:</b>
-${escapeHtml(p.year)}
-</div>
-
-<div class="meta">
-<b>Set:</b>
-${escapeHtml(p.set)}
-</div>
-
-<div class="meta">
-<b>Code:</b>
-${escapeHtml(p.code)}
-</div>
-
-<div class="meta">
-<b>Marks:</b>
-${escapeHtml(p.marks)}
-</div>
-
-<div class="meta">
-<b>Time:</b>
-${escapeHtml(p.time)}
-</div>
-
-<div class="card-buttons">
-${buttons}
-</div>
-
-`;
-
-grid.appendChild(card);
-
-});
-
+document.getElementById("testSubject").addEventListener("change",updateChapters);
+function getAnswerIndex(q){
+ let a=q.correct_answer??q.answer??q.correctAnswer;
+ if(typeof a==="number"){if(a>=1&&a<=4)return a-1;if(a>=0&&a<=3)return a}
+ if(typeof a==="string"){let x=a.trim().toUpperCase();if(/^[A-D]$/.test(x))return x.charCodeAt(0)-65;if(Array.isArray(q.options)){let i=q.options.findIndex(v=>String(v).trim()===a.trim());if(i>=0)return i}}
+ return null;
 }
-
-
-function setView(v,b){
-
-currentView=v;
-
-document
-.querySelectorAll(".nav-tab")
-.forEach(x=>
-x.classList.remove("active")
-);
-
-b.classList.add("active");
-
-renderPapers();
-
+function isPyq(q){return String(q.type||q.source_type||"").toUpperCase()==="PYQ"||!!q.year||!!q.set}
+function priority(q){return Number(q.historical_priority_score??q.priority_score??q.frequency??q.priority??0)||0}
+function shuffle(a){a=[...a];for(let i=a.length-1;i>0;i--){let j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a}
+function buildPool(){
+ const subject=document.getElementById("testSubject").value,chapter=document.getElementById("testChapter").value,year=document.getElementById("testYear").value,diff=document.getElementById("difficulty").value,mode=document.getElementById("testMode").value,type=document.getElementById("testType").value;
+ let pool=questionBank.filter(q=>(!subject||q.subject===subject)&&(type==="chapter"?chapter==="all"||q.chapter===chapter:true)&&(year==="all"||String(q.year)===year)&&(diff==="all"||String(q.difficulty||"").toLowerCase()===diff.toLowerCase()));
+ if(type==="subject"&&chapter!=="all")pool=pool.filter(q=>q.chapter===chapter);
+ if(type==="full"){};
+ if(mode==="pyq")pool=pool.filter(isPyq);
+ if(mode==="important")pool.sort((a,b)=>priority(b)-priority(a));
+ else if(mode==="random")pool=shuffle(pool);
+ else pool.sort((a,b)=>{let c=String(a.chapter||"").localeCompare(String(b.chapter||""),undefined,{numeric:true});if(c)return c;return Number(a.question_number??a.questionNo??0)-Number(b.question_number??b.questionNo??0)});
+ return pool;
 }
-
-
-function renderAll(){
-
-renderStats();
-
-populateSubjectFilter();
-
-renderSubjects();
-
-renderMaterials();
-
-renderPapers();
-
+function startTest(){
+ clearInterval(timerInterval);const pool=buildPool();const want=document.getElementById("questionCount").value==="full"?pool.length:Number(document.getElementById("questionCount").value);
+ if(!pool.length){const n=document.getElementById("dataNotice");n.style.display="block";n.textContent="No questions match these settings. Your website is working, but more questions must be added to data/questions.json.";return}
+ const count=Math.min(want,pool.length);testQuestions=pool.slice(0,count);testAnswers=new Array(count).fill(null);testReview=new Array(count).fill(false);currentQuestion=0;lastConfig={subject:document.getElementById("testSubject").value,chapter:document.getElementById("testChapter").value,year:document.getElementById("testYear").value,difficulty:document.getElementById("difficulty").value,mode:document.getElementById("testMode").value,type:document.getElementById("testType").value};
+ document.getElementById("testSetup").classList.remove("show");document.getElementById("resultPanel").classList.remove("show");document.getElementById("testScreen").classList.add("show");
+ if(document.getElementById("testMode").value==="timed"){timeLeft=Math.max(60,count*60);startTimer()}else{document.getElementById("timer").textContent="Practice Mode"}renderQuestion();saveAttempt();scrollToSection("testScreen");
 }
-
-
-function openTestSetup(){
-
-document
-.getElementById("testSetup")
-.classList.add("show");
-
-document
-.getElementById("testSetup")
-.scrollIntoView({
-behavior:"smooth"
-});
-
+function startTimer(){clearInterval(timerInterval);updateTimer();timerInterval=setInterval(()=>{timeLeft--;updateTimer();if(timeLeft<=0){clearInterval(timerInterval);alert("Time is up. The test will be submitted.");submitTest()}},1000)}
+function updateTimer(){document.getElementById("timer").textContent=`⏱ ${String(Math.floor(timeLeft/60)).padStart(2,"0")}:${String(timeLeft%60).padStart(2,"0")}`}
+function renderQuestion(){
+ const q=testQuestions[currentQuestion];if(!q)return;const opts=Array.isArray(q.options)?q.options:Object.values(q.options||{});
+ document.getElementById("testProgress").textContent=`Question ${currentQuestion+1} of ${testQuestions.length}`;
+ document.getElementById("questionSource").textContent=`${isPyq(q)?"PYQ":"Practice"} • ${q.year||""}${q.set?" • Set "+q.set:""}${q.shift?" • "+q.shift:""}${q.chapter?" • "+q.chapter:""}${q.questionNo||q.question_number?" • Q"+(q.questionNo??q.question_number):""}`;
+ document.getElementById("questionText").textContent=q.text??q.question??"Question text unavailable.";
+ const box=document.getElementById("options");box.innerHTML="";opts.forEach((x,i)=>{let b=document.createElement("button");b.className="answer-option"+(testAnswers[currentQuestion]===i?" selected":"");b.innerHTML=`<b>${String.fromCharCode(65+i)}.</b> ${escapeHtml(x)}`;b.onclick=()=>selectAnswer(i);box.appendChild(b)});
+ document.getElementById("previousBtn").disabled=currentQuestion===0;document.getElementById("nextBtn").textContent=currentQuestion===testQuestions.length-1?"Finish Test":"Next →";renderPalette();
 }
-
-
-function closeTestSetup(){
-
-document
-.getElementById("testSetup")
-.classList.remove("show");
-
+function selectAnswer(i){testAnswers[currentQuestion]=i;saveAttempt();renderQuestion()}
+function clearAnswer(){testAnswers[currentQuestion]=null;saveAttempt();renderQuestion()}
+function toggleReview(){testReview[currentQuestion]=!testReview[currentQuestion];saveAttempt();renderPalette()}
+function renderPalette(){document.getElementById("palette").innerHTML=testQuestions.map((_,i)=>`<button class="qdot ${testAnswers[i]!==null?"answered ":""}${i===currentQuestion?"current ":""}${testReview[i]?"review":""}" onclick="goQuestion(${i})">${i+1}</button>`).join("")}
+function goQuestion(i){currentQuestion=i;renderQuestion()}
+function nextQuestion(){if(currentQuestion<testQuestions.length-1){currentQuestion++;renderQuestion();saveAttempt()}else confirmSubmit()}
+function previousQuestion(){if(currentQuestion>0){currentQuestion--;renderQuestion();saveAttempt()}}
+function confirmSubmit(){if(confirm("Submit the test now? You can review all answers after submission."))submitTest()}
+function submitTest(){
+ clearInterval(timerInterval);let correct=0,wrong=0,unanswered=0;const results=[];
+ testQuestions.forEach((q,i)=>{const a=testAnswers[i],c=getAnswerIndex(q),status=a===null?"UNATTEMPTED":c!==null&&a===c?"CORRECT":"INCORRECT";if(status==="CORRECT")correct++;else if(status==="INCORRECT")wrong++;else unanswered++;results.push({q,a,c,status})});
+ const total=testQuestions.length,percent=total?(correct/total*100).toFixed(1):"0.0";document.getElementById("scoreText").textContent=`${correct}/${total}`;document.getElementById("percentageText").textContent=percent+"%";document.getElementById("totalCount").textContent=total;document.getElementById("correctCount").textContent=correct;document.getElementById("wrongCount").textContent=wrong;document.getElementById("unansweredCount").textContent=unanswered;
+ document.getElementById("reviewList").innerHTML=results.map((r,i)=>{const q=r.q,opts=Array.isArray(q.options)?q.options:Object.values(q.options||{});const your=r.a===null?"Not attempted":(opts[r.a]??"Not available"),ans=r.c===null?"Not available":(opts[r.c]??"Not available");return `<div class="review-item"><b>Q${i+1}. ${escapeHtml(q.text??q.question??"")}</b><br>Your answer: ${escapeHtml(your)}<br>Correct answer: ${escapeHtml(ans)}<br><span class="${r.status==="CORRECT"?"correct":r.status==="INCORRECT"?"wrong":""}">${r.status}</span>${q.explanation?`<br><b>Explanation:</b> ${escapeHtml(q.explanation)}`:""}<br><small>Difficulty: ${escapeHtml(q.difficulty||"Not specified")} | Priority: ${escapeHtml(q.priority??q.historical_priority_score??"Not specified")} | Concept: ${escapeHtml(q.concept||"Not specified")}</small></div>`}).join("");
+ document.getElementById("testScreen").classList.remove("show");document.getElementById("resultPanel").classList.add("show");localStorage.removeItem("bseb_current_attempt");scrollToSection("resultPanel");
 }
+function saveAttempt(){if(!testQuestions.length)return;localStorage.setItem("bseb_current_attempt",JSON.stringify({testQuestions,testAnswers,testReview,currentQuestion,lastConfig,timeLeft}))}
+function restoreAttempt(){try{const x=JSON.parse(localStorage.getItem("bseb_current_attempt"));if(!x?.testQuestions?.length)return;testQuestions=x.testQuestions;testAnswers=x.testAnswers||new Array(testQuestions.length).fill(null);testReview=x.testReview||new Array(testQuestions.length).fill(false);currentQuestion=x.currentQuestion||0;lastConfig=x.lastConfig||null;timeLeft=x.timeLeft||0;document.getElementById("testScreen").classList.add("show");renderQuestion()}catch(e){console.error(e)}}
+function restartTest(){document.getElementById("resultPanel").classList.remove("show");openTestSetup()}
+function retryIncorrect(){const bad=testQuestions.filter((q,i)=>testAnswers[i]!==null&&getAnswerIndex(q)!==null&&testAnswers[i]!==getAnswerIndex(q));if(!bad.length){alert("No incorrect attempted questions to retry.");return}testQuestions=bad;testAnswers=new Array(bad.length).fill(null);testReview=new Array(bad.length).fill(false);currentQuestion=0;document.getElementById("resultPanel").classList.remove("show");document.getElementById("testScreen").classList.add("show");document.getElementById("timer").textContent="Practice Mode";renderQuestion();}
 
-
-function shuffle(a){
-
-a=[...a];
-
-for(
-let i=a.length-1;
-i>0;
-i--
-){
-
-let j=
-Math.floor(
-Math.random()*(i+1)
-);
-
-[a[i],a[j]]=
-[a[j],a[i]];
-
+document.getElementById("searchInput").value.toLowerCase().trim(),year=document.getElementById("yearFilter").value,subject=document.getElementById("subjectFilter").value,status=document.getElementById("statusFilter").value;
+ const list=papers.filter(p=>{
+  const hay=[p.year,p.subject,p.code,p.set,p.marks,p.time,p.status].join(" ").toLowerCase();
+  return (!q||hay.includes(q))&&(year==="all"||p.year===year)&&(subject==="all"||p.subject===subject)&&(status==="all"||p.status===status)&&(currentView==="all"||p.group===currentView);
+ });
+ grid.innerHTML="";
+ if(!list.length){grid.innerHTML='<div class="empty" style="grid-column:1/-1">No paper records match your search/filter.</div>';return}
+ list.forEach(p=>{
+  const card=document.createElement("article");card.className="paper-card";
+  const badge=p.status==="verified"?'<span class="badge">✓ VERIFIED</span>':'<span class="badge pending">SOURCE NOT VERIFIED</span>';
+  let buttons=p.localPdf?`<button class="btn btn-primary" onclick='openPdf(${JSON.stringify(p.localPdf)},${JSON.stringify(p.year+" "+p.subject+" Set "+p.set)})'>📄 View PDF</button><a class="btn btn-secondary" href="${encodeURI(p.localPdf)}" download>⬇ Download</a>`:'<button class="btn btn-primary" disabled>📄 PDF not uploaded yet</button>';
+  card.innerHTML=`<h3>${escapeHtml(p.subject)}</h3>${badge}<div class="meta"><b>Year:</b> ${escapeHtml(p.year)}</div><div class="meta"><b>Set:</b> ${escapeHtml(p.set)}</div><div class="meta"><b>Code:</b> ${escapeHtml(p.code)}</div><div class="meta"><b>Marks:</b> ${escapeHtml(p.marks)}</div><div class="meta"><b>Time:</b> ${escapeHtml(p.time)}</div><div class="card-buttons">${buttons}</div>`;
+  grid.appendChild(card);
+ });
 }
+function setView(v,b){currentView=v;document.querySelectorAll(".nav-tab").forEach(x=>x.classList.remove("active"));b.classList.add("active");renderPapers()}
+function renderAll(){renderStats();populateSubjectFilter();renderSubjects();renderMaterials();renderPapers()}
 
-return a;
-
-}
-
+function openTestSetup(){document.getElementById("testSetup").classList.add("show");document.getElementById("testSetup").scrollIntoView({behavior:"smooth"})}
+function closeTestSetup(){document.getElementById("testSetup").classList.remove("show")}
+function shuffle(a){a=[...a];for(let i=a.length-1;i>0;i--){let j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a}
 
 function startTest(){
-
-const subject=
-document.getElementById("testSubject")
-.value;
-
-const year=
-document.getElementById("testYear")
-.value;
-
-const count=
-+document.getElementById("questionCount")
-.value;
-
-const mode=
-document.getElementById("testMode")
-.value;
-
-
-if(!subject){
-
-alert("Please select a subject.");
-
-return;
-
+ const subject=document.getElementById("testSubject").value,year=document.getElementById("testYear").value,count=+document.getElementById("questionCount").value,mode=document.getElementById("testMode").value;
+ if(!subject){alert("Please select a subject.");return}
+ const pool=questionBank.filter(q=>q.subject===subject&&(year==="all"||String(q.year)===year));
+ if(!pool.length){alert("This subject is in the paper database, but its question data has not been imported yet. Please add the verified question dataset before starting a test.");return}
+ testQuestions=shuffle(pool).slice(0,Math.min(count,pool.length));testAnswers=new Array(testQuestions.length).fill(null);currentQuestion=0;
+ document.getElementById("testSetup").classList.remove("show");document.getElementById("resultPanel").classList.remove("show");document.getElementById("testScreen").classList.add("show");
+ if(mode==="timed"){timeLeft=testQuestions.length*60;startTimer()}else{stopTimer();document.getElementById("timer").textContent="Practice Mode"}
+ renderQuestion();document.getElementById("testScreen").scrollIntoView({behavior:"smooth"});
 }
-
-
-const pool=
-questionBank.filter(q=>
-q.subject===subject
-&&
-(
-year==="all"
-||
-String(q.year)===year
-)
-);
-
-
-if(!pool.length){
-
-alert(
-"This subject is in the paper database, but its question data has not been imported yet. Please add the verified question dataset before starting a test."
-);
-
-return;
-
-}
-
-
-testQuestions=
-shuffle(pool)
-.slice(
-0,
-Math.min(
-count,
-pool.length
-)
-);
-
-testAnswers=
-new Array(
-testQuestions.length
-)
-.fill(null);
-
-currentQuestion=0;
-
-
-document
-.getElementById("testSetup")
-.classList.remove("show");
-
-document
-.getElementById("resultPanel")
-.classList.remove("show");
-
-document
-.getElementById("testScreen")
-.classList.add("show");
-
-
-if(mode==="timed"){
-
-timeLeft=
-testQuestions.length*60;
-
-startTimer();
-
-}else{
-
-stopTimer();
-
-document
-.getElementById("timer")
-.textContent="Practice Mode";
-
-}
-
-
-renderQuestion();
-
-document
-.getElementById("testScreen")
-.scrollIntoView({
-behavior:"smooth"
-});
-
-}
-
-
 function renderQuestion(){
-
-const q=
-testQuestions[currentQuestion];
-
-if(!q)
-return;
-
-
-document
-.getElementById("testProgress")
-.textContent=
-`Question ${currentQuestion+1} of ${testQuestions.length}`;
-
-
-document
-.getElementById("questionSource")
-.textContent=
-`${q.year??"Year"} • ${q.subject??"Subject"} • Set ${q.set??"—"} • Q${q.questionNo??"—"}`;
-
-
-document
-.getElementById("questionText")
-.textContent=
-q.text
-??
-q.question
-??
-"Question text unavailable.";
-
-
-const box=
-document.getElementById("options");
-
-box.innerHTML="";
-
-
-const opts=
-Array.isArray(q.options)
-
-?
-q.options
-
-:
-["A","B","C","D"]
-.map(k=>q.options?.[k])
-.filter(x=>x!==undefined);
-
-
-opts.forEach((x,i)=>{
-
-let b=
-document.createElement("button");
-
-b.className=
-"answer-option"
-+
-(
-testAnswers[currentQuestion]===i
-?
-" selected"
-:
-""
-);
-
-
-b.innerHTML=
-`<b>${String.fromCharCode(65+i)}.</b> ${escapeHtml(x)}`;
-
-
-b.onclick=()=>{
-
-testAnswers[currentQuestion]=i;
-
-renderQuestion();
-
-};
-
-
-box.appendChild(b);
-
-});
-
-
-document
-.getElementById("previousBtn")
-.disabled=
-currentQuestion===0;
-
-
-document
-.getElementById("nextBtn")
-.textContent=
-currentQuestion===testQuestions.length-1
-?
-"Finish Test"
-:
-"Next →";
-
+ const q=testQuestions[currentQuestion];if(!q)return;
+ document.getElementById("testProgress").textContent=`Question ${currentQuestion+1} of ${testQuestions.length}`;
+ document.getElementById("questionSource").textContent=`${q.year??"Year"} • ${q.subject??"Subject"} • Set ${q.set??"—"} • Q${q.questionNo??"—"}`;
+ document.getElementById("questionText").textContent=q.text??q.question??"Question text unavailable.";
+ const box=document.getElementById("options");box.innerHTML="";
+ const opts=Array.isArray(q.options)?q.options:["A","B","C","D"].map(k=>q.options?.[k]).filter(x=>x!==undefined);
+ opts.forEach((x,i)=>{let b=document.createElement("button");b.className="answer-option"+(testAnswers[currentQuestion]===i?" selected":"");b.innerHTML=`<b>${String.fromCharCode(65+i)}.</b> ${escapeHtml(x)}`;b.onclick=()=>{testAnswers[currentQuestion]=i;renderQuestion()};box.appendChild(b)});
+ document.getElementById("previousBtn").disabled=currentQuestion===0;
+ document.getElementById("nextBtn").textContent=currentQuestion===testQuestions.length-1?"Finish Test":"Next →";
 }
-
-
-function nextQuestion(){
-
-if(
-currentQuestion<
-testQuestions.length-1
-){
-
-currentQuestion++;
-
-renderQuestion();
-
-}else{
-
-finishTest();
-
-}
-
-}
-
-
-function previousQuestion(){
-
-if(currentQuestion>0){
-
-currentQuestion--;
-
-renderQuestion();
-
-}
-
-}
-
-
-function startTimer(){
-
-stopTimer();
-
-updateTimer();
-
-timerInterval=
-setInterval(()=>{
-
-timeLeft--;
-
-updateTimer();
-
-if(timeLeft<=0){
-
-stopTimer();
-
-finishTest();
-
-}
-
-},1000);
-
-}
-
-
-function stopTimer(){
-
-if(timerInterval){
-
-clearInterval(timerInterval);
-
-timerInterval=null;
-
-}
-
-}
-
-
-function updateTimer(){
-
-document
-.getElementById("timer")
-.textContent=
-`⏱ ${String(
-Math.floor(timeLeft/60)
-).padStart(2,"0")}:${String(
-timeLeft%60
-).padStart(2,"0")}`;
-
-}
-
-
-function normaliseAnswer(a){
-
-if(typeof a==="number")
-return a;
-
-
-if(typeof a==="string"){
-
-a=a.trim().toUpperCase();
-
-
-if(/^[A-D]$/.test(a))
-return a.charCodeAt(0)-65;
-
-
-let n=Number(a);
-
-
-if(Number.isInteger(n))
-return n>0&&n<=4?n-1:n;
-
-}
-
-
-return -1;
-
-}
-
-
+function nextQuestion(){if(currentQuestion<testQuestions.length-1){currentQuestion++;renderQuestion()}else finishTest()}
+function previousQuestion(){if(currentQuestion>0){currentQuestion--;renderQuestion()}}
+function startTimer(){stopTimer();updateTimer();timerInterval=setInterval(()=>{timeLeft--;updateTimer();if(timeLeft<=0){stopTimer();finishTest()}},1000)}
+function stopTimer(){if(timerInterval){clearInterval(timerInterval);timerInterval=null}}
+function updateTimer(){document.getElementById("timer").textContent=`⏱ ${String(Math.floor(timeLeft/60)).padStart(2,"0")}:${String(timeLeft%60).padStart(2,"0")}`}
+function normaliseAnswer(a){if(typeof a==="number")return a;if(typeof a==="string"){a=a.trim().toUpperCase();if(/^[A-D]$/.test(a))return a.charCodeAt(0)-65;let n=Number(a);if(Number.isInteger(n))return n>0&&n<=4?n-1:n}return -1}
 function finishTest(){
-
-stopTimer();
-
-let correct=0;
-
-let wrong=0;
-
-let unanswered=0;
-
-
-testQuestions.forEach((q,i)=>{
-
-let a=testAnswers[i];
-
-let c=normaliseAnswer(q.answer);
-
-
-if(a==null)
-unanswered++;
-
-else if(a===c)
-correct++;
-
-else
-wrong++;
-
-});
-
-
-const total=
-testQuestions.length;
-
-const p=
-total
-?
-(correct/total*100).toFixed(1)
-:
-"0.0";
-
-
-document
-.getElementById("scoreText")
-.textContent=
-`${correct}/${total}`;
-
-
-document
-.getElementById("percentageText")
-.textContent=
-p+"%";
-
-
-document
-.getElementById("correctCount")
-.textContent=correct;
-
-
-document
-.getElementById("wrongCount")
-.textContent=wrong;
-
-
-document
-.getElementById("unansweredCount")
-.textContent=unanswered;
-
-
-const review=
-document.getElementById("reviewList");
-
-review.innerHTML="";
-
-
-testQuestions.forEach((q,i)=>{
-
-let c=
-normaliseAnswer(q.answer);
-
-let u=
-testAnswers[i];
-
-let opts=
-Array.isArray(q.options)
-?
-q.options
-:
-Object.values(q.options||{});
-
-
-let d=
-document.createElement("div");
-
-d.className="review-item";
-
-
-let r=
-u==null
-
-?
-'<span class="wrong">Unanswered</span>'
-
-:
-u===c
-
-?
-'<span class="correct">Correct ✓</span>'
-
-:
-'<span class="wrong">Wrong ✗</span>';
-
-
-d.innerHTML=
-
-`<b>Q${q.questionNo??i+1}.</b>
-${escapeHtml(q.text??q.question??"")}
-<br>
-${r}
-<br>
-<small>
-Correct answer:
-${escapeHtml(opts[c]??"Not available")}
-</small>`;
-
-
-review.appendChild(d);
-
-});
-
-
-document
-.getElementById("testScreen")
-.classList.remove("show");
-
-
-document
-.getElementById("resultPanel")
-.classList.add("show");
-
-
-document
-.getElementById("resultPanel")
-.scrollIntoView({
-behavior:"smooth"
-});
-
+ stopTimer();let correct=0,wrong=0,unanswered=0;
+ testQuestions.forEach((q,i)=>{let a=testAnswers[i],c=normaliseAnswer(q.answer);if(a==null)unanswered++;else if(a===c)correct++;else wrong++});
+ const total=testQuestions.length,p=total?(correct/total*100).toFixed(1):"0.0";
+ document.getElementById("scoreText").textContent=`${correct}/${total}`;document.getElementById("percentageText").textContent=p+"%";
+ document.getElementById("correctCount").textContent=correct;document.getElementById("wrongCount").textContent=wrong;document.getElementById("unansweredCount").textContent=unanswered;
+ const review=document.getElementById("reviewList");review.innerHTML="";
+ testQuestions.forEach((q,i)=>{let c=normaliseAnswer(q.answer),u=testAnswers[i],opts=Array.isArray(q.options)?q.options:Object.values(q.options||{}),d=document.createElement("div");d.className="review-item";let r=u==null?'<span class="wrong">Unanswered</span>':u===c?'<span class="correct">Correct ✓</span>':'<span class="wrong">Wrong ✗</span>';d.innerHTML=`<b>Q${q.questionNo??i+1}.</b> ${escapeHtml(q.text??q.question??"")}<br>${r}<br><small>Correct answer: ${escapeHtml(opts[c]??"Not available")}</small>`;review.appendChild(d)});
+ document.getElementById("testScreen").classList.remove("show");document.getElementById("resultPanel").classList.add("show");document.getElementById("resultPanel").scrollIntoView({behavior:"smooth"});
 }
+function restartTest(){document.getElementById("resultPanel").classList.remove("show");openTestSetup()}
 
-
-function restartTest(){
-
-document
-.getElementById("resultPanel")
-.classList.remove("show");
-
-openTestSetup();
-
-}
-
-
-document
-.getElementById("searchInput")
-.addEventListener(
-"input",
-renderPapers
-);
-
-document
-.getElementById("yearFilter")
-.addEventListener(
-"change",
-renderPapers
-);
-
-document
-.getElementById("subjectFilter")
-.addEventListener(
-"change",
-renderPapers
-);
-
-document
-.getElementById("statusFilter")
-.addEventListener(
-"change",
-renderPapers
-);
-
+document.getElementById("searchInput").addEventListener("input",renderPapers);
+document.getElementById("yearFilter").addEventListener("change",renderPapers);
+document.getElementById("subjectFilter").addEventListener("change",renderPapers);
+document.getElementById("statusFilter").addEventListener("change",renderPapers);
 
 renderAll();
-
+restoreAttempt();
 loadQuestionBank();
-
 </script>
-
 </body>
 </html>
