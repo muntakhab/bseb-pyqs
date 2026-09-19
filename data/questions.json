@@ -1,5 +1,3 @@
-
-[]
 [
   {
     "id": "2025-physics-D-001",
@@ -9,6 +7,9 @@
     "code": "117",
     "section": "A",
     "questionNo": 1,
+    "chapter": "Electric Charges and Fields",
+    "difficulty": "Moderate",
+    "type": "PYQ",
     "text": "Two equal positive point charges of 1 μC are kept 1 metre apart in air. The electric potential energy of the system is:",
     "options": [
       "1 joule",
@@ -17,7 +18,9 @@
       "zero"
     ],
     "answer": 2,
-    "marks": 1
+    "marks": 1,
+    "source": "BSEB Class 12 Physics 2025 Set D",
+    "verification": "Answer verified against the uploaded Set D answer/solution material."
   },
   {
     "id": "2025-physics-D-002",
@@ -27,15 +30,20 @@
     "code": "117",
     "section": "A",
     "questionNo": 2,
-    "text": "The SI unit of capacitance is:",
+    "chapter": "Electrostatic Potential and Capacitance",
+    "difficulty": "Easy",
+    "type": "PYQ",
+    "text": "Which of the following is a unit of capacitance?",
     "options": [
-      "Coulomb",
-      "Ampere",
-      "Volt",
-      "Farad"
+      "coulomb",
+      "ampere",
+      "volt",
+      "coulomb/volt"
     ],
     "answer": 3,
-    "marks": 1
+    "marks": 1,
+    "source": "BSEB Class 12 Physics 2025 Set D",
+    "verification": "Answer verified against the uploaded Set D answer/solution material."
   },
   {
     "id": "2025-physics-D-003",
@@ -45,15 +53,20 @@
     "code": "117",
     "section": "A",
     "questionNo": 3,
+    "chapter": "Electrostatic Potential and Capacitance",
+    "difficulty": "Easy",
+    "type": "PYQ",
     "text": "The capacitance of a condenser does not depend upon:",
     "options": [
-      "Shape of plates",
-      "Size of plates",
-      "Charge on plates",
-      "Distance between plates"
+      "shape of plates",
+      "size of plates",
+      "charge on plates",
+      "distance between plates"
     ],
     "answer": 2,
-    "marks": 1
+    "marks": 1,
+    "source": "BSEB Class 12 Physics 2025 Set D",
+    "verification": "Answer verified against the uploaded Set D answer/solution material."
   },
   {
     "id": "2025-physics-D-004",
@@ -63,15 +76,20 @@
     "code": "117",
     "section": "A",
     "questionNo": 4,
+    "chapter": "Electric Charges and Fields",
+    "difficulty": "Easy",
+    "type": "PYQ",
     "text": "The electric field on the outer surface of a charged conductor is:",
     "options": [
-      "Parallel to the surface",
-      "Perpendicular to the surface",
-      "At 45° to the surface",
-      "Zero"
+      "parallel to the surface",
+      "perpendicular to the surface",
+      "at 45° to the surface",
+      "zero"
     ],
     "answer": 1,
-    "marks": 1
+    "marks": 1,
+    "source": "BSEB Class 12 Physics 2025 Set D",
+    "verification": "Answer verified against the uploaded Set D answer/solution material."
   },
   {
     "id": "2025-physics-D-005",
@@ -81,15 +99,19 @@
     "code": "117",
     "section": "A",
     "questionNo": 5,
-    "text": "The electric field inside a conductor in electrostatic equilibrium is:",
+    "chapter": "Electric Charges and Fields",
+    "difficulty": "Easy",
+    "type": "PYQ",
+    "text": "If a conductor is placed in an external electric field, the field inside the conductor will be:",
     "options": [
-      "Zero",
-      "Equal to the external field",
-      "Twice the external field",
-      "Half the external field"
+      "zero",
+      "equal to the external field",
+      "twice the external field",
+      "half the external field"
     ],
     "answer": 0,
-    "marks": 1
+    "marks": 1,
+    "source": "BSEB Class 12 Physics 2025 Set D",
+    "verification": "Answer verified against the uploaded Set D answer/solution material."
   }
 ]
-
