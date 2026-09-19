@@ -1,2 +1,94 @@
 
 []
+[
+  {
+    "id": "2025-physics-D-001",
+    "year": 2025,
+    "subject": "Physics",
+    "set": "D",
+    "code": "117",
+    "section": "A",
+    "questionNo": 1,
+    "text": "Two equal positive point charges of 1 μC are kept 1 metre apart in air. The electric potential energy of the system is:",
+    "options": [
+      "1 joule",
+      "1 eV",
+      "9 × 10⁻³ joule",
+      "zero"
+    ],
+    "answer": 2,
+    "marks": 1
+  },
+  {
+    "id": "2025-physics-D-002",
+    "year": 2025,
+    "subject": "Physics",
+    "set": "D",
+    "code": "117",
+    "section": "A",
+    "questionNo": 2,
+    "text": "The SI unit of capacitance is:",
+    "options": [
+      "Coulomb",
+      "Ampere",
+      "Volt",
+      "Farad"
+    ],
+    "answer": 3,
+    "marks": 1
+  },
+  {
+    "id": "2025-physics-D-003",
+    "year": 2025,
+    "subject": "Physics",
+    "set": "D",
+    "code": "117",
+    "section": "A",
+    "questionNo": 3,
+    "text": "The capacitance of a condenser does not depend upon:",
+    "options": [
+      "Shape of plates",
+      "Size of plates",
+      "Charge on plates",
+      "Distance between plates"
+    ],
+    "answer": 2,
+    "marks": 1
+  },
+  {
+    "id": "2025-physics-D-004",
+    "year": 2025,
+    "subject": "Physics",
+    "set": "D",
+    "code": "117",
+    "section": "A",
+    "questionNo": 4,
+    "text": "The electric field on the outer surface of a charged conductor is:",
+    "options": [
+      "Parallel to the surface",
+      "Perpendicular to the surface",
+      "At 45° to the surface",
+      "Zero"
+    ],
+    "answer": 1,
+    "marks": 1
+  },
+  {
+    "id": "2025-physics-D-005",
+    "year": 2025,
+    "subject": "Physics",
+    "set": "D",
+    "code": "117",
+    "section": "A",
+    "questionNo": 5,
+    "text": "The electric field inside a conductor in electrostatic equilibrium is:",
+    "options": [
+      "Zero",
+      "Equal to the external field",
+      "Twice the external field",
+      "Half the external field"
+    ],
+    "answer": 0,
+    "marks": 1
+  }
+]
