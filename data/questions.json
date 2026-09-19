@@ -1,14 +1,1630 @@
 {
-  "id": 1,
-  "difficulty": "Easy",
-  "pyq_year": "2024",
-  "question": "The SI unit of capacitance is:",
-  "options": [
-    "Coulomb",
-    "Ampere",
-    "Volt",
-    "Farad"
+  "metadata": {
+    "board": "BSEB (Bihar School Examination Board)",
+    "class": "12th / Intermediate",
+    "exam_scope": "Annual Board Examination Only",
+    "pyq_years": [
+      "2020",
+      "2021",
+      "2022",
+      "2023",
+      "2024",
+      "2025",
+      "2026"
+    ],
+    "target_exam": "2027",
+    "supported_subjects": [
+      "Physics",
+      "Chemistry",
+      "Mathematics",
+      "Biology",
+      "English",
+      "Hindi",
+      "Urdu"
+    ],
+    "test_modes": [
+      "PYQ_Only",
+      "Most_Important",
+      "Random_Mix"
+    ],
+    "supported_test_sizes": [
+      10,
+      25,
+      50,
+      "Full"
+    ],
+    "database_status": "PARTIAL — evidence-safe build; only source-derived records are included as PYQ test questions",
+    "source_policy": "No unsupported questions, years, sets, answers, or repetition claims are invented."
+  },
+  "subjects": [
+    {
+      "subject_id": "PHY12",
+      "subject_name": "Physics",
+      "chapters": [
+        {
+          "chapter_id": 1,
+          "chapter_name": "Alternating Current",
+          "total_mcqs": 25,
+          "mcq_difficulty_breakdown": {
+            "easy": 12,
+            "moderate": 8,
+            "high": 5
+          },
+          "mcqs": [
+            {
+              "id": "PHY-SOURCE-007",
+              "question": "For a purely inductive AC circuit, the power factor is:",
+              "options": [
+                "1",
+                "0",
+                "1/2",
+                "-1"
+              ],
+              "correct_option_index": 1,
+              "difficulty": "Easy",
+              "explanation": "Current and voltage differ in phase by 90°, so cosφ = 0.",
+              "selection_tags": {
+                "is_pyq": true,
+                "is_most_important": true,
+                "bseb_priority": "VERY_HIGH"
+              },
+              "pyq_metadata": {
+                "year": "2025",
+                "set": "D",
+                "asked_frequency_2020_2026": 1,
+                "historical_evidence": "SOURCE_DERIVED_NOT_OFFICIAL_TRANSCRIPT"
+              }
+            },
+            {
+              "id": "PHY-SOURCE-008",
+              "question": "In a purely capacitive AC circuit, the current:",
+              "options": [
+                "Lags voltage by 90°",
+                "Leads voltage by 90°",
+                "Is in phase with voltage",
+                "Is always zero"
+              ],
+              "correct_option_index": 1,
+              "difficulty": "Easy",
+              "explanation": "In a pure capacitor, current leads voltage by 90°.",
+              "selection_tags": {
+                "is_pyq": true,
+                "is_most_important": true,
+                "bseb_priority": "VERY_HIGH"
+              },
+              "pyq_metadata": {
+                "year": "2025",
+                "set": "D",
+                "asked_frequency_2020_2026": 1,
+                "historical_evidence": "SOURCE_DERIVED_NOT_OFFICIAL_TRANSCRIPT"
+              }
+            },
+            {
+              "id": "PHY-SOURCE-009",
+              "question": "At series resonance in an RLC circuit, the impedance is:",
+              "options": [
+                "Maximum",
+                "Minimum",
+                "Infinite",
+                "Zero in every practical circuit"
+              ],
+              "correct_option_index": 1,
+              "difficulty": "Easy",
+              "explanation": "At resonance XL = XC, leaving the resistance as the impedance; this is the minimum value for a series RLC circuit.",
+              "selection_tags": {
+                "is_pyq": true,
+                "is_most_important": true,
+                "bseb_priority": "VERY_HIGH"
+              },
+              "pyq_metadata": {
+                "year": "2025",
+                "set": "D",
+                "asked_frequency_2020_2026": 1,
+                "historical_evidence": "SOURCE_DERIVED_NOT_OFFICIAL_TRANSCRIPT"
+              }
+            }
+          ],
+          "subjective_questions": [],
+          "status": "PARTIAL"
+        },
+        {
+          "chapter_id": 2,
+          "chapter_name": "Atoms",
+          "total_mcqs": 25,
+          "mcq_difficulty_breakdown": {
+            "easy": 12,
+            "moderate": 8,
+            "high": 5
+          },
+          "mcqs": [
+            {
+              "id": "PHY-SOURCE-019",
+              "question": "The visible spectral lines of hydrogen mainly belong to the:",
+              "options": [
+                "Lyman series",
+                "Balmer series",
+                "Paschen series",
+                "Brackett series"
+              ],
+              "correct_option_index": 1,
+              "difficulty": "Moderate",
+              "explanation": "The Balmer series corresponds to transitions ending at n = 2 and lies in the visible region.",
+              "selection_tags": {
+                "is_pyq": true,
+                "is_most_important": false,
+                "bseb_priority": "HIGH"
+              },
+              "pyq_metadata": {
+                "year": "2025",
+                "set": "D",
+                "asked_frequency_2020_2026": 1,
+                "historical_evidence": "SOURCE_DERIVED_NOT_OFFICIAL_TRANSCRIPT"
+              }
+            }
+          ],
+          "subjective_questions": [],
+          "status": "PARTIAL"
+        },
+        {
+          "chapter_id": 3,
+          "chapter_name": "Current Electricity",
+          "total_mcqs": 25,
+          "mcq_difficulty_breakdown": {
+            "easy": 12,
+            "moderate": 8,
+            "high": 5
+          },
+          "mcqs": [
+            {
+              "id": "PHY-SOURCE-006",
+              "question": "A shunt is connected with a galvanometer to convert it into an ammeter. The shunt:",
+              "options": [
+                "Decreases the current range",
+                "Increases the current range",
+                "Stops current",
+                "Increases resistance of the galvanometer"
+              ],
+              "correct_option_index": 1,
+              "difficulty": "Easy",
+              "explanation": "A low-resistance shunt provides an alternate path and increases the measurable current range.",
+              "selection_tags": {
+                "is_pyq": true,
+                "is_most_important": true,
+                "bseb_priority": "VERY_HIGH"
+              },
+              "pyq_metadata": {
+                "year": "2025",
+                "set": "D",
+                "asked_frequency_2020_2026": 1,
+                "historical_evidence": "SOURCE_DERIVED_NOT_OFFICIAL_TRANSCRIPT"
+              }
+            },
+            {
+              "id": "PHY-SOURCE-021",
+              "question": "The SI unit of electric field can be written as:",
+              "options": [
+                "V/m",
+                "V·m",
+                "A/m",
+                "C/m"
+              ],
+              "correct_option_index": 0,
+              "difficulty": "Moderate",
+              "explanation": "Electric field is potential difference per unit distance, V/m.",
+              "selection_tags": {
+                "is_pyq": true,
+                "is_most_important": false,
+                "bseb_priority": "HIGH"
+              },
+              "pyq_metadata": {
+                "year": "2025",
+                "set": "D",
+                "asked_frequency_2020_2026": 1,
+                "historical_evidence": "SOURCE_DERIVED_NOT_OFFICIAL_TRANSCRIPT"
+              }
+            },
+            {
+              "id": "PHY-SOURCE-022",
+              "question": "For a uniform wire, resistance is given by:",
+              "options": [
+                "R = A/(ρl)",
+                "R = ρl/A",
+                "R = ρA/l",
+                "R = l/(ρA)"
+              ],
+              "correct_option_index": 1,
+              "difficulty": "Moderate",
+              "explanation": "Resistance is proportional to length and inversely proportional to area: R = ρl/A.",
+              "selection_tags": {
+                "is_pyq": true,
+                "is_most_important": false,
+                "bseb_priority": "HIGH"
+              },
+              "pyq_metadata": {
+                "year": "2025",
+                "set": "D",
+                "asked_frequency_2020_2026": 1,
+                "historical_evidence": "SOURCE_DERIVED_NOT_OFFICIAL_TRANSCRIPT"
+              }
+            },
+            {
+              "id": "PHY-SOURCE-023",
+              "question": "The resistance of a semiconductor generally:",
+              "options": [
+                "Increases with temperature",
+                "Decreases with temperature",
+                "Never changes",
+                "Becomes infinite at all temperatures"
+              ],
+              "correct_option_index": 1,
+              "difficulty": "High",
+              "explanation": "Semiconductors generally have a negative temperature coefficient of resistance.",
+              "selection_tags": {
+                "is_pyq": true,
+                "is_most_important": false,
+                "bseb_priority": "HIGH"
+              },
+              "pyq_metadata": {
+                "year": "2025",
+                "set": "D",
+                "asked_frequency_2020_2026": 1,
+                "historical_evidence": "SOURCE_DERIVED_NOT_OFFICIAL_TRANSCRIPT"
+              }
+            }
+          ],
+          "subjective_questions": [],
+          "status": "PARTIAL"
+        },
+        {
+          "chapter_id": 4,
+          "chapter_name": "Dual Nature of Radiation and Matter",
+          "total_mcqs": 25,
+          "mcq_difficulty_breakdown": {
+            "easy": 12,
+            "moderate": 8,
+            "high": 5
+          },
+          "mcqs": [
+            {
+              "id": "PHY-SOURCE-017",
+              "question": "The de Broglie wavelength of a particle is related to its momentum p by:",
+              "options": [
+                "λ = hp",
+                "λ = p/h",
+                "λ = h/p",
+                "λ = h+p"
+              ],
+              "correct_option_index": 2,
+              "difficulty": "Moderate",
+              "explanation": "The de Broglie relation is λ = h/p.",
+              "selection_tags": {
+                "is_pyq": true,
+                "is_most_important": false,
+                "bseb_priority": "HIGH"
+              },
+              "pyq_metadata": {
+                "year": "2025",
+                "set": "D",
+                "asked_frequency_2020_2026": 1,
+                "historical_evidence": "SOURCE_DERIVED_NOT_OFFICIAL_TRANSCRIPT"
+              }
+            },
+            {
+              "id": "PHY-SOURCE-018",
+              "question": "The rest mass of a photon is:",
+              "options": [
+                "h/c",
+                "c/h",
+                "Zero",
+                "1 kg"
+              ],
+              "correct_option_index": 2,
+              "difficulty": "Moderate",
+              "explanation": "A photon has zero invariant (rest) mass.",
+              "selection_tags": {
+                "is_pyq": true,
+                "is_most_important": false,
+                "bseb_priority": "HIGH"
+              },
+              "pyq_metadata": {
+                "year": "2025",
+                "set": "D",
+                "asked_frequency_2020_2026": 1,
+                "historical_evidence": "SOURCE_DERIVED_NOT_OFFICIAL_TRANSCRIPT"
+              }
+            }
+          ],
+          "subjective_questions": [],
+          "status": "PARTIAL"
+        },
+        {
+          "chapter_id": 5,
+          "chapter_name": "Electric Charges and Fields",
+          "total_mcqs": 25,
+          "mcq_difficulty_breakdown": {
+            "easy": 12,
+            "moderate": 8,
+            "high": 5
+          },
+          "mcqs": [
+            {
+              "id": "PHY-SOURCE-001",
+              "question": "Two equal positive charges are kept a fixed distance apart. Their electrostatic potential energy is positive.",
+              "options": [
+                "Negative",
+                "Zero",
+                "Positive",
+                "Cannot be determined"
+              ],
+              "correct_option_index": 2,
+              "difficulty": "Easy",
+              "explanation": "The product q1q2 is positive, so electrostatic potential energy kq1q2/r is positive.",
+              "selection_tags": {
+                "is_pyq": true,
+                "is_most_important": true,
+                "bseb_priority": "VERY_HIGH"
+              },
+              "pyq_metadata": {
+                "year": "2025",
+                "set": "D",
+                "asked_frequency_2020_2026": 1,
+                "historical_evidence": "SOURCE_DERIVED_NOT_OFFICIAL_TRANSCRIPT"
+              }
+            },
+            {
+              "id": "PHY-SOURCE-004",
+              "question": "In electrostatic equilibrium, the electric field at the surface of a charged conductor is:",
+              "options": [
+                "Parallel to the surface",
+                "Perpendicular to the surface",
+                "At 45° to the surface",
+                "Always zero"
+              ],
+              "correct_option_index": 1,
+              "difficulty": "Easy",
+              "explanation": "The tangential component must vanish in electrostatic equilibrium; the field is normal to the surface.",
+              "selection_tags": {
+                "is_pyq": true,
+                "is_most_important": true,
+                "bseb_priority": "VERY_HIGH"
+              },
+              "pyq_metadata": {
+                "year": "2025",
+                "set": "D",
+                "asked_frequency_2020_2026": 1,
+                "historical_evidence": "SOURCE_DERIVED_NOT_OFFICIAL_TRANSCRIPT"
+              }
+            },
+            {
+              "id": "PHY-SOURCE-005",
+              "question": "The electric field inside a conductor in electrostatic equilibrium is:",
+              "options": [
+                "Zero",
+                "Equal to the external field",
+                "Twice the external field",
+                "Half the external field"
+              ],
+              "correct_option_index": 0,
+              "difficulty": "Easy",
+              "explanation": "Free charges rearrange until the electrostatic field inside the conductor is zero.",
+              "selection_tags": {
+                "is_pyq": true,
+                "is_most_important": true,
+                "bseb_priority": "VERY_HIGH"
+              },
+              "pyq_metadata": {
+                "year": "2025",
+                "set": "D",
+                "asked_frequency_2020_2026": 1,
+                "historical_evidence": "SOURCE_DERIVED_NOT_OFFICIAL_TRANSCRIPT"
+              }
+            },
+            {
+              "id": "PHY-SOURCE-029",
+              "question": "The electric flux through a closed surface depends on the:",
+              "options": [
+                "Shape of the surface only",
+                "Net enclosed charge",
+                "Colour of the surface",
+                "Surface material only"
+              ],
+              "correct_option_index": 1,
+              "difficulty": "High",
+              "explanation": "By Gauss's law, total electric flux through a closed surface is proportional to the net enclosed charge.",
+              "selection_tags": {
+                "is_pyq": true,
+                "is_most_important": false,
+                "bseb_priority": "HIGH"
+              },
+              "pyq_metadata": {
+                "year": "2025",
+                "set": "D",
+                "asked_frequency_2020_2026": 1,
+                "historical_evidence": "SOURCE_DERIVED_NOT_OFFICIAL_TRANSCRIPT"
+              }
+            }
+          ],
+          "subjective_questions": [],
+          "status": "PARTIAL"
+        },
+        {
+          "chapter_id": 6,
+          "chapter_name": "Electromagnetic Induction",
+          "total_mcqs": 25,
+          "mcq_difficulty_breakdown": {
+            "easy": 12,
+            "moderate": 8,
+            "high": 5
+          },
+          "mcqs": [
+            {
+              "id": "PHY-SOURCE-024",
+              "question": "The working principle of an electric generator is:",
+              "options": [
+                "Electrostatic induction",
+                "Electromagnetic induction",
+                "Photoelectric effect",
+                "Thermionic emission"
+              ],
+              "correct_option_index": 1,
+              "difficulty": "High",
+              "explanation": "A changing magnetic flux induces an emf according to Faraday's law.",
+              "selection_tags": {
+                "is_pyq": true,
+                "is_most_important": false,
+                "bseb_priority": "HIGH"
+              },
+              "pyq_metadata": {
+                "year": "2025",
+                "set": "D",
+                "asked_frequency_2020_2026": 1,
+                "historical_evidence": "SOURCE_DERIVED_NOT_OFFICIAL_TRANSCRIPT"
+              }
+            }
+          ],
+          "subjective_questions": [],
+          "status": "PARTIAL"
+        },
+        {
+          "chapter_id": 7,
+          "chapter_name": "Electromagnetic Waves",
+          "total_mcqs": 25,
+          "mcq_difficulty_breakdown": {
+            "easy": 12,
+            "moderate": 8,
+            "high": 5
+          },
+          "mcqs": [
+            {
+              "id": "PHY-SOURCE-016",
+              "question": "Optical fibre communication uses:",
+              "options": [
+                "Mechanical waves",
+                "Electromagnetic waves",
+                "Sound waves only",
+                "Matter waves"
+              ],
+              "correct_option_index": 1,
+              "difficulty": "Moderate",
+              "explanation": "Information is carried by electromagnetic light waves guided through the fibre.",
+              "selection_tags": {
+                "is_pyq": true,
+                "is_most_important": false,
+                "bseb_priority": "HIGH"
+              },
+              "pyq_metadata": {
+                "year": "2025",
+                "set": "D",
+                "asked_frequency_2020_2026": 1,
+                "historical_evidence": "SOURCE_DERIVED_NOT_OFFICIAL_TRANSCRIPT"
+              }
+            }
+          ],
+          "subjective_questions": [],
+          "status": "PARTIAL"
+        },
+        {
+          "chapter_id": 8,
+          "chapter_name": "Electrostatic Potential and Capacitance",
+          "total_mcqs": 25,
+          "mcq_difficulty_breakdown": {
+            "easy": 12,
+            "moderate": 8,
+            "high": 5
+          },
+          "mcqs": [
+            {
+              "id": "PHY-SOURCE-002",
+              "question": "The SI unit of capacitance is:",
+              "options": [
+                "Coulomb",
+                "Ampere",
+                "Volt",
+                "Farad"
+              ],
+              "correct_option_index": 3,
+              "difficulty": "Easy",
+              "explanation": "Capacitance is measured in farads (F).",
+              "selection_tags": {
+                "is_pyq": true,
+                "is_most_important": true,
+                "bseb_priority": "VERY_HIGH"
+              },
+              "pyq_metadata": {
+                "year": "2025",
+                "set": "D",
+                "asked_frequency_2020_2026": 1,
+                "historical_evidence": "SOURCE_DERIVED_NOT_OFFICIAL_TRANSCRIPT"
+              }
+            },
+            {
+              "id": "PHY-SOURCE-003",
+              "question": "The capacitance of a condenser does not depend on its:",
+              "options": [
+                "Shape",
+                "Size",
+                "Charge",
+                "Separation of plates"
+              ],
+              "correct_option_index": 2,
+              "difficulty": "Easy",
+              "explanation": "For a given geometry and dielectric, capacitance is independent of the charge stored.",
+              "selection_tags": {
+                "is_pyq": true,
+                "is_most_important": true,
+                "bseb_priority": "VERY_HIGH"
+              },
+              "pyq_metadata": {
+                "year": "2025",
+                "set": "D",
+                "asked_frequency_2020_2026": 1,
+                "historical_evidence": "SOURCE_DERIVED_NOT_OFFICIAL_TRANSCRIPT"
+              }
+            },
+            {
+              "id": "PHY-SOURCE-028",
+              "question": "Two capacitors connected in parallel have the same:",
+              "options": [
+                "Charge always",
+                "Potential difference",
+                "Capacitance always",
+                "Energy always"
+              ],
+              "correct_option_index": 1,
+              "difficulty": "High",
+              "explanation": "Parallel elements share the same potential difference.",
+              "selection_tags": {
+                "is_pyq": true,
+                "is_most_important": false,
+                "bseb_priority": "HIGH"
+              },
+              "pyq_metadata": {
+                "year": "2025",
+                "set": "D",
+                "asked_frequency_2020_2026": 1,
+                "historical_evidence": "SOURCE_DERIVED_NOT_OFFICIAL_TRANSCRIPT"
+              }
+            }
+          ],
+          "subjective_questions": [],
+          "status": "PARTIAL"
+        },
+        {
+          "chapter_id": 9,
+          "chapter_name": "Magnetism and Matter",
+          "total_mcqs": 25,
+          "mcq_difficulty_breakdown": {
+            "easy": 12,
+            "moderate": 8,
+            "high": 5
+          },
+          "mcqs": [
+            {
+              "id": "PHY-SOURCE-025",
+              "question": "For a ferromagnetic material, relative permeability is generally:",
+              "options": [
+                "Much less than 1",
+                "Close to zero",
+                "High",
+                "Exactly 1"
+              ],
+              "correct_option_index": 2,
+              "difficulty": "High",
+              "explanation": "Ferromagnetic materials can have very large relative permeability.",
+              "selection_tags": {
+                "is_pyq": true,
+                "is_most_important": false,
+                "bseb_priority": "HIGH"
+              },
+              "pyq_metadata": {
+                "year": "2025",
+                "set": "D",
+                "asked_frequency_2020_2026": 1,
+                "historical_evidence": "SOURCE_DERIVED_NOT_OFFICIAL_TRANSCRIPT"
+              }
+            }
+          ],
+          "subjective_questions": [],
+          "status": "PARTIAL"
+        },
+        {
+          "chapter_id": 10,
+          "chapter_name": "Moving Charges and Magnetism",
+          "total_mcqs": 25,
+          "mcq_difficulty_breakdown": {
+            "easy": 12,
+            "moderate": 8,
+            "high": 5
+          },
+          "mcqs": [
+            {
+              "id": "PHY-SOURCE-026",
+              "question": "The SI unit of current density is:",
+              "options": [
+                "A/m²",
+                "A/m",
+                "C/m²",
+                "V/m"
+              ],
+              "correct_option_index": 0,
+              "difficulty": "High",
+              "explanation": "Current density is current per unit cross-sectional area, A/m².",
+              "selection_tags": {
+                "is_pyq": true,
+                "is_most_important": false,
+                "bseb_priority": "HIGH"
+              },
+              "pyq_metadata": {
+                "year": "2025",
+                "set": "D",
+                "asked_frequency_2020_2026": 1,
+                "historical_evidence": "SOURCE_DERIVED_NOT_OFFICIAL_TRANSCRIPT"
+              }
+            },
+            {
+              "id": "PHY-SOURCE-027",
+              "question": "The magnetic field inside a long ideal solenoid is approximately:",
+              "options": [
+                "Zero everywhere",
+                "Uniform and along its axis",
+                "Perpendicular to its axis",
+                "Only at the ends"
+              ],
+              "correct_option_index": 1,
+              "difficulty": "High",
+              "explanation": "For a long solenoid, the internal magnetic field is nearly uniform and parallel to its axis.",
+              "selection_tags": {
+                "is_pyq": true,
+                "is_most_important": false,
+                "bseb_priority": "HIGH"
+              },
+              "pyq_metadata": {
+                "year": "2025",
+                "set": "D",
+                "asked_frequency_2020_2026": 1,
+                "historical_evidence": "SOURCE_DERIVED_NOT_OFFICIAL_TRANSCRIPT"
+              }
+            }
+          ],
+          "subjective_questions": [],
+          "status": "PARTIAL"
+        },
+        {
+          "chapter_id": 11,
+          "chapter_name": "Nuclei",
+          "total_mcqs": 25,
+          "mcq_difficulty_breakdown": {
+            "easy": 12,
+            "moderate": 8,
+            "high": 5
+          },
+          "mcqs": [
+            {
+              "id": "PHY-SOURCE-020",
+              "question": "Approximately, 1 atomic mass unit is equivalent to:",
+              "options": [
+                "9.31 MeV",
+                "93.1 MeV",
+                "931 MeV",
+                "9310 MeV"
+              ],
+              "correct_option_index": 2,
+              "difficulty": "Moderate",
+              "explanation": "The mass-energy equivalent of 1 u is approximately 931 MeV.",
+              "selection_tags": {
+                "is_pyq": true,
+                "is_most_important": false,
+                "bseb_priority": "HIGH"
+              },
+              "pyq_metadata": {
+                "year": "2025",
+                "set": "D",
+                "asked_frequency_2020_2026": 1,
+                "historical_evidence": "SOURCE_DERIVED_NOT_OFFICIAL_TRANSCRIPT"
+              }
+            }
+          ],
+          "subjective_questions": [],
+          "status": "PARTIAL"
+        },
+        {
+          "chapter_id": 12,
+          "chapter_name": "Ray Optics and Optical Instruments",
+          "total_mcqs": 25,
+          "mcq_difficulty_breakdown": {
+            "easy": 12,
+            "moderate": 8,
+            "high": 5
+          },
+          "mcqs": [
+            {
+              "id": "PHY-SOURCE-010",
+              "question": "A convex mirror always forms an image that is:",
+              "options": [
+                "Real and inverted",
+                "Virtual and erect",
+                "Real and erect",
+                "Virtual and inverted"
+              ],
+              "correct_option_index": 1,
+              "difficulty": "Easy",
+              "explanation": "For a real object, a convex mirror forms a virtual, erect and diminished image.",
+              "selection_tags": {
+                "is_pyq": true,
+                "is_most_important": true,
+                "bseb_priority": "VERY_HIGH"
+              },
+              "pyq_metadata": {
+                "year": "2025",
+                "set": "D",
+                "asked_frequency_2020_2026": 1,
+                "historical_evidence": "SOURCE_DERIVED_NOT_OFFICIAL_TRANSCRIPT"
+              }
+            },
+            {
+              "id": "PHY-SOURCE-011",
+              "question": "A lens of power +2 D has focal length:",
+              "options": [
+                "2 m",
+                "1 m",
+                "0.5 m",
+                "0.02 m"
+              ],
+              "correct_option_index": 2,
+              "difficulty": "Easy",
+              "explanation": "P = 1/f (with f in metres), so f = 1/2 = 0.5 m.",
+              "selection_tags": {
+                "is_pyq": true,
+                "is_most_important": false,
+                "bseb_priority": "HIGH"
+              },
+              "pyq_metadata": {
+                "year": "2025",
+                "set": "D",
+                "asked_frequency_2020_2026": 1,
+                "historical_evidence": "SOURCE_DERIVED_NOT_OFFICIAL_TRANSCRIPT"
+              }
+            },
+            {
+              "id": "PHY-SOURCE-012",
+              "question": "Hypermetropia is corrected using a:",
+              "options": [
+                "Concave lens",
+                "Convex lens",
+                "Cylindrical lens only",
+                "Plane glass plate"
+              ],
+              "correct_option_index": 1,
+              "difficulty": "Easy",
+              "explanation": "A converging (convex) lens supplies the required positive optical power.",
+              "selection_tags": {
+                "is_pyq": true,
+                "is_most_important": false,
+                "bseb_priority": "HIGH"
+              },
+              "pyq_metadata": {
+                "year": "2025",
+                "set": "D",
+                "asked_frequency_2020_2026": 1,
+                "historical_evidence": "SOURCE_DERIVED_NOT_OFFICIAL_TRANSCRIPT"
+              }
+            }
+          ],
+          "subjective_questions": [],
+          "status": "PARTIAL"
+        },
+        {
+          "chapter_id": 13,
+          "chapter_name": "Semiconductor Electronics",
+          "total_mcqs": 25,
+          "mcq_difficulty_breakdown": {
+            "easy": 12,
+            "moderate": 8,
+            "high": 5
+          },
+          "mcqs": [
+            {
+              "id": "PHY-SOURCE-013",
+              "question": "In a p-type semiconductor, the majority charge carriers are:",
+              "options": [
+                "Electrons",
+                "Holes",
+                "Neutrons",
+                "Photons"
+              ],
+              "correct_option_index": 1,
+              "difficulty": "Moderate",
+              "explanation": "Trivalent doping creates acceptor levels, making holes the majority carriers.",
+              "selection_tags": {
+                "is_pyq": true,
+                "is_most_important": false,
+                "bseb_priority": "HIGH"
+              },
+              "pyq_metadata": {
+                "year": "2025",
+                "set": "D",
+                "asked_frequency_2020_2026": 1,
+                "historical_evidence": "SOURCE_DERIVED_NOT_OFFICIAL_TRANSCRIPT"
+              }
+            },
+            {
+              "id": "PHY-SOURCE-014",
+              "question": "In an n-type semiconductor, the majority charge carriers are:",
+              "options": [
+                "Holes",
+                "Electrons",
+                "Protons",
+                "Ions only"
+              ],
+              "correct_option_index": 1,
+              "difficulty": "Moderate",
+              "explanation": "Donor impurities contribute electrons, so electrons are the majority carriers.",
+              "selection_tags": {
+                "is_pyq": true,
+                "is_most_important": false,
+                "bseb_priority": "HIGH"
+              },
+              "pyq_metadata": {
+                "year": "2025",
+                "set": "D",
+                "asked_frequency_2020_2026": 1,
+                "historical_evidence": "SOURCE_DERIVED_NOT_OFFICIAL_TRANSCRIPT"
+              }
+            },
+            {
+              "id": "PHY-SOURCE-015",
+              "question": "Which logic gate gives output 0 only when both inputs are 1?",
+              "options": [
+                "OR",
+                "AND",
+                "NAND",
+                "NOR"
+              ],
+              "correct_option_index": 2,
+              "difficulty": "Moderate",
+              "explanation": "NAND is the complement of AND, so only input 11 gives output 0.",
+              "selection_tags": {
+                "is_pyq": true,
+                "is_most_important": false,
+                "bseb_priority": "HIGH"
+              },
+              "pyq_metadata": {
+                "year": "2025",
+                "set": "D",
+                "asked_frequency_2020_2026": 1,
+                "historical_evidence": "SOURCE_DERIVED_NOT_OFFICIAL_TRANSCRIPT"
+              }
+            }
+          ],
+          "subjective_questions": [],
+          "status": "PARTIAL"
+        },
+        {
+          "chapter_id": 14,
+          "chapter_name": "Wave Optics",
+          "total_mcqs": 25,
+          "mcq_difficulty_breakdown": {
+            "easy": 12,
+            "moderate": 8,
+            "high": 5
+          },
+          "mcqs": [],
+          "subjective_questions": [],
+          "status": "PARTIAL"
+        }
+      ]
+    },
+    {
+      "subject_id": "CHE12",
+      "subject_name": "Chemistry",
+      "chapters": [
+        {
+          "chapter_id": 1,
+          "chapter_name": "Alcohols, Phenols and Ethers",
+          "total_mcqs": 25,
+          "mcq_difficulty_breakdown": {
+            "easy": 12,
+            "moderate": 8,
+            "high": 5
+          },
+          "mcqs": [],
+          "subjective_questions": [],
+          "status": "PARTIAL"
+        },
+        {
+          "chapter_id": 2,
+          "chapter_name": "Aldehydes, Ketones and Carboxylic Acids",
+          "total_mcqs": 25,
+          "mcq_difficulty_breakdown": {
+            "easy": 12,
+            "moderate": 8,
+            "high": 5
+          },
+          "mcqs": [],
+          "subjective_questions": [],
+          "status": "PARTIAL"
+        },
+        {
+          "chapter_id": 3,
+          "chapter_name": "Amines",
+          "total_mcqs": 25,
+          "mcq_difficulty_breakdown": {
+            "easy": 12,
+            "moderate": 8,
+            "high": 5
+          },
+          "mcqs": [],
+          "subjective_questions": [],
+          "status": "PARTIAL"
+        },
+        {
+          "chapter_id": 4,
+          "chapter_name": "Biomolecules",
+          "total_mcqs": 25,
+          "mcq_difficulty_breakdown": {
+            "easy": 12,
+            "moderate": 8,
+            "high": 5
+          },
+          "mcqs": [],
+          "subjective_questions": [],
+          "status": "PARTIAL"
+        },
+        {
+          "chapter_id": 5,
+          "chapter_name": "Chemical Kinetics",
+          "total_mcqs": 25,
+          "mcq_difficulty_breakdown": {
+            "easy": 12,
+            "moderate": 8,
+            "high": 5
+          },
+          "mcqs": [],
+          "subjective_questions": [],
+          "status": "PARTIAL"
+        },
+        {
+          "chapter_id": 6,
+          "chapter_name": "Coordination Compounds",
+          "total_mcqs": 25,
+          "mcq_difficulty_breakdown": {
+            "easy": 12,
+            "moderate": 8,
+            "high": 5
+          },
+          "mcqs": [],
+          "subjective_questions": [],
+          "status": "PARTIAL"
+        },
+        {
+          "chapter_id": 7,
+          "chapter_name": "Electrochemistry",
+          "total_mcqs": 25,
+          "mcq_difficulty_breakdown": {
+            "easy": 12,
+            "moderate": 8,
+            "high": 5
+          },
+          "mcqs": [],
+          "subjective_questions": [],
+          "status": "PARTIAL"
+        },
+        {
+          "chapter_id": 8,
+          "chapter_name": "Haloalkanes and Haloarenes",
+          "total_mcqs": 25,
+          "mcq_difficulty_breakdown": {
+            "easy": 12,
+            "moderate": 8,
+            "high": 5
+          },
+          "mcqs": [],
+          "subjective_questions": [],
+          "status": "PARTIAL"
+        },
+        {
+          "chapter_id": 9,
+          "chapter_name": "Solutions",
+          "total_mcqs": 25,
+          "mcq_difficulty_breakdown": {
+            "easy": 12,
+            "moderate": 8,
+            "high": 5
+          },
+          "mcqs": [],
+          "subjective_questions": [],
+          "status": "PARTIAL"
+        },
+        {
+          "chapter_id": 10,
+          "chapter_name": "d- and f-Block Elements",
+          "total_mcqs": 25,
+          "mcq_difficulty_breakdown": {
+            "easy": 12,
+            "moderate": 8,
+            "high": 5
+          },
+          "mcqs": [],
+          "subjective_questions": [],
+          "status": "PARTIAL"
+        }
+      ]
+    },
+    {
+      "subject_id": "MAT12",
+      "subject_name": "Mathematics",
+      "chapters": [
+        {
+          "chapter_id": 1,
+          "chapter_name": "Application of Derivatives",
+          "total_mcqs": 25,
+          "mcq_difficulty_breakdown": {
+            "easy": 12,
+            "moderate": 8,
+            "high": 5
+          },
+          "mcqs": [],
+          "subjective_questions": [],
+          "status": "PARTIAL"
+        },
+        {
+          "chapter_id": 2,
+          "chapter_name": "Application of Integrals",
+          "total_mcqs": 25,
+          "mcq_difficulty_breakdown": {
+            "easy": 12,
+            "moderate": 8,
+            "high": 5
+          },
+          "mcqs": [],
+          "subjective_questions": [],
+          "status": "PARTIAL"
+        },
+        {
+          "chapter_id": 3,
+          "chapter_name": "Continuity and Differentiability",
+          "total_mcqs": 25,
+          "mcq_difficulty_breakdown": {
+            "easy": 12,
+            "moderate": 8,
+            "high": 5
+          },
+          "mcqs": [],
+          "subjective_questions": [],
+          "status": "PARTIAL"
+        },
+        {
+          "chapter_id": 4,
+          "chapter_name": "Determinants",
+          "total_mcqs": 25,
+          "mcq_difficulty_breakdown": {
+            "easy": 12,
+            "moderate": 8,
+            "high": 5
+          },
+          "mcqs": [],
+          "subjective_questions": [],
+          "status": "PARTIAL"
+        },
+        {
+          "chapter_id": 5,
+          "chapter_name": "Differential Equations",
+          "total_mcqs": 25,
+          "mcq_difficulty_breakdown": {
+            "easy": 12,
+            "moderate": 8,
+            "high": 5
+          },
+          "mcqs": [],
+          "subjective_questions": [],
+          "status": "PARTIAL"
+        },
+        {
+          "chapter_id": 6,
+          "chapter_name": "Integrals",
+          "total_mcqs": 25,
+          "mcq_difficulty_breakdown": {
+            "easy": 12,
+            "moderate": 8,
+            "high": 5
+          },
+          "mcqs": [],
+          "subjective_questions": [],
+          "status": "PARTIAL"
+        },
+        {
+          "chapter_id": 7,
+          "chapter_name": "Inverse Trigonometric Functions",
+          "total_mcqs": 25,
+          "mcq_difficulty_breakdown": {
+            "easy": 12,
+            "moderate": 8,
+            "high": 5
+          },
+          "mcqs": [],
+          "subjective_questions": [],
+          "status": "PARTIAL"
+        },
+        {
+          "chapter_id": 8,
+          "chapter_name": "Linear Programming",
+          "total_mcqs": 25,
+          "mcq_difficulty_breakdown": {
+            "easy": 12,
+            "moderate": 8,
+            "high": 5
+          },
+          "mcqs": [],
+          "subjective_questions": [],
+          "status": "PARTIAL"
+        },
+        {
+          "chapter_id": 9,
+          "chapter_name": "Matrices",
+          "total_mcqs": 25,
+          "mcq_difficulty_breakdown": {
+            "easy": 12,
+            "moderate": 8,
+            "high": 5
+          },
+          "mcqs": [],
+          "subjective_questions": [],
+          "status": "PARTIAL"
+        },
+        {
+          "chapter_id": 10,
+          "chapter_name": "Probability",
+          "total_mcqs": 25,
+          "mcq_difficulty_breakdown": {
+            "easy": 12,
+            "moderate": 8,
+            "high": 5
+          },
+          "mcqs": [],
+          "subjective_questions": [],
+          "status": "PARTIAL"
+        },
+        {
+          "chapter_id": 11,
+          "chapter_name": "Relations and Functions",
+          "total_mcqs": 25,
+          "mcq_difficulty_breakdown": {
+            "easy": 12,
+            "moderate": 8,
+            "high": 5
+          },
+          "mcqs": [],
+          "subjective_questions": [],
+          "status": "PARTIAL"
+        },
+        {
+          "chapter_id": 12,
+          "chapter_name": "Three Dimensional Geometry",
+          "total_mcqs": 25,
+          "mcq_difficulty_breakdown": {
+            "easy": 12,
+            "moderate": 8,
+            "high": 5
+          },
+          "mcqs": [],
+          "subjective_questions": [],
+          "status": "PARTIAL"
+        },
+        {
+          "chapter_id": 13,
+          "chapter_name": "Vector Algebra",
+          "total_mcqs": 25,
+          "mcq_difficulty_breakdown": {
+            "easy": 12,
+            "moderate": 8,
+            "high": 5
+          },
+          "mcqs": [],
+          "subjective_questions": [],
+          "status": "PARTIAL"
+        }
+      ]
+    },
+    {
+      "subject_id": "BIO12",
+      "subject_name": "Biology",
+      "chapters": [
+        {
+          "chapter_id": 1,
+          "chapter_name": "Biodiversity and Conservation",
+          "total_mcqs": 25,
+          "mcq_difficulty_breakdown": {
+            "easy": 12,
+            "moderate": 8,
+            "high": 5
+          },
+          "mcqs": [],
+          "subjective_questions": [],
+          "status": "PARTIAL"
+        },
+        {
+          "chapter_id": 2,
+          "chapter_name": "Biotechnology and its Applications",
+          "total_mcqs": 25,
+          "mcq_difficulty_breakdown": {
+            "easy": 12,
+            "moderate": 8,
+            "high": 5
+          },
+          "mcqs": [],
+          "subjective_questions": [],
+          "status": "PARTIAL"
+        },
+        {
+          "chapter_id": 3,
+          "chapter_name": "Biotechnology: Principles and Processes",
+          "total_mcqs": 25,
+          "mcq_difficulty_breakdown": {
+            "easy": 12,
+            "moderate": 8,
+            "high": 5
+          },
+          "mcqs": [],
+          "subjective_questions": [],
+          "status": "PARTIAL"
+        },
+        {
+          "chapter_id": 4,
+          "chapter_name": "Ecosystem",
+          "total_mcqs": 25,
+          "mcq_difficulty_breakdown": {
+            "easy": 12,
+            "moderate": 8,
+            "high": 5
+          },
+          "mcqs": [],
+          "subjective_questions": [],
+          "status": "PARTIAL"
+        },
+        {
+          "chapter_id": 5,
+          "chapter_name": "Environmental Issues",
+          "total_mcqs": 25,
+          "mcq_difficulty_breakdown": {
+            "easy": 12,
+            "moderate": 8,
+            "high": 5
+          },
+          "mcqs": [],
+          "subjective_questions": [],
+          "status": "PARTIAL"
+        },
+        {
+          "chapter_id": 6,
+          "chapter_name": "Evolution",
+          "total_mcqs": 25,
+          "mcq_difficulty_breakdown": {
+            "easy": 12,
+            "moderate": 8,
+            "high": 5
+          },
+          "mcqs": [],
+          "subjective_questions": [],
+          "status": "PARTIAL"
+        },
+        {
+          "chapter_id": 7,
+          "chapter_name": "Human Health and Disease",
+          "total_mcqs": 25,
+          "mcq_difficulty_breakdown": {
+            "easy": 12,
+            "moderate": 8,
+            "high": 5
+          },
+          "mcqs": [],
+          "subjective_questions": [],
+          "status": "PARTIAL"
+        },
+        {
+          "chapter_id": 8,
+          "chapter_name": "Human Reproduction",
+          "total_mcqs": 25,
+          "mcq_difficulty_breakdown": {
+            "easy": 12,
+            "moderate": 8,
+            "high": 5
+          },
+          "mcqs": [],
+          "subjective_questions": [],
+          "status": "PARTIAL"
+        },
+        {
+          "chapter_id": 9,
+          "chapter_name": "Microbes in Human Welfare",
+          "total_mcqs": 25,
+          "mcq_difficulty_breakdown": {
+            "easy": 12,
+            "moderate": 8,
+            "high": 5
+          },
+          "mcqs": [],
+          "subjective_questions": [],
+          "status": "PARTIAL"
+        },
+        {
+          "chapter_id": 10,
+          "chapter_name": "Molecular Basis of Inheritance",
+          "total_mcqs": 25,
+          "mcq_difficulty_breakdown": {
+            "easy": 12,
+            "moderate": 8,
+            "high": 5
+          },
+          "mcqs": [],
+          "subjective_questions": [],
+          "status": "PARTIAL"
+        },
+        {
+          "chapter_id": 11,
+          "chapter_name": "Organisms and Populations",
+          "total_mcqs": 25,
+          "mcq_difficulty_breakdown": {
+            "easy": 12,
+            "moderate": 8,
+            "high": 5
+          },
+          "mcqs": [],
+          "subjective_questions": [],
+          "status": "PARTIAL"
+        },
+        {
+          "chapter_id": 12,
+          "chapter_name": "Principles of Inheritance and Variation",
+          "total_mcqs": 25,
+          "mcq_difficulty_breakdown": {
+            "easy": 12,
+            "moderate": 8,
+            "high": 5
+          },
+          "mcqs": [],
+          "subjective_questions": [],
+          "status": "PARTIAL"
+        },
+        {
+          "chapter_id": 13,
+          "chapter_name": "Reproductive Health",
+          "total_mcqs": 25,
+          "mcq_difficulty_breakdown": {
+            "easy": 12,
+            "moderate": 8,
+            "high": 5
+          },
+          "mcqs": [],
+          "subjective_questions": [],
+          "status": "PARTIAL"
+        },
+        {
+          "chapter_id": 14,
+          "chapter_name": "Sexual Reproduction in Flowering Plants",
+          "total_mcqs": 25,
+          "mcq_difficulty_breakdown": {
+            "easy": 12,
+            "moderate": 8,
+            "high": 5
+          },
+          "mcqs": [],
+          "subjective_questions": [],
+          "status": "PARTIAL"
+        },
+        {
+          "chapter_id": 15,
+          "chapter_name": "Strategies for Enhancement in Food Production",
+          "total_mcqs": 25,
+          "mcq_difficulty_breakdown": {
+            "easy": 12,
+            "moderate": 8,
+            "high": 5
+          },
+          "mcqs": [],
+          "subjective_questions": [],
+          "status": "PARTIAL"
+        }
+      ]
+    },
+    {
+      "subject_id": "ENG12",
+      "subject_name": "English",
+      "chapters": [
+        {
+          "chapter_id": 1,
+          "chapter_name": "Grammar",
+          "total_mcqs": 25,
+          "mcq_difficulty_breakdown": {
+            "easy": 12,
+            "moderate": 8,
+            "high": 5
+          },
+          "mcqs": [],
+          "subjective_questions": [],
+          "status": "PARTIAL"
+        },
+        {
+          "chapter_id": 2,
+          "chapter_name": "Literature",
+          "total_mcqs": 25,
+          "mcq_difficulty_breakdown": {
+            "easy": 12,
+            "moderate": 8,
+            "high": 5
+          },
+          "mcqs": [],
+          "subjective_questions": [],
+          "status": "PARTIAL"
+        },
+        {
+          "chapter_id": 3,
+          "chapter_name": "Reading",
+          "total_mcqs": 25,
+          "mcq_difficulty_breakdown": {
+            "easy": 12,
+            "moderate": 8,
+            "high": 5
+          },
+          "mcqs": [],
+          "subjective_questions": [],
+          "status": "PARTIAL"
+        },
+        {
+          "chapter_id": 4,
+          "chapter_name": "Writing",
+          "total_mcqs": 25,
+          "mcq_difficulty_breakdown": {
+            "easy": 12,
+            "moderate": 8,
+            "high": 5
+          },
+          "mcqs": [],
+          "subjective_questions": [],
+          "status": "PARTIAL"
+        }
+      ]
+    },
+    {
+      "subject_id": "HIN12",
+      "subject_name": "Hindi",
+      "chapters": [
+        {
+          "chapter_id": 1,
+          "chapter_name": "गद्य",
+          "total_mcqs": 25,
+          "mcq_difficulty_breakdown": {
+            "easy": 12,
+            "moderate": 8,
+            "high": 5
+          },
+          "mcqs": [],
+          "subjective_questions": [],
+          "status": "PARTIAL"
+        },
+        {
+          "chapter_id": 2,
+          "chapter_name": "पद्य",
+          "total_mcqs": 25,
+          "mcq_difficulty_breakdown": {
+            "easy": 12,
+            "moderate": 8,
+            "high": 5
+          },
+          "mcqs": [],
+          "subjective_questions": [],
+          "status": "PARTIAL"
+        },
+        {
+          "chapter_id": 3,
+          "chapter_name": "लेखन",
+          "total_mcqs": 25,
+          "mcq_difficulty_breakdown": {
+            "easy": 12,
+            "moderate": 8,
+            "high": 5
+          },
+          "mcqs": [],
+          "subjective_questions": [],
+          "status": "PARTIAL"
+        },
+        {
+          "chapter_id": 4,
+          "chapter_name": "व्याकरण",
+          "total_mcqs": 25,
+          "mcq_difficulty_breakdown": {
+            "easy": 12,
+            "moderate": 8,
+            "high": 5
+          },
+          "mcqs": [],
+          "subjective_questions": [],
+          "status": "PARTIAL"
+        }
+      ]
+    },
+    {
+      "subject_id": "URD12",
+      "subject_name": "Urdu",
+      "chapters": [
+        {
+          "chapter_id": 1,
+          "chapter_name": "क़वायद",
+          "total_mcqs": 25,
+          "mcq_difficulty_breakdown": {
+            "easy": 12,
+            "moderate": 8,
+            "high": 5
+          },
+          "mcqs": [],
+          "subjective_questions": [],
+          "status": "PARTIAL"
+        },
+        {
+          "chapter_id": 2,
+          "chapter_name": "तहरीर",
+          "total_mcqs": 25,
+          "mcq_difficulty_breakdown": {
+            "easy": 12,
+            "moderate": 8,
+            "high": 5
+          },
+          "mcqs": [],
+          "subjective_questions": [],
+          "status": "PARTIAL"
+        },
+        {
+          "chapter_id": 3,
+          "chapter_name": "नज़्म/ग़ज़ल",
+          "total_mcqs": 25,
+          "mcq_difficulty_breakdown": {
+            "easy": 12,
+            "moderate": 8,
+            "high": 5
+          },
+          "mcqs": [],
+          "subjective_questions": [],
+          "status": "PARTIAL"
+        },
+        {
+          "chapter_id": 4,
+          "chapter_name": "नस्र",
+          "total_mcqs": 25,
+          "mcq_difficulty_breakdown": {
+            "easy": 12,
+            "moderate": 8,
+            "high": 5
+          },
+          "mcqs": [],
+          "subjective_questions": [],
+          "status": "PARTIAL"
+        }
+      ]
+    }
   ],
-  "correct_option_index": 3,
-  "explanation": "Capacitance C = Q/V, so its SI unit is coulomb per volt, called farad."
+  "research_queue": {
+    "pending_records_in_previous_v1": 1575,
+    "ready_records_in_previous_v1": 29,
+    "ready_interactive_mcqs_in_this_build": 29,
+    "note": "Pending slots remain outside the PYQ test pool until supported by source material."
+  }
 }
